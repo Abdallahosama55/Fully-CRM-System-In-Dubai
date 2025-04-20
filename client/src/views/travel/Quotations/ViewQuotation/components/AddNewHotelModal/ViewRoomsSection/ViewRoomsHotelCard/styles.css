@@ -1,0 +1,192 @@
+.hotel_card_view_quotation {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 1px solid var(--gray-300);
+    position: relative;
+}
+
+/* Typography adjustments */
+.hotel_card_view_quotation .ant-typography p,
+.hotel_card_view_quotation .ant-typography {
+    margin-bottom: 6px !important;
+}
+
+/* Image Column */
+.hotel_images_column {
+    width: 100%;
+}
+
+.hotel_card_view_quotation .hotel_image,
+.hotel_card_view_quotation .slick-slide,
+.hotel_card_view_quotation .ant-carousel {
+    max-width: 100%;
+    height: 180px !important;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.hotel_card_view_quotation .slick-dots li button {
+    background-color: #fff !important;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hotel_card_view_quotation .slick-arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.hotel_card_view_quotation .slick-arrow::after {
+    position: unset;
+}
+
+.hotel_card_view_quotation .ant-image-mask {
+    border-radius: 1rem !important;
+}
+
+/* Info Section */
+.hotel_card_view_quotation_info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Name Styling */
+.hotel_card_view_quotation .accomdation_name {
+    margin-bottom: 0 !important;
+}
+
+/* Location Info */
+.hotel_card_view_quotation .location_info {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.hotel_card_view_quotation .location_info span::first-letter {
+    text-transform: capitalize;
+}
+
+/* Rating Stars */
+.hotel_card_view_quotation .rate_stars {
+    margin-inline-start: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* Info Line */
+.hotel_card_view_quotation .info_line {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* Google Map Link */
+.hotel_card_view_quotation .google_map_link_box {
+    flex-grow: 1;
+    width: 100% !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 12px;
+}
+
+.hotel_card_view_quotation .google_map_link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #3A5EE3;
+}
+
+/* Cancellation Info */
+.hotel_card_view_quotation .pensions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* Price Section */
+.hotel_card_view_quotation .price_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 8px;
+    border-inline-start: 1px solid #E5E5EA;
+    padding-inline-start: 1rem;
+}
+
+.hotel_card_view_quotation .price_section .rooms_left {
+    color: #C30000;
+}
+
+.hotel_card_view_quotation .back_to_search_button {
+    position: absolute;
+    top: 5px;
+    inset-inline-end: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 920px) {
+    .hotel_card_view_quotation .price_section .rooms_left {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .hotel_card_view_quotation .price_section .book_now_btn {
+        width: 100% !important;
+    }
+
+    .hotel_card_view_quotation .hotel_image,
+    .hotel_card_view_quotation .slick-slide,
+    .hotel_card_view_quotation .ant-carousel {
+        width: 100% !important;
+        height: 200px !important;
+        overflow: hidden;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    .hotel_card_view_quotation .accomdation_name {
+        font-size: 16px;
+    }
+
+    .hotel_card_view_quotation .location_info {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hotel_card_view_quotation .price_section {
+        border-inline-start: unset !important;
+        gap: 2px !important;
+    }
+
+    .hotel_card_view_quotation .price_section {
+        text-align: center;
+        padding: 0;
+    }
+
+    .hotel_card_view_quotation .accomdation_name {
+        font-size: 14px;
+    }
+
+    .hotel_card_view_quotation .fz-18 {
+        font-size: 16px;
+    }
+
+    .hotel_card_view_quotation .fz-14 {
+        font-size: 12px;
+    }
+
+    .hotel_card_view_quotation .price_section .book_now_btn {
+        font-size: 12px;
+    }
+}

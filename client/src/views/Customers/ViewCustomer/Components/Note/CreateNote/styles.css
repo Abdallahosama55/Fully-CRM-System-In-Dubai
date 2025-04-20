@@ -1,0 +1,20 @@
+.view-customer-comp-note-create-node-card {
+  margin-top: 16px;
+}
+
+.view-customer-comp-note-create-node-card .ant-card-body {
+  padding: 16px 24px;
+}
+
+.view-customer-comp-note-create-node-card.hide-card-body {
+  display: none;
+}
+
+.view-customer-comp-note-create-node-card .ant-card-head-title {
+  font-weight: 500;
+}
+.view-customer-comp-note-create-node-card .button-save {
+  background: #007d3d !important;
+  color: white !important;
+  border-color: #007d3d !important;
+}

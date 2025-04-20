@@ -1,0 +1,38 @@
+.rate_tab .collapse_title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rate_tab .ant-collapse {
+    border-radius: unset !important;
+}
+
+.rate_tab .ant-collapse-header {
+    padding: 24px 32px !important;
+    user-select: none;
+}
+
+.rate_tab .ant-collapse-content-box {
+    padding: 32px !important;
+}
+
+.rate_tab .move_link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+}
+
+.rate_tab .move_link:hover {
+    font-weight: 500;
+}
+
+.rate_tab .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}

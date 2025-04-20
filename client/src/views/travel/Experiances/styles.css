@@ -1,0 +1,109 @@
+.experiances_page .actions_btn {
+  background-color: #2729421f;
+}
+
+.experiances_page .actions_btn:hover {
+  background-color: #27294260 !important;
+}
+
+.experiances_page .general-table-select {
+  background-color: #fff !important;
+  border-radius: 12px;
+}
+
+.experiances_page .actions_menu_label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.experiances_page .actions_menu_label.delete_action_btn {
+  color: #f40055 !important;
+}
+
+.experiances_page .general-table-search .ant-input {
+  min-width: 200px;
+}
+
+
+/* table style*/
+.experiances_page .status {
+  position: relative;
+  padding-inline-start: 16px;
+  color: #3a5ee3;
+}
+
+.experiances_page .status.inactive {
+  position: relative;
+  padding-inline-start: 16px;
+  color: #f40055;
+}
+
+.experiances_page .status::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 0;
+  width: 8px;
+  height: 35px;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  background-color: #3a5ee3;
+  opacity: 0.08;
+}
+
+.experiances_page .status.inactive::before {
+  background-color: #f40055;
+}
+
+.experiances_page .experiance_image {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.experiances_page .langs_flags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 150px;
+  overflow: auto;
+}
+
+.experiances_page .langs_flags img {
+  width: 35px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.experiances_image {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 4px;
+}
+
+.experiances_name_cell {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+.experiances_name_body {
+  margin-top: 2px;
+}
+
+.experiances_name_themes{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.experiances_name_themes svg {
+  width: 20px;
+  height: 20px;
+  filter: invert(11%) sepia(100%) saturate(1243%) hue-rotate(196deg) brightness(91%) contrast(85%);
+}

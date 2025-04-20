@@ -1,0 +1,6 @@
+.bordered_card {
+    padding: 1rem;
+    border-radius: 16px;
+    border: 1px solid #EFEFF1;
+    background: var(--base-white);
+}

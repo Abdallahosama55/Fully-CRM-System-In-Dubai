@@ -1,0 +1,195 @@
+.experience_card_search {
+    border: 1px solid #E5E5EA;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.experience_card_search .ant-typography p,
+.experience_card_search .ant-typography {
+    margin-bottom: 6px !important;
+}
+
+.experience_card_search .experience_name {
+    margin-inline-end: 6px;
+    margin-bottom: 0px !important;
+    text-transform: capitalize;
+}
+
+/* image */
+.experience_card_search .experience_images_column {
+    width: 100%;
+}
+
+
+.experience_card_search .experience_image,
+.experience_card_search .slick-slide,
+.experience_card_search .ant-carousel {
+    max-width: 100%;
+    height: 180px !important;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.experience_card_search .slick-dots li button {
+    background-color: #fff !important;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.experience_card_search .slick-arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.experience_card_search .slick-arrow::after {
+    position: unset;
+}
+
+.experience_card_search .ant-image-mask {
+    border-radius: 1rem !important;
+}
+
+/* body */
+.experience_card_search_info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience_card_search .accomdation_name {
+    margin-bottom: 0 !important;
+}
+
+.experience_card_search .location_info {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.experience_card_search .location_info span::first-letter {
+    text-transform: capitalize;
+}
+
+.experience_card_search .experience_card_theme_imgs {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    max-width: calc(28px * 5);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.experience_card_search .experience_card_theme_imgs .experience_card_theme_img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.experience_card_search .info_line {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.experience_card_search .google_map_link_box {
+    flex-grow: 1;
+    width: 100% !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 12px;
+}
+
+.experience_card_search .google_map_link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #3A5EE3;
+}
+
+.experience_card_search .pensions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.experience_card_search .price_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 8px;
+    border-inline-start: 1px solid #E5E5EA;
+    padding-inline-start: 1rem;
+}
+
+.experience_card_search .price_section .rooms_left {
+    color: #C30000;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 920px) {
+
+    .experience_card_search_info,
+    .price_section {
+        margin: 0.5rem 0;
+        border-inline-start: unset !important;
+        border-top: 1px solid #E5E5EA;
+        margin-top: 0.5rem !important;
+    }
+
+    .experience_card_search .price_section .book_now_btn {
+        width: 100% !important;
+    }
+
+    .experience_card_search .experience_image,
+    .experience_card_search .slick-slide,
+    .experience_card_search .ant-carousel {
+        width: 100% !important;
+        height: 200px !important;
+        overflow: hidden;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    .experience_card_search .accomdation_name {
+        font-size: 16px;
+    }
+
+    .experience_card_search .location_info {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience_card_search .price_section {
+        gap: 2px !important;
+    }
+
+    .experience_card_search .price_section {
+        text-align: center;
+        padding: 0;
+    }
+
+    .experience_card_search .accomdation_name {
+        font-size: 14px;
+    }
+
+    .experience_card_search .fz-18 {
+        font-size: 16px;
+    }
+
+    .experience_card_search .fz-14 {
+        font-size: 12px;
+    }
+
+    .experience_card_search .price_section .book_now_btn {
+        font-size: 12px;
+    }
+}

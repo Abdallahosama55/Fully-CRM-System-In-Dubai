@@ -1,0 +1,87 @@
+.room_card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.room_card .ant-divider-horizontal {
+    margin: 16px 0;
+}
+
+.room_card .room_card_image,
+.room_card .ant-carousel {
+    height: 250px !important;
+    width: 100% !important;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.slick-arrow {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: #fff !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D5FEB !important;
+    opacity: 1 !important;
+    position: relative;
+}
+
+.slick-arrow::after {
+    position: unset !important;
+    top: 50% !important;
+    left: 50% !important;
+    border-inline-width: 3px 0 !important;
+    border-block-width: 3px 0 !important;
+}
+
+/* room_card_body */
+.room_card_body {
+    padding: 16px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.room_card_body .accommodation_facilities {
+    margin: 16px 0;
+}
+
+.room_card_body .facility_line {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.room_card_body .room_card_section .ant-radio-group {
+    display: block;
+}
+
+.room_card_body .room_card_section .ant-radio-wrapper {
+    display: flex !important;
+    width: 100% !important;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.room_card_body .room_card_section .ant-radio-wrapper span:nth-of-type(2) {
+    width: 100% !important;
+}
+
+
+.room_card_body .room_card_section .info_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room_card_body .cancellation_section .ant-radio {
+    align-self: flex-start !important;
+    margin-top: 4px;
+}
+
+.room_card_body .room_card_section .price {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

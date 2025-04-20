@@ -1,0 +1,7 @@
+.note_card_body .card_image {
+    width: 100%;
+    margin-top: 0.5rem;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}

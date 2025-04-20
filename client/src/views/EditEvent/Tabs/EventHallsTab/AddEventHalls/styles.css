@@ -1,0 +1,73 @@
+.add_event_halls .image-text-holder {
+    padding: 8px 12px !important;
+    box-shadow: 0px 3px 8px #00000014;
+    border-radius: 0 0 14px 14px;
+}
+
+.add_event_halls .ant-form-item {
+    margin-bottom: 12px;
+}
+
+.add_event_halls .explore-card {
+    aspect-ratio: 1.618;
+    min-width: 200px;
+    border-radius: 14px;
+    border: 2px;
+    border-color: transparent;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.add_event_halls .image-holder {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.add_event_halls .image-holder img {
+    transition: transform 400ms;
+}
+
+.add_event_halls .image-holder .ant-image {
+    overflow: hidden;
+}
+
+.add_event_halls .image-holder img:hover {
+    transform: scale(1.2);
+}
+
+.add_event_halls .rows-verses {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+
+
+.add_event_halls .shadow {
+    box-shadow: 0px 3px 8px #00000014;
+}
+
+.add_event_halls .Search {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add_event_halls .border-blue {
+    border: 2px solid #3a5ee3;
+}
+
+.add_event_halls .make-row .ant-form-item-row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 64px;
+}
+
+.add_event_halls .make-row .ant-form-item-label {
+    padding: 0;
+}
+
+.add_event_halls .verse-search {
+    background: #2729420d !important;
+    border: none;
+}

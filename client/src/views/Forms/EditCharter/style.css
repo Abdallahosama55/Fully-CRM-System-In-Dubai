@@ -1,0 +1,48 @@
+.edit-charter-drawer {
+  height: 100%;
+}
+
+.edit-charter-drawer .header {
+  padding-bottom: 26px;
+}
+.edit-charter-drawer .header .content {
+  display: flex;
+  justify-content: space-between;
+}
+.edit-charter-drawer .header .title {
+  display: flex;
+
+  align-items: center;
+  gap: 8px;
+}
+.edit-charter-drawer .header .step {
+  color: #6b7280;
+}
+.edit-charter-drawer .ant-list-item-meta-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #313343;
+  padding-bottom: 6px;
+}
+.edit-charter-drawer .ant-list-item-meta-description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #697281;
+}
+.edit-charter-drawer .ant-progress-text {
+  top: 6px;
+  font-weight: 500;
+  color: white;
+}
+.edit-charter-drawer .header .divider {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.edit-charter-drawer .ant-form-item .ant-form-item-label > label {
+  color: #697281;
+  font-size: 12px;
+  font-weight: 400;
+}

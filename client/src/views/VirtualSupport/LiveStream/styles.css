@@ -1,0 +1,37 @@
+.live-stream-section .live-stream-cam {
+  width: 100%;
+  aspect-ratio: 1.7;
+  border: 3px solid transparent;
+}
+
+.live-stream-section .live-stream-btn {
+  background: transparent;
+  border: 2px solid #000;
+  padding: 0px 14px;
+}
+
+.live-stream-section .live-stream-btn-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.live-stream-section .color-picker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.live-stream-section .color-picker::-webkit-color-swatch {
+  border-radius: 4px;
+  border: none;
+}
+.live-stream-section .color-picker::-moz-color-swatch {
+  border-radius: 4px;
+  border: none;
+}

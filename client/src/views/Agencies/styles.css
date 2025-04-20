@@ -1,0 +1,56 @@
+.agencies_page {
+    padding: 0 5px;
+}
+
+.agencies_page .ant-picker-input {
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+
+.agencies_page .select-with-prefix {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.agencies_page .select-prefix-icon {
+    margin-right: 8px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+
+.agencies_page .custom-select {
+    width: 100%;
+}
+
+.company_name_cell{
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 200px;
+    gap: 8px;
+}
+
+.agencies_page .ant-select-selection-placeholder,
+.agencies_page .ant-select-selection-item,
+.agencies_page.ant-select-selection-search input {
+    text-indent: 24px !important;
+}
+
+.agencies_info_line_with_icon {
+    display: grid;
+    grid-template-columns: 12px 1fr !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.agencies_info_line_with_icon svg {
+    width: 12px !important;
+    height: 12px !important;
+}

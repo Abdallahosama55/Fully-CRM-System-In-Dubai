@@ -1,0 +1,63 @@
+.calender-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+}
+.calender-header .calender {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+.calender-header .today {
+  border: none;
+  box-shadow: none;
+  background-color: #1131da33;
+}
+.calender-header .arrows {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.calender-header .arrows span {
+  padding: 4px;
+  background-color: #27294205;
+  color: #000;
+  border-radius: 50%;
+  border: 1px solid #2729420f;
+  cursor: pointer;
+}
+.calender-header .day {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.calender-header .search .ant-input-group-addon {
+  background-color: #fff;
+  border-radius: 0px;
+  border: none;
+}
+.calender-header .search .ant-input {
+  border: none;
+}
+
+.calender-header .convert-buttons {
+  display: flex;
+  align-items: center;
+  padding: 3px !important;
+  background-color: #1131da33;
+  height: fit-content;
+  border-radius: 8px;
+}
+.calender-header .convert-buttons button {
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  height: 30px;
+  line-height: 12px;
+}
+.calender-header .convert-buttons button.active {
+  background-color: #3a5ee3;
+  color: #fff;
+}

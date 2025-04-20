@@ -1,0 +1,92 @@
+.day {
+  flex-grow: 1;
+  height: inherit;
+  overflow: auto;
+}
+.day .head {
+  margin-bottom: 44px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px dotted #f1f1f1;
+  padding-bottom: 1px;
+}
+.day .head .day-head {
+  border-radius: 8px;
+  background-color: #3a5ee3;
+  color: #fff;
+  padding: 11px 40px;
+  text-transform: uppercase;
+}
+.day .head button {
+  background-color: #3a5ee3;
+  color: #fff;
+}
+.day .head button:hover {
+  color: #fff;
+}
+.day .row {
+  flex-direction: column;
+  position: relative;
+}
+.day .hours {
+  display: flex;
+  border-top: 1px dotted #f1f1f1;
+  height: 60px;
+}
+.day .hour {
+  position: relative;
+}
+.day .hour div {
+  position: absolute;
+  top: -12px;
+  background-color: #fdfdfd;
+  padding-right: 2px;
+  color: #000;
+  font-size: 14px;
+}
+
+.day .events .event-container {
+  background: #3a5ee326;
+  align-items: center;
+  border: 1px solid #3a5ee3;
+  border-radius: 12px;
+  padding: 6px 13px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  right: 5px;
+  z-index: 1;
+}
+.day .events .icon-title {
+  display: flex;
+  gap: 15px;
+}
+.day .events .event-container .icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #3a5ee3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day .events .event-container div span:last-child {
+  font-size: 12px;
+  color: #03071399;
+}
+.day .events .event-container a {
+  background-color: #3a5ee3;
+  padding: 15px 40px;
+  border-radius: 12px;
+}
+.day .events .event-container .join-meet {
+  background-color: #3a5ee3;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+.day .events .event-container a {
+  color: #fff !important;
+}

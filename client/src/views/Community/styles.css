@@ -1,0 +1,87 @@
+.community-list-view {
+  padding: 2rem;
+}
+
+.community-list-view .community-list-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 450px;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.community-list-view .community-list-card:hover {
+  box-shadow: 0px 0px 8px rgba(101, 101, 101, 0.3);
+}
+
+.community-list-view .community-list-card .community-list-card-header {
+  padding: 60% 0 0 0;
+  margin: 0;
+  position: relative;
+  border: none;
+  border-radius: 19px 19px 0 0;
+}
+
+.community-list-view
+  .community-list-card
+  .community-list-card-header
+  .community-list-card-header-actions {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  cursor: auto;
+}
+
+.community-list-view
+  .community-list-card
+  .community-list-card-header
+  .community-list-card-header-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 8px rgba(101, 101, 101, 0.3);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.community-list-view .community-list-card .community-list-card-body {
+  margin-top: 12px;
+  padding: 1rem;
+}
+
+.community-list-view .community-list-card .community-list-card-header .community-list-card-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.community-list-view .community-list-card .community-list-card-header .community-list-card-logo {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 500px) {
+  .community-list-view .community-list-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+}

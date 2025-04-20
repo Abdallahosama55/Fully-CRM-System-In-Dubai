@@ -1,0 +1,74 @@
+.library_section .library_tabs .ant-tabs-nav {
+    margin-bottom: 8px !important;
+}
+
+.library_section .items_type_tabs .ant-tabs-nav .ant-tabs-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.library_section .items_type_tabs .ant-tabs-nav .ant-tabs-tab-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 10px;
+    font-weight: 400;
+    width: 25% !important;
+}
+
+.library_section .items_type_tabs .ant-tabs-nav-operations {
+    display: none !important;
+}
+
+.library_section_modal .ant-modal-content {
+    padding: 1rem;
+}
+
+.library_section_modal .ant-modal-content .ant-modal-body {
+    width: minmax(1200px, 100%) !important;
+    height: calc(100vh - 150px) !important;
+}
+
+.library_section_modal .ant-modal-footer {
+    border-top: 1px solid #EAECF2 !important;
+    padding-top: 1rem !important;
+    margin-top: 1rem !important;
+}
+
+
+.library_section_modal .ant-modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.library_section_modal .modal_title {
+    color: var(--vbooking-b700) !important;
+    margin-bottom: 1rem !important;
+    flex: 0;
+}
+
+.library_section_modal .search_engine_block {
+    flex: 0;
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--gray-100);
+}
+
+.library_section_modal .search_engine_results,
+.library_section_modal .static_inventory_modal_body,
+.library_section_modal .select_item_type {
+    margin-top: 1rem;
+    padding-inline-end: 0.5rem;
+    flex: 1;
+    overflow: auto;
+}
+
+.library_section_modal .static_inventory_modal_body,
+.library_section_modal .select_item_type {
+    margin-top: 4px !important;
+}
+
+.library_section_modal .radio_with_icon .ant-radio-wrapper {
+    align-items: center;
+}

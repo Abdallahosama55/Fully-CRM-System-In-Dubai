@@ -1,0 +1,46 @@
+.multi_lung_editor .ant-tabs-nav {
+    margin: unset;
+}
+
+.multi_lung_editor .flag_tab_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 8px;
+}
+
+.multi_lung_editor .ant-tabs-tab-active .flag_tab_title {
+    background-color: #2D5FEB;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.2s all ease-in-out;
+}
+
+.multi_lung_editor .ant-tabs-nav-list {
+    background-color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #E5E5EA;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.multi_lung_editor .ant-tabs-tab {
+    padding: 8px 0;
+}
+
+.multi_lung_editor .ant-tabs-ink-bar {
+    display: none !important;
+}
+
+.multi_lung_editor .editor {
+    min-height: 230px;
+    max-height: 400px;
+    border-top-left-radius: 0;
+}
+
+.multi_lung_editor .ql-editor {
+    min-height: 230px;
+    max-height: 400px;
+}

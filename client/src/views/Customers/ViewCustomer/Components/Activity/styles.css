@@ -1,0 +1,35 @@
+.view-customer-activity-comp .ant-collapse-content {
+  border-top-color: #efeff1;
+  padding: 0;
+}
+
+.view-customer-activity-comp .ant-collapse-header-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.view-customer-activity-comp-time-line .ant-card-extra {
+  position: relative;
+  bottom: 8px;
+}
+
+.view-customer-activity-comp-time-line .ant-card-head {
+  padding-inline: 16px;
+}
+
+.view-customer-activity-comp-time-line .ant-card-body {
+  padding: 16px;
+  background: #fff4cf;
+}
+
+.view-customer-activity-comp-time-line.hide-card-body .ant-card-body {
+  display: none;
+}
+
+.view-customer-activity-comp-create-activity {
+  margin-top: 16px;
+}
+
+.view-customer-activity-comp-create-activity .hide-card-body {
+  display: none;
+}

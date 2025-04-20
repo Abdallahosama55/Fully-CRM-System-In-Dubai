@@ -1,0 +1,13 @@
+.popover-calendar .ant-popover-inner {
+  padding: 19px;
+  max-width: 254px;
+  width: 254px;
+}
+.popover-calendar.meet-page .ant-popover-inner {
+  padding: 19px;
+  max-width: 265px;
+  width: 265px;
+}
+.popover-calendar.meet-page .invites {
+  font-size: 11px;
+}

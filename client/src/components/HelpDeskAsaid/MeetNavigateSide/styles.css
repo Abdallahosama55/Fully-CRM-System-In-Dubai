@@ -1,0 +1,73 @@
+.meet-left-side {
+  border-radius: 35px 0 0 35px;
+  border-left: 1px solid #000;
+}
+
+.meet-left-side-layout {
+  flex-direction: column;
+  height: 100vh;
+  padding-block: 20px;
+}
+
+.full-screen-asider-navigate
+  .meet-navigate-side
+  .help-desk-nav-sider-btns-wraper {
+  width: 100%;
+}
+
+.full-screen-asider-navigate .meet-navigate-side > .ant-row,
+.full-screen-asider-navigate .meet-navigate-side .help-desk-nav-sider-btns {
+  flex-direction: column;
+  height: 100%;
+  gap: 40px !important;
+}
+
+.full-screen-asider-navigate
+  .meet-navigate-side
+  .help-desk-nav-sider
+  .help-desk-nav-sider-btns,
+.help-desk .help-desk-nav-sider .help-desk-nav-sider-btns > .ant-col {
+  width: 100%;
+}
+
+.meet-navigate-side .sider-active-btn::after {
+  content: "";
+  position: absolute;
+  right: -16px;
+  width: 3px;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  background-color: #3a5ee3;
+}
+
+.full-screen-asider-navigate .meet-navigate-side .sider-active-btn::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  width: 3px;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  background-color: #3a5ee3;
+}
+
+.meet-navigate-side .sider-active-btn svg path {
+  fill: #3a5ee3;
+}
+
+.meet-navigate-side .help-desk-avatar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.meet-left-side .ant-segmented .ant-segmented-item-selected {
+  background-color: #0318d6;
+  color: #fff;
+}
+.meet-left-side .ant-segmented .ant-segmented-item-selected svg path {
+  fill: #fff;
+}
+.meet-left-side .ant-segmented {
+  background-color: transparent;
+}

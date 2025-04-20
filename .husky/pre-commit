@@ -1,0 +1,25 @@
+# .husky/pre-commit
+if [ -z "$husky_skip_init" ]; then
+    debug () {
+        if [ "$HUSKY_DEBUG" = "1" ]; then
+            echo "husky debug: $1"
+        fi
+    }
+    readonly hook_name="$(basename -- "$0")"
+    debug "Running $hook_name"
+
+    if [ "$HUSKY" = "0" ]; then
+        debug "HUSKY env variable is set to 0, skipping $hook_name"
+        exit 0
+    fi
+
+    if [ -f ~/.huskyrc ]; then
+        debug "Sourcing ~/.huskyrc"
+        . ~/.huskyrc
+    fi
+    
+    if [ "$exitCode" = "127" ]; then
+        echo "husky: command not found, skipping PATH=$hook_name"
+    fi
+    exit $exitCode
+fi

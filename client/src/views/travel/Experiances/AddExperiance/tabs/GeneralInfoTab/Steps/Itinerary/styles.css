@@ -1,0 +1,13 @@
+.no_agendas_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem 1rem;
+}
+
+.no_agendas_text{
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,66 @@
+.pipline-card {
+  height: 100%;
+padding: 12px;
+border-radius: 12px;
+border:1px solid #E5E5EA;
+background-color: rgba(229, 229, 234, 0.3);
+}
+
+.pipline-card .title{
+    display: flex;
+    justify-content: space-between;
+    padding:4px 0px 4px 0px;
+    margin-bottom: 10px;
+}
+.pipline-card .title h3{
+ font-weight: 500;
+ font-size: 14px;
+
+}
+
+.pipline-card .pipline-stages-section{
+  background-color: #ffffff;
+    padding: 8px 12px 8px 12px;
+    border-radius: 12px;
+}
+
+.pipline-card .view-button {
+    font-weight: 600;
+    padding-inline: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+.pipline-card .pipline-stages-section .piplines-point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .pipline-card .pipline-stages-section .stage-item {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width as needed */
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 12px;
+    align-self: flex-start;
+  }
+
+  .pipline-card .pipline-stages-section .stage-item .number-of-card {
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  

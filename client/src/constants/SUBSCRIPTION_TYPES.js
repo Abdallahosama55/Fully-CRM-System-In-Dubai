@@ -1,0 +1,6 @@
+const SUBSCRIPTION_TYPES = {
+    TRAVEL: "TRAVEL",
+    DEFAULT: "DEFAULT"
+}
+
+export default SUBSCRIPTION_TYPES;

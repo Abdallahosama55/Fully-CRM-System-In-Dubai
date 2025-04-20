@@ -1,0 +1,23 @@
+.ai_configrations .general_tab_ai_active {
+  padding: 24px 32px;
+  background-color: #e8f0fe;
+  border-radius: 8px;
+}
+
+.ai_configrations .general_tab_ai_form {
+  padding-block: 32px;
+  border-bottom: 1px solid #e5e5ea;
+  margin-bottom: 32px;
+}
+
+.ai_configrations .ai-behavior-system-command {
+  background: #eee;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.ai_configrations .ai-behavior-system-command:hover {
+  background: #bdbcbc;
+}

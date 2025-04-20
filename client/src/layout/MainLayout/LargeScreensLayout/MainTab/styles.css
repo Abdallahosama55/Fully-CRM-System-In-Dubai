@@ -1,0 +1,76 @@
+.main_tab {
+    width: 64px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100dvh;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+
+/* Customize the scrollbar */
+.main_tab::-webkit-scrollbar {
+    width: 6px;
+    /* Scrollbar thickness */
+    background: var(--side-menu-bg-1);
+    /* Background color for the track */
+}
+
+.main_tab::-webkit-scrollbar-thumb {
+    background: var(--side-menu-bg-1);
+    /* Scrollbar color */
+    border-radius: 10px;
+    /* Rounded scrollbar */
+    border: 2px solid #f5f5f5;
+    /* Adds space around the thumb */
+}
+
+.main_tab::-webkit-scrollbar-thumb:hover {
+    background-color: var(--vbooking-c800);
+    /* Darker color on hover */
+}
+
+.main_tab::-webkit-scrollbar-track {
+    background-color: #d9dfe981;
+    /* Track background color */
+    border-radius: 10px;
+    /* Rounded track edges */
+}
+
+.main_tab_button {
+    width: 40px !important;
+    height: 40px !important;
+    color: #344054;
+}
+
+.main_tab_button.disabled:hover {
+    background: #d9dfe981 !important;
+}
+
+
+.main_tab_button.disabled:hover .main_tab_button-icon {
+    color: #667085;
+}
+
+.main_tab_button:hover,
+.main_tab_button.active {
+    background: var(--side-menu-bg-3) !important;
+}
+
+.main_tab_button:hover .main_tab_button-icon {
+    color: #2D6ADB;
+}
+
+.side_menu_label {
+    text-align: center;
+    color: var(--font-secondary);
+    font-family: Poppins;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 0;
+    max-width: 40px;
+}

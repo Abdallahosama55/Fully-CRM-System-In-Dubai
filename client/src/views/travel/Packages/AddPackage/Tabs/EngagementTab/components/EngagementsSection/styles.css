@@ -1,0 +1,23 @@
+.days-section {
+    overflow: hidden;
+    width: 100%;
+}
+
+.days-container {
+    display: flex;
+    gap: 0.7rem;
+    width: 100%;
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+}
+
+.days-container>* {
+    flex: 0 0 auto;
+    /* Prevents shrinking */
+    min-width: 200px;
+    /* Adjust based on your design */
+}

@@ -1,0 +1,30 @@
+.body-content.create-update-desk {
+  border-radius: 14px;
+  background: #fff;
+  height: auto;
+  position: relative;
+  padding: 20px 20px 80px 20px;
+}
+.create-desk-next {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+
+  background-color: #fff;
+  padding: 14px 1rem;
+  border-top: 1px solid #27294240;
+  transition: all 0.2s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .create-desk-next {
+    left: 0px !important;
+    /* width: calc(100% - 80px) !important; */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .create-desk-next {
+    width: 100% !important;
+  }
+}

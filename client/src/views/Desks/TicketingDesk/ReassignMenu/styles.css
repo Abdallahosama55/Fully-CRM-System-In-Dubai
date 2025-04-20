@@ -1,0 +1,17 @@
+.reassign-menu {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #d1d1d666;
+  padding: 16px;
+  max-width: 300px;
+  margin-inline-end: 7rem;
+}
+
+.reassign-menu .employee-item {
+  transition: all 0.2s ease-in-out;
+  border-radius: 12px;
+}
+
+.reassign-menu .employee-item:hover {
+  background: #d1d1d666;
+}

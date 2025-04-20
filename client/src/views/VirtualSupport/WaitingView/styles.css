@@ -1,0 +1,11 @@
+#leave-meeting-btn {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;border-color:  #d63b48;
+  margin-top: 16px;
+  background: #d63b48;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+}

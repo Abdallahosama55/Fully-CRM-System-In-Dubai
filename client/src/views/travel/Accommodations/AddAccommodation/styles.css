@@ -1,0 +1,64 @@
+.add_accommodation_page {
+  height: calc(100dvh - 78px);
+  display: flex;
+  flex-direction: column;
+}
+
+.add_accommodation_page>.add_accommodation_tabs {
+  flex: 1;
+}
+
+.add_accommodation_page>.add_accommodation_tabs>.ant-tabs-nav .ant-tabs-ink-bar {
+  display: none !important;
+}
+
+.add_accommodation_page>.add_accommodation_tabs>.ant-tabs-nav::before {
+  display: none;
+}
+
+.add_accommodation_page>.add_accommodation_tabs>.ant-tabs-nav .ant-tabs-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.add_accommodation_page>.add_accommodation_tabs>.ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
+  border-radius: 8px;
+  border: 1px solid #EFEFF1;
+  background: #FFF;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+}
+
+
+.add_accommodation_page>.add_accommodation_tabs>.ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab-active {
+  border: 1px solid var(--vbooking-c800);
+  background: var(--vbooking-c500);
+}
+
+.add_accommodation_page>.add_accommodation_tabs>.ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab-active * {
+  color: #2D6ADB !important;
+}
+
+.add_accommodation_page>.add_accommodation_tabs>.ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab-icon {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 18px !important;
+}
+
+.add_accommodation_page>.add_accommodation_tabs>.ant-tabs-nav .ant-tabs-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.add_accommodation_move_btns {
+  padding: 1rem 0;
+  height: 80px;
+  /* background-color: #fff; */
+  border-top: 1px solid #ccc;
+}

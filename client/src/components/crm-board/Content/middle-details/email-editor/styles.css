@@ -1,0 +1,43 @@
+.email-editor {
+  width: 493px;
+  height: 440px;
+  position: fixed;
+  bottom: 0;
+  right: 110px;
+  border-radius: 12px;
+  z-index: 2;
+  border: 1px solid #efeff1;
+  box-shadow: 0px -8px 70px #0000001f;
+}
+.email-editor .email-title {
+  border-radius: 12px 12px 0px 0px;
+  background-color: #f1f1f3;
+  padding: 15px 16px;
+}
+.email-editor .email-body {
+  border-radius: 0px 0px 12px 12px;
+  background-color: #fff;
+  height: calc(100% - 50px);
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+}
+
+.email-editor .email-body .sender {
+  padding: 17px 15px;
+  border-bottom: 1px solid #efeff1;
+}
+.email-editor .email-body .cc {
+  padding: 1px 15px;
+  border-bottom: 1px solid #efeff1;
+}
+.email-editor .editor {
+  height: 100%;
+  box-shadow: none;
+  border-radius: 0%;
+}
+.email-editor .quill {
+  height: 100%;
+}
+.email-editor .submit_btn {
+  padding: 4.5px 30px;
+}

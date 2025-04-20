@@ -1,0 +1,9 @@
+.participant-status svg:not(:last-child) {
+  margin-inline-end: 1rem;
+}
+
+.support-participants {
+  overflow-y: auto;
+  margin-top: 1rem;
+  max-height: 800px;
+}

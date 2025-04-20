@@ -1,0 +1,72 @@
+.container-info {
+  background-color: #fafafb;
+  border: 1px solid #efeff1;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 97%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.form-section {
+  margin-bottom: 32px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.ant-input,
+.ant-textarea {
+  width: 100%;
+}
+
+.question-section {
+  border: 1px solid #efeff1;
+
+  border-radius: 8px;
+  padding-block: 12px;
+
+}
+.question-section_header{
+    border-bottom: 1px solid #D0D5DD;
+    padding-block: 12px;
+    margin-bottom: 16px;
+}
+.choice-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.choice-item-span {
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  background-color: #ffff;
+  padding-block: 8px;
+  padding-inline: 16px;
+}
+.add-choice {
+  margin-top: 12px;
+}
+
+/* Make Switch green */
+.custom-switch .ant-switch-checked {
+  background-color: #00c853; /* Material Green Accent */
+}
+
+.choice-item {
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,91 @@
+.close-metaverse {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+#slider-preview
+  .slider-dropdown:where(.css-dev-only-do-not-override-uv8uuz).ant-dropdown
+  .ant-dropdown-menu,
+#slider-preview
+  :where(.css-dev-only-do-not-override-uv8uuz).ant-dropdown-menu-submenu
+  .ant-dropdown-menu {
+  background: linear-gradient(
+    143.7deg,
+    rgba(255, 255, 255, 0.54) 0.93%,
+    rgba(255, 255, 255, 0.54) 98.91%
+  ) !important;
+  border-radius: 8px !important;
+  padding: 8px 10px 8px 10px !important;
+  box-shadow: 0px 20px 40px 0px #0000001f;
+}
+#slider-preview .slider-dropdown .ant-dropdown-menu-submenu-title:hover {
+  background-color: #3a5ee3 !important;
+  color: #ffffff !important;
+  padding: 6px;
+  font-size: 13px;
+  height: 34px;
+}
+#slider-preview .slider-dropdown .ant-dropdown-menu-submenu-title {
+  padding: 6px;
+  font-size: 13px;
+  height: 34px;
+}
+#slider-preview .ant-dropdown-menu-title-content {
+  padding: 6px;
+  font-size: 13px;
+  height: 34px;
+}
+#slider-preview .ant-dropdown-menu-item-only-child {
+  padding: 6px;
+  font-size: 13px;
+  height: 34px;
+}
+#slider-preview .ant-dropdown-menu-item-active {
+  background-color: #3a5ee3 !important;
+  font-weight: 500;
+  color: #ffffff !important;
+  padding: 6px;
+  font-size: 13px;
+  height: 34px;
+}
+#slider-preview .profile-popover {
+  min-width: 200px;
+}
+#slider-preview
+  .slider-dropdown
+  .ant-dropdown-menu-submenu-expand-icon
+  .ant-dropdown-menu-submenu-arrow-icon {
+  color: inherit !important;
+}
+#slider-preview :where(.css-dev-only-do-not-override-uv8uuz).ant-dropdown-menu-submenu-popup ul {
+  position: relative;
+  left: 25px;
+}
+#slider-preview .ant-dropdown-menu-submenu-expand-icon {
+  position: static !important;
+}
+
+#burger-menu {
+  display: none;
+}
+#menu-items {
+  display: none;
+}
+@media only screen and (min-width: 480px) {
+  #burger-menu {
+    display: none;
+  }
+  #menu-items {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #burger-menu {
+    display: block;
+  }
+  #menu-items {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+.employee-desk-form {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  justify-content: space-between;
+}
+
+.employee-desk-form .footer {
+  position: sticky;
+  bottom: 0;
+  padding: 8px;
+}

@@ -1,0 +1,54 @@
+.month {
+  height: inherit;
+  overflow: auto;
+}
+.month table thead {
+  background-color: #fafafb;
+  padding: 20px;
+}
+.month table thead th {
+  padding: 12px !important;
+  text-align: center;
+  border: 1px solid #d2d2d2;
+}
+.month table .ant-picker-cell {
+  border: 1px solid #d2d2d2;
+}
+.month table .ant-picker-cell-inner.ant-picker-calendar-date {
+  border-top: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.month .ant-picker-calendar-date-value {
+  text-align: left;
+}
+.month .ant-picker-calendar-date-today {
+  background: none !important;
+}
+.month .ant-picker-calendar-date-today .ant-picker-calendar-date-value {
+  background-color: #3a5ee3;
+  border-radius: 50%;
+  width: 33px;
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+}
+.month .current {
+  background: #3a5ee326;
+  border-radius: 2px;
+  font-size: 12px;
+  padding: 2px;
+  position: relative;
+  padding-left: 6px;
+  margin-top: 5px;
+}
+.month .current::after {
+  content: " ";
+  background-color: #3a5ee3;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+}

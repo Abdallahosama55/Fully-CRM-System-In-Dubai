@@ -1,0 +1,99 @@
+.virtual-support .meeting-screens-holder {
+  background: white;
+}
+
+.virtual-support .meeting-screens-holder .bottom-participant {
+  background: #fff;
+  border-radius: 12px;
+  padding: 6px 8px;
+  width: 100%;
+  position: relative;
+  border: 1px solid rgba(242, 242, 247, 1);
+}
+
+.meeting-screens-holder .show-more-participants {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-blend-mode: multiply !important;
+  background-color: #3a5ee361 !important;
+}
+
+.virtual-support .meeting-controls {
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 9px 8px;
+  bottom: 78px;
+  z-index: 50;
+}
+
+.ant-dropdown-menu.share-screen-menu {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+.virtual-support .leave-meetings-options {
+  position: absolute;
+  color: white;
+  background: #e81224;
+  box-shadow: 0px 3px 6px 0px #00000029;
+  right: 35px;
+  padding: 9px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 201;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  bottom: 80px;
+}
+.virtual-support .meeting-settings {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  bottom: 80px;
+  left: 30px;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 201;
+}
+
+.virtual-support .meeting-controls-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.settings-options {
+  max-width: 200px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 16px;
+  color: #fff;
+}

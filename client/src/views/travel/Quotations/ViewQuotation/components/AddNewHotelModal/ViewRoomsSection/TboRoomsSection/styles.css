@@ -1,0 +1,48 @@
+.room_compination_card {
+    margin-bottom: 1rem;
+}
+
+.room_compination_card .room_compination_card_header {
+    padding: 10px 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 1px solid var(--gray-200);
+    border-right: 1px solid var(--gray-200);
+    border-left: 1px solid var(--gray-200);
+
+
+    text-transform: capitalize;
+    color: var(--color-primary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.room_compination_card_header_room_price {
+    color: var(--gray-600);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.room_compination_card_body .ant-table {
+    border: unset !important;
+}
+
+.room_compination_card_body .ant-table-wrapper .ant-table-container table>thead>tr:first-child>*:first-child,
+.room_compination_card_body .ant-table-wrapper .ant-table-container table>thead>tr:first-child>*:last-child {
+    border-radius: unset !important;
+}
+
+.room_compination_card_body .ant-table .ant-table-thead>tr>th {
+    background-color: #FFF;
+    border-radius: 0 !important;
+    border: 1px solid var(--gray-200);
+    padding: 0.75rem;
+}
+
+.room_compination_card_body .ant-table .ant-table-tbody>tr>td {
+    border: 1px solid var(--gray-200) !important;
+    padding: 0.5rem;
+}

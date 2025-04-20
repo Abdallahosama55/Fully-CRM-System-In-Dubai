@@ -1,0 +1,133 @@
+.widget-container {
+  cursor: auto;
+}
+
+.widget-container .widget-container-list {
+  width: 280px;
+  height: 450px;
+  border-radius: 20px;
+  background: linear-gradient(
+    120deg,
+    #3259d8 -30%,
+    #3a62da -10%,
+    #744aba 20%,
+    #bd3a99 65%,
+    #f42d80 90%,
+    #ff2b7b 120%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-main-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(
+    120deg,
+    #3259d8 -30%,
+    #3a62da -10%,
+    #744aba 20%,
+    #bd3a99 65%,
+    #f42d80 90%,
+    #ff2b7b 120%
+  );
+}
+
+.widget-container .widget-icon-wraper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.widget-container .widget-services-list {
+  background: #fff;
+  border-radius: 19px;
+  box-shadow: 0px -10px 35px rgba(0, 0, 0, 0.15);
+  padding: 24px 16.5px;
+}
+
+.widget-container .widget-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.75;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.widget-service-section {
+  width: 280px;
+  height: 450px;
+  border-radius: 20px;
+  background: linear-gradient(
+    120deg,
+    #3259d8 -30%,
+    #3a62da -10%,
+    #744aba 20%,
+    #bd3a99 65%,
+    #f42d80 90%,
+    #ff2b7b 120%
+  );
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-service-section .service-section-header {
+  padding: 16px 12px 6px;
+}
+
+.widget-service-section .service-section-main {
+  background: #fafafa;
+  border-radius: 20px;
+  width: 100%;
+  flex: 1;
+  padding: 14px;
+  max-height: 428px;
+}
+
+.widget-service-section .start-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  background: linear-gradient(
+    120deg,
+    #3259d8 -30%,
+    #3a62da -10%,
+    #744aba 20%,
+    #bd3a99 65%,
+    #f42d80 90%,
+    #ff2b7b 120%
+  );
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget-container .ant-form-item {
+  margin-bottom: 12px;
+}
+
+.widget-container .ticket-upload .ant-upload.ant-upload-select {
+  width: 70px;
+  height: 70px;
+}

@@ -1,0 +1,147 @@
+.production-tools .production-tools-screen,
+.production-tools .production-tools-media {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #eee;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.production-tools .production-tools-media {
+  border: 2px solid #eee;
+}
+
+.production-tools .production-tools-media:hover {
+  background: #eee;
+  cursor: grab;
+}
+
+.production-tools .dragover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 201;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+}
+
+.production-tools .participants-show {
+  max-width: 240px !important;
+  max-height: 43vh !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+.production-tools .participants-shared-tracks {
+  padding: 6px;
+  background: #f2f2f7;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.production-tools .media-list-item {
+  flex: 1;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 16px;
+  height: 76px;
+  cursor: grab;
+}
+
+.production-tools .media-list-icon {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.production-tools .media-list-icon.image {
+  border: 1px solid #a3c59a;
+  background: #e3f6de;
+}
+
+.production-tools .media-list-icon.video {
+  border: 1px solid #d4a9cd;
+  background: #efd5eb;
+}
+
+.production-tools .media-list-icon.audio {
+  border: 1px solid #a4adde;
+  background: #dee2f6;
+}
+
+.production-tools .media-list-icon.document {
+  border: 1px solid #d59c9c;
+  background: #ecd0d0;
+}
+
+.production-tools .media-list-icon.overlay {
+  border: 1px solid #cdc9a9;
+  background: #efecd5;
+}
+
+.production-tools .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: #3a5ee3;
+  border: none;
+  color: white;
+}
+
+.production-tools
+  .ant-select-single:not(.ant-select-customize-input)
+  .ant-select-selector
+  .ant-select-selection-placeholder {
+  color: white;
+}
+
+.production-tools .ant-select-single:not(.ant-select-customize-input) .ant-select-suffix {
+  color: white;
+}
+
+.production-tools .participants-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.production-tools .participants-list .top-section {
+  display: flex;
+  gap: 12;
+  flex-direction: column;
+}
+
+.production-tools .participants-list .collapse-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: padding 0.2s ease-out;
+}
+.production-tools .participants-list .collapse-text {
+  color: #3a5ee3;
+}
+.production-tools .participants-list .collapse-button {
+  background: #c75c65;
+  cursor: pointer;
+  color: white;
+  padding-inline: 4px;
+  border-radius: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.production-tools .participants-list [aria-collapse="true"] {
+  max-height: 100%;
+  padding-top: 12px;
+}

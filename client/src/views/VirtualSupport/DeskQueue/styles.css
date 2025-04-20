@@ -1,0 +1,25 @@
+.virtial-support-desk-queue-add-schedual-button {
+  background: linear-gradient(87.33deg, #1e40dd -4.16%, #8fcaf3 119.21%) !important;
+  color: white;
+  height: 40px;
+}
+
+.virtial-support-desk-queue-add-schedual-button:hover {
+  color: white;
+  background: red;
+}
+
+.virtial-support-desk-queue-item-card .ant-card-meta-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 2px !important;
+}
+
+.virtial-support-desk-queue-item-card .ant-card-meta-description {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.virtial-support-desk-queue-item-card .ant-card-meta-avatar {
+  padding-inline-end: 4px;
+}

@@ -1,0 +1,7 @@
+.members-list-items .ant-list-item-meta-description,
+.members-list-items .ant-list-item-meta-title {
+  margin: 0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

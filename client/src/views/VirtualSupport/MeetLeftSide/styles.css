@@ -1,0 +1,90 @@
+.meet-left-side .meet-left-side-layout {
+  padding-block: 20px;
+  height: 100%;
+  border-radius: 25px 0 0 25px;
+}
+
+.meet-left-side {
+  background: #f6f6f7 !important;
+  overflow: auto !important;
+  height: 100vh !important;
+  border-radius: 28px 0 0 28px;
+  border-right: 1px solid #fff;
+  border-radius: 0px;
+  border-left: 1.5px solid #000;
+}
+
+.meet-left-side .sider-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  width: calc(100% - 16px);
+  background: linear-gradient(1deg, #27294203, #27294224 50%, #27294203);
+  margin-block: 22px;
+}
+
+.meet-left-side .menu-item {
+  position: relative;
+  font-size: 13px;
+}
+
+.meet-left-side .menu-item.active {
+  font-weight: 500;
+  color: #000;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.059);
+}
+
+.meet-left-side .menu-item.active::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  height: 18px;
+  width: 2px;
+  background: #3a5ee3;
+  border-radius: 8px;
+}
+.menu-item-call-desk {
+  padding-inline: 9px;
+  padding-block: 9px;
+  align-items: center;
+}
+.meet-left-side .menu-item svg {
+  width: 22px;
+  height: 22px;
+}
+
+.vindo-logo {
+  animation-name: logoFade;
+  animation-duration: 1.2s;
+}
+
+.leave-meeting-options {
+  background: #fff;
+  max-width: 200px;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.leave-meeting-options .leave-meet-btn {
+  background: #e81224;
+  color: #fff;
+}
+
+@keyframes logoFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .meet-left-side.sm-hide {
+    display: none;
+    width: 0px;
+  }
+}

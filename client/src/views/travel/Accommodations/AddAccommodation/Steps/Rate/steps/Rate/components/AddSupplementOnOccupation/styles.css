@@ -1,0 +1,15 @@
+.add_suplement .ant-radio-checked .ant-radio-inner {
+    border-color: #272942;
+    background-color: #272942;
+}
+
+.add_suplement {
+    position: relative;
+    min-height: 100%;
+}
+
+.add_supplement_btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

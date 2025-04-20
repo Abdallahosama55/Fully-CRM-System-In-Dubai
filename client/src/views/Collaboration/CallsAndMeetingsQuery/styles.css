@@ -1,0 +1,31 @@
+.employees-query .filter-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5e5eaa6;
+  cursor: pointer;
+}
+
+.calls-meetings-query .more-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #2729420a;
+  cursor: pointer;
+}
+.calls-meetings-query .more-btn-meet {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+}

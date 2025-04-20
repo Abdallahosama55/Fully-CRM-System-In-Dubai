@@ -1,0 +1,39 @@
+.invoice-main {
+  background: #fff;
+  min-height: 100vh;
+  width: 909px;
+}
+
+.invoice-main .ant-typography {
+  color: #000 !important;
+}
+
+.invoice-container {
+  padding: 75px 56px;
+  margin: auto;
+}
+
+.background-img {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  pointer-events: none;
+}
+
+.invoice-inner {
+  padding: 0px 30px;
+}
+
+.invoice-text {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  background: transparent
+    linear-gradient(244deg, #afda1a 0%, #45b7f5 50%, #55a4cc 100%) 0% 0%
+    no-repeat padding-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tc {
+  text-align: center;
+}

@@ -1,0 +1,70 @@
+.dragger-add-image {
+  background-color: rgba(165, 162, 153, 0.3);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin: auto auto 0.5rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-dragger .ant-upload.ant-upload-drag {
+  border: none !important;
+  height: 200px !important;
+}
+
+.post-dragger {
+  border: 1px solid transparent;
+}
+
+.post-dragger:hover {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.photos-preview {
+  margin-bottom: 1rem;
+}
+
+/* .photos-preview .ant-image-img {
+  border-radius: 12px !important;
+} */
+
+.preview-more {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3b3b3;
+  border-radius: 12px;
+  cursor: pointer;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
+}
+
+.preview-more-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.preview-more:hover .preview-more-mask {
+  display: block;
+}
+
+.remove-uploaded-files {
+  position: absolute;
+  right: 0px;
+  z-index: 100;
+}
+
+.remove-uploaded-files .ant-btn {
+  background-color: #eee !important;
+  border: none !important;
+}

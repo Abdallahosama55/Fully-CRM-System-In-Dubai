@@ -1,0 +1,68 @@
+.view_experiance_page {
+    padding: 1rem;
+}
+
+.view_experiance_page .page_content {
+    max-width: 1440px;
+    margin: 0 auto !important;
+}
+
+.view_experiance_page .rate_stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-inline-end: 0.5rem;
+}
+
+
+.view_experiance_page .rate_stars svg {
+    transform: scale(1.2);
+}
+
+.view_experiance_page .info_with_icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.view_experiance_page .features {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.view_experiance_page .description .ant-typography p {
+    margin-bottom: unset !important;
+}
+
+
+.view_experiance_page .ant-form-item {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.view_experiance_page .ant-table .ant-table-thead>tr>th {
+    background-color: #FFF;
+    border-left: unset;
+}
+
+.view_experiance_page .ant-table-row-expand-icon-cell {
+    padding: unset;
+    margin: unset;
+    width: 0px !important;
+}
+
+.view_experiance_page .sessions_section .ant-radio-wrapper {
+    background-color: rgb(232, 238, 255) !important;
+    padding: 14px 30px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    max-height: 600px !important;
+    overflow: auto;
+}
+
+.view_experiance_page .sessions_section .ant-radio-wrapper.ant-radio-wrapper-checked {
+    background-color: rgb(232, 238, 255) !important;
+    outline: 2px solid rgb(116, 153, 255);
+}

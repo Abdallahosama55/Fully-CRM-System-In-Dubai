@@ -1,0 +1,40 @@
+.ai_configrations .voice_tab_ai_form {
+  padding-block: 32px;
+  border-bottom: 1px solid #e5e5ea;
+  margin-bottom: 32px;
+}
+
+.ai_configrations .voice_tab_ai_form .voice_tab_ai_form_select_gradiant {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: transparent linear-gradient(120deg, #d558c8 0%, #24d292 100%) 0% 0% no-repeat
+    padding-box;
+}
+
+.ai_configrations .voice_tab_ai_form .voice_tab_ai_form_voice_degree {
+  padding: 12px 0px;
+  text-align: center;
+  width: 80px;
+  color: #030713;
+  font-weight: 600;
+  border: 1px solid #e5e5ea;
+  background-color: #f6f6f7;
+  border-radius: 6px;
+}
+
+.ai_configrations .voice_tab_ai_form .voice_tab_ai_form_color_schema {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #e5e5ea;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai_configrations .voice_tab_ai_form .voice_tab_ai_form_color_picker {
+  color: #3a5ee3;
+  border-color: #3a5ee3;
+}

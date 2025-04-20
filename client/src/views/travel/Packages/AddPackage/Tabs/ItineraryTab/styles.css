@@ -1,0 +1,15 @@
+.package_itinerary_tab {
+    display: grid;
+    grid-template-columns: calc(100% - 350px) 334px;
+    gap: 16px;
+}
+
+.library_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.library_container>.library_section {
+    flex: 1;
+    margin-bottom: 16px !important;
+}

@@ -1,0 +1,29 @@
+.upload-img {
+  height: 350px !important;
+}
+
+.upload-img .add-category-preview {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 350px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.isDownloadAbel .ant-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.isDownloadAbel .ant-row .ant-col.ant-form-item-label {
+  padding: 0;
+}
+.isDownloadAbel .ant-row.ant-col.ant-form-item-control {
+  width: fit-content;
+}

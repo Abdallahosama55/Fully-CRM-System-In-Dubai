@@ -1,0 +1,9 @@
+.help-desk-wraper {
+  flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 1199px) {
+  .help-desk-wraper {
+    flex-wrap: wrap;
+  }
+}

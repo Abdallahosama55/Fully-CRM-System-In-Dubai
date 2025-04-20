@@ -1,0 +1,76 @@
+.badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.badge_with_icon{
+    gap: 4px;
+    align-items: center;
+}
+
+.badge_with_icon svg{
+    width: 12px;
+    height: 12px;
+}
+
+.badge_with_icon_large svg{
+    width: 18px;
+    height: 18px;
+} 
+
+.badge.fullWidth {
+    flex: 1 0 0;
+    align-items: flex-start;
+}
+
+/* sizes */
+.badge.small {
+    padding: 2px 8px;
+}
+
+.badge.medium {
+    padding: 2px 10px;
+}
+
+
+.badge.large {
+    padding: 4px 12px;
+}
+
+/* colors */
+.badge.primary , .badge.primary span{
+    color: var(--vbooking-b700);
+    background: var(--vbooking-c800);
+}
+
+.badge.success , .badge.success span{
+    color: #007C43;
+    background: #8CF7C1;
+}
+
+
+.badge.warning , .badge.warning span{
+    color: #B54708;
+    background: #FFDE7A;
+}
+
+.badge.error , .badge.error span{
+    color: #B42318;
+    background: #FFCBC8;
+}
+
+
+.badge.grey , .badge.grey span{
+    color: #344054;
+    background: #EAECF1;
+}
+
+
+.badge.orange , .badge.orange span{
+    color: #CA2800;
+    background: #FFD4A8;
+}

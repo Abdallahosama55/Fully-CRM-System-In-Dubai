@@ -1,0 +1,26 @@
+.booking_info_general_tab .product_card {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.booking_info_general_tab .product_card_body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.booking_info_general_tab .product_card_body_title {
+    color: var(--font-link);
+}
+
+.booking_info_general_tab .product_card_info_with_icon {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    gap: 6px;
+    align-items: center;
+}

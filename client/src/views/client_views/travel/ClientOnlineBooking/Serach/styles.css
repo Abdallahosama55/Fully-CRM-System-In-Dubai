@@ -1,0 +1,15 @@
+.results {
+  transform: translateY(-48px);
+  margin: 1rem auto;
+  max-width: 1440px;
+}
+
+.serach_block .ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1440px) {
+  .results {
+    padding: 0 24px;
+  }
+}

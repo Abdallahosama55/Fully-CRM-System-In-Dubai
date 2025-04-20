@@ -1,0 +1,19 @@
+.experaince_booking_section {
+    border: 1px solid #E5E5EA;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.experaince_booking_section .section_header {
+    padding: 18px 32px;
+    background: #F6F6F7;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #E5E5EA;
+    border-radius:  8px;
+}
+
+.padding_in_body {
+    padding: 32px;
+}

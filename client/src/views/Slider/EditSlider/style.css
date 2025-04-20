@@ -1,0 +1,115 @@
+.editor-slider-builder .image-text-holder {
+  padding: 8px 12px !important;
+  box-shadow: 0px 3px 8px #00000014;
+}
+
+.editor-slider-builder .ant-form-item {
+  margin-bottom: 12px;
+}
+
+.editor-slider-builder .explore-card {
+  aspect-ratio: 1.618;
+  min-width: 200px;
+}
+
+.editor-slider-builder .image-holder {
+  height: 100%;
+}
+
+.editor-slider-builder .image-holder img {
+  transition: transform 400ms;
+}
+
+.editor-slider-builder .image-holder .ant-image {
+  overflow: hidden;
+}
+
+.editor-slider-builder .image-holder img:hover {
+  transform: scale(1.2);
+}
+
+.editor-slider-builder .rows-verses {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.editor-slider-builder .shadow {
+  box-shadow: 0px 3px 8px #00000014;
+}
+
+.editor-slider-builder .Search {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor-slider-builder .border-blue {
+  border: 2px solid #3a5ee3;
+}
+
+.editor-slider-builder .make-row .ant-form-item-row {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  column-gap: 64px;
+}
+
+.editor-slider-builder .make-row .ant-form-item-label {
+  padding: 0;
+}
+
+.dropdown-items-meet.more-btn-meet {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.edit-slider {
+  padding-bottom: 24px;
+  padding-left: 16px;
+}
+.item-picker .ant-color-picker-color-block {
+  height: 24px;
+  width: 24px;
+}
+.item-picker .ant-color-picker-trigger {
+  background-color: #f6f6f7;
+  border: 1px solid #e5e5ea;
+  justify-content: left;
+  padding-inline: 8px;
+}
+
+.item-picker .ant-color-picker-trigger-text {
+  color: #667085;
+
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+}
+
+.create-new-slider .color-picker-form {
+  margin: 0;
+}
+
+.slider-edit-slider-panel-comp-card .hide-card-body {
+  display: none;
+}
+
+.slider-edit-slider-panel-comp-card {
+  border: 1px solid #e5e5ea;
+}
+
+.slider-edit-slider-panel-comp-card .ant-card-head {
+  border-bottom: unset;
+}
+
+.slider-edit-slider-panel-comp-card .ant-card-head {
+  min-height: 44px;
+}
+
+.slider-edit-slider-panel-comp-card .ant-card-body {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

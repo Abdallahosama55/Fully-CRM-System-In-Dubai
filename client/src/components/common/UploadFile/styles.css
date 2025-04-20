@@ -1,0 +1,18 @@
+.custome-common-upload-file .ant-upload-list-item {
+  width: 350px;
+  background: #f1f1f3 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 18px;
+}
+
+.custome-common-upload-file .ant-upload-drag {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px dashed #d1d1d6;
+  border-radius: 8px;
+  min-height: 120px;
+}
+
+.custome-common-upload-file .ant-upload-btn {
+  padding: 38px 0px !important;
+}

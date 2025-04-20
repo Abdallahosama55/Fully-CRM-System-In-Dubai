@@ -1,0 +1,22 @@
+.ask_genie_text_area {
+    width: calc(100% - 40px);
+    resize: none;
+    padding-top: 4px;
+}
+
+.ask_genie_suggestion_button {
+    padding: 4px 12px;
+    border-radius: 16px;
+    background: var(--gray-100);
+
+    transition: 0.3s all ease-in-out;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.ask_genie_suggestion_button:hover{
+    background: var(--gray-200);
+}

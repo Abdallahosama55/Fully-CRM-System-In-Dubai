@@ -1,0 +1,15 @@
+.registration-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #224a9a;
+}
+
+.registration-content {
+  background-color: #224a9a;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}

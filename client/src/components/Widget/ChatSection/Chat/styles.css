@@ -1,0 +1,34 @@
+.chat-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 10px;
+}
+
+.chat-message {
+  background: #9a42a91f;
+  border-radius: 12px 12px 12px 4px;
+  padding: 8px;
+}
+
+.chat-main::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-message .ant-typography {
+  line-height: 12px;
+}
+
+.chat-send-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+  background: #9a42a933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

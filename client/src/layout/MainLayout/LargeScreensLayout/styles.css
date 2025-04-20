@@ -1,0 +1,91 @@
+.not_mobile.main_layout_large_screen {
+    background: var(--side-menu-bg-2);
+    min-height: 100dvh !important;
+}
+
+.not_mobile .main_layout_large_screen_page_content {
+    height: 100dvh !important;
+    margin-inline-start: 72px;
+    transition: margin 0.3s ease;
+}
+
+.not_mobile .main_layout_large_screen_page_content .main_layout_large_screen_page_content_body {
+    background-color: #fff;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    padding: 10px 0;
+    margin-top: 8px !important;
+    height: calc(100dvh - 60px) !important;
+    overflow: auto !important;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.main_layout_large_screen_page_content_body:has(.layout_no_padding) {
+    padding: 0 !important;
+}
+
+/* Customize the scrollbar */
+.not_mobile .main_layout_large_screen_page_content .main_layout_large_screen_page_content_body::-webkit-scrollbar {
+    width: 6px;
+    /* Scrollbar thickness */
+    background-color: #f5f5f5;
+    /* Background color for the track */
+}
+
+.not_mobile .main_layout_large_screen_page_content .main_layout_large_screen_page_content_body::-webkit-scrollbar-thumb {
+    background-color: var(--vbooking-c500);
+    /* Scrollbar color */
+    border-radius: 10px;
+    /* Rounded scrollbar */
+    border: 2px solid #f5f5f5;
+    /* Adds space around the thumb */
+}
+
+.not_mobile .main_layout_large_screen_page_content .main_layout_large_screen_page_content_body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--vbooking-c800);
+    /* Darker color on hover */
+}
+
+.not_mobile .main_layout_large_screen_page_content .main_layout_large_screen_page_content_body::-webkit-scrollbar-track {
+    background-color: #d9dfe981;
+    /* Track background color */
+    border-radius: 10px;
+    /* Rounded track edges */
+}
+
+.not_mobile .main_layout_large_screen_page_content.sub_menu_open {
+    margin-inline-start: 304px !important;
+}
+
+.not_mobile .main_layout_large_screen_menu {
+    background: var(--side-menu-bg-1);
+    border-right: 1px solid var(--side-menu-bg-3);
+
+    position: fixed;
+    top: 0;
+    inset-inline-start: 0;
+    height: 100dvh;
+    width: 64px;
+}
+
+.not_mobile .main_layout_large_screen_sub_menu {
+    width: 240px;
+    height: 100dvh;
+    background: inherit;
+    position: fixed;
+    top: 0;
+    inset-inline-start: -240px;
+    transition: 0.3 all ease-in-out;
+}
+
+.not_mobile .main_layout_large_screen_sub_menu.sub_menu_open {
+    inset-inline-start: 64px;
+}
+
+/* HIDE IN MOBILE SCREENS */
+.is_mobile .main_layout_large_screen_menu,
+.is_mobile .main_layout_large_screen_sub_menu {
+    display: none;
+}

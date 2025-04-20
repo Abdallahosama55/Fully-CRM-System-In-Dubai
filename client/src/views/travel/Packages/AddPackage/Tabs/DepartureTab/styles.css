@@ -1,0 +1,20 @@
+.package_departure_tab .even-row {
+    background-color: #FFF !important;
+}
+
+.departure_modal .ant-picker-content thead tr th {
+    background-color: #f0f2f5;
+    cursor: pointer !important;
+    transition: 0.3s all ease-in-out;
+    user-select: none;
+}
+
+.departure_modal .ant-picker-content thead tr th:hover {
+    background-color: #1945A2 !important;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.departure_modal .ant-picker-calendar-mode-switch{
+    display: none;
+}

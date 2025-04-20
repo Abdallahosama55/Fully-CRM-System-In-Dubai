@@ -1,0 +1,43 @@
+.web-widget-root-header {
+  padding: 24px 10px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+}
+.web-widget-root-header .item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+.web-widget-root-header .vindo-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.web-widget-root-header .image-logo {
+  height: 72px;
+}
+.web-widget-root-header h3 {
+  color: #272942;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.web-widget-root-header .item::after {
+  content: "";
+
+  width: 54px;
+  border-radius: 2px;
+  height: 3px;
+  background-color: #3a5ee3;
+}
+.web-widget-root-header p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #030713;
+}

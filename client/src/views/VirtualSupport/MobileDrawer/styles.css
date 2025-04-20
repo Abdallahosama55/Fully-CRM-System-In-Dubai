@@ -1,0 +1,11 @@
+.mobile-meet-drawer {
+  z-index: 100000;
+}
+
+.mobile-meet-drawer.ant-drawer .ant-drawer-body {
+  padding: 0px;
+}
+
+.mobile-meet-drawer .ant-drawer-content-wrapper {
+  max-width: 255px;
+}

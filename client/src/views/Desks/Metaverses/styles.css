@@ -1,0 +1,27 @@
+.desks-metaverses-verse-card {
+  width: 240px;
+  border: 1px solid #e5e5ea;
+  box-shadow: 0px 0px 8px 0px #00000010;
+  height: 190px;
+}
+
+.desks-metaverses-verse-card .ant-card-body {
+  padding: 8px;
+  padding-bottom: 0;
+}
+
+.desks-metaverses-verse-card-checkbox {
+  margin: 0;
+}
+
+.desks-metaverses-verse-card-checkbox .ant-form-item > {
+  margin-bottom: 0px !important;
+}
+
+.desks-metaverses-verse-card-checkbox .ant-form-item-control-input {
+  min-height: 22px;
+}
+
+.desks-metaverses-verse-card-checkbox .ant-form-item::last-child {
+  margin-bottom: 0px !important;
+}

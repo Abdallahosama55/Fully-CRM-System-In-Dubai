@@ -1,0 +1,28 @@
+.table_title,
+.actions_menu_label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accomdation_image {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 4px;
+}
+
+.accomdation_name_cell{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 8px;
+    align-items: center;
+}
+
+.accomdation_name_body{
+    margin-top: 2px;
+}
+
+.accomdation_name_rate svg{
+    scale: 0.8;
+    margin-left: -4px;
+}

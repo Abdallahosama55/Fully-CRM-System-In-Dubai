@@ -1,0 +1,189 @@
+.ant-layout {
+  background: transparent;
+}
+
+.widget-schedule-call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.schedule-call-card {
+  background: transparent;
+  min-height: 500px;
+  max-width: 1003px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 8px;
+}
+
+.schedule-call-card .close-modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.schedule-call-card .ant-card-body {
+  padding: 0;
+}
+
+.schedule-call-card .topic-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.schedule-call-card .desks-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  overflow-y: auto;
+  height: 330px;
+  max-width: 860px;
+}
+
+.schedule-call-card .desks-container .desk-card {
+  width: 400px;
+  height: 93px;
+  border-radius: 12px;
+}
+
+.schedule-call-card .desks-container .desk-card:hover {
+  background-color: #0036ff1a;
+  border: unset;
+}
+
+.schedule-call-card .desks-container .desk-card .ant-card-head {
+  padding: 0 24px;
+  min-height: 40px;
+  border-bottom: unset;
+}
+
+.schedule-call-card .desks-container .desk-card .ant-card-body {
+  padding: 16px 24px;
+}
+
+.schedule-call-card .powered-by-text {
+  font-size: 10px;
+  font-weight: 11px;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+.schedule-call-card .times-list::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+@media (max-width: 768px) {
+  .schedule-call-card .desks-container .desk-card {
+    width: 100%;
+    min-width: 330px;
+  }
+
+  .schedule-call-card .desk-card {
+    width: 100%;
+  }
+  .schedule-call-card .widget-schedule-call {
+    overflow: auto;
+    align-items: normal;
+  }
+
+  .schedule-call-card .powered-by-text {
+    position: relative;
+    bottom: 0;
+    font-weight: 500;
+    font-size: 11px;
+    left: 0;
+    margin-top: 14px;
+  }
+}
+
+.schedule-call-card .calendar-time-select {
+  padding: 32px 24px;
+  background: white;
+  border-radius: 0 8px 8px 0;
+  min-height: 500px;
+}
+
+.schedule-call-card .calendar-time-select .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px;
+}
+
+.schedule-call-card .calendar-time-select .times-list {
+  padding: 0px 0 32px 24px;
+  overflow-y: auto;
+  max-height: 430px;
+}
+
+.schedule-call-card .calendar-time-select .times-list .time {
+  display: flex;
+  height: 49px;
+  padding: 12px 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border-style: solid;
+  color: "#2d5feb";
+  background: #f6faff;
+  cursor: pointer;
+}
+
+.schedule-call-card .user-form {
+  background: white;
+  border-radius: 0 8px 8px 0;
+  min-height: 500px;
+  padding: 32px 24px;
+}
+
+.schedule-success {
+  min-height: 498px;
+  background: white;
+  border-radius: 0 8px 8px 0;
+  padding: 32px 24px;
+}
+
+.schedule-call-card .select-time-zone {
+  width: 100%;
+  border-radius: 68px;
+  background: #eee;
+}
+
+.schedule-call-card .select-time-zone .ant-select-selector {
+  border-radius: 68px;
+  background: #eee;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #eee;
+  padding-inline: 16px;
+  line-height: 120%;
+}
+.schedule-call-card .select-time-zone .ant-select-arrow {
+  color: #272942;
+}
+
+.web-widget-schedual-call-popup-widget-schedule-call {
+  max-width: 100%;
+  padding: 0px;
+}
+
+.web-widget-schedual-call-popup-widget-schedule-call .ant-modal {
+  margin: 0 !important;
+}
+
+.web-widget-schedual-call-popup-widget-schedule-call .ant-modal-content {
+  padding: 0px;
+  background: transparent;
+}

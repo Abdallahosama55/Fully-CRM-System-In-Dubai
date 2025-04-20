@@ -1,0 +1,76 @@
+.comment-input {
+  border: none;
+  border-radius: 12px !important;
+  background-color: #f2f2f7;
+  box-shadow: inset 0px 0px 5px #00000008;
+}
+
+.comment-input .ant-input-affix-wrapper:hover,
+.ant-input-affix-wrapper-focused {
+  border-color: #0d0d0d !important;
+}
+
+.comment-main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.comment-comment {
+  font-size: 14px;
+  color: #454545;
+  letter-spacing: 0.14px;
+}
+.comment-info {
+  background-color: #f8f8f7;
+  border-radius: 1px 12px 12px;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f7;
+}
+
+.comment-interactions {
+  padding-inline-start: 1rem;
+  margin-top: 0.2rem;
+}
+
+.comments-actions {
+  color: #888888;
+  cursor: pointer;
+}
+
+.reply-input {
+  margin-top: 1rem;
+  padding-inline-start: 1rem;
+}
+
+.reply-main {
+  margin: 1rem 0 0;
+  padding-inline-start: 1rem;
+}
+
+.reply-info {
+  background-color: #f2f2f7;
+  border-radius: 1px 12px 12px;
+  padding: 0.5rem 1rem;
+}
+
+.video-react .video-react-big-play-button {
+  background-color: transparent !important;
+  border: none !important;
+  right: 10px;
+  left: auto !important;
+}
+
+/* emoji picker footer */
+.emoji-mart-preview {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .reply-fullName {
+    max-width: 70px !important;
+  }
+  .reply-description {
+    font-size: 10px;
+  }
+}

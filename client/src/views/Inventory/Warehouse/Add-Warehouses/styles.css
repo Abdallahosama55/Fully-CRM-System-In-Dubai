@@ -1,0 +1,63 @@
+.add-warehouses {
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-inline-end: 12px;
+}
+.add-warehouses-main .tabs .ant-tabs-nav::before {
+  border-bottom: 0px;
+}
+.add-warehouses-main .tabs .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 12px;
+  border: 1px solid #efeff1;
+  background-color: #ffffff;
+  padding: 4px 8px;
+  margin: 0;
+  margin-right: 8px;
+}
+.add-warehouses-main .tabs .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+  color: #8e8e93;
+}
+.add-warehouses-main .tabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 12px;
+  background-color: #3a5ee3;
+  padding: 4px 8px;
+}
+.add-warehouses-main .tabs .inner-tab .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 4px 8px;
+}
+.add-warehouses-main .inner-tab .ant-tabs-tab-btn .ant-col {
+  font-size: 10px;
+}
+.add-warehouses-main .inner-tab .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 8px;
+}
+.add-warehouses-main .tabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fff;
+}
+.add-warehouses-main
+  .tabs
+  .inner-tab
+  .ant-tabs-nav
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #000;
+  filter: saturate(1);
+}
+.add-warehouses-main .inner-tab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: red;
+}
+.add-warehouses-main .tabs .ant-tabs-nav .ant-tabs-ink-bar-animated {
+  height: 0;
+}
+.add-warehouses-main .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+  color: #8e8e93;
+  filter: saturate(0.2);
+}
+.add-warehouses-main form {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: calc(100vh - 197px);
+}

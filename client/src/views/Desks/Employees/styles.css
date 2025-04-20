@@ -1,0 +1,17 @@
+.desks-employees-employee-card {
+  transition: all 0.5s ease;
+  aspect-ratio: 16/4;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.desks-employees-employee-card .ant-card-body:hover {
+  background: #fafafa;
+
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.desks-employees-employee-card .ant-card-body {
+  padding: 16px;
+}

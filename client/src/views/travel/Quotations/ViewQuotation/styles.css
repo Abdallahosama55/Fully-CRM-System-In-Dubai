@@ -1,0 +1,77 @@
+.view_quotation {
+    padding: 48px;
+    background-color: rgb(243, 244, 246);
+    border-radius: 1.5rem;
+}
+
+.view_quotation_header_sub_title {
+    line-height: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.view_quotation_header_title {
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, rgba(8, 0, 150, 1) 0%, rgba(0, 0, 198, 1) 25%, rgba(20, 131, 222, 1) 50%, rgb(0, 180, 216) 75%, rgb(0, 187, 224) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Ensure the text is transparent to show the gradient */
+    background-size: 200% 100%;
+    /* Make the gradient twice as wide as the element */
+    animation: backgroundMove 5s linear infinite;
+    /* Adjusted animation properties */
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+        /* Start from the left */
+    }
+
+    50% {
+        background-position: 100% 50%;
+        /* Move to the right */
+    }
+
+    100% {
+        background-position: 0% 50%;
+        /* Move back to the left */
+    }
+}
+
+.view_quotation_header .ant-tabs-nav {
+    margin-bottom: 0 !important;
+}
+
+.delete_quotation_item_button {
+    position: absolute;
+    inset-inline-end: 8px;
+    inset-block-start: 8px;
+    cursor: pointer;
+    z-index: 999 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .view_quotation {
+        padding: 24px;
+    }
+
+    .view_quotation_header_title {
+        font-size: 32px;
+    }
+
+    .full_width_on_small_screen {
+        width: 100%;
+    }
+
+    .full_width_on_small_screen .ant-tabs-nav-wrap{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

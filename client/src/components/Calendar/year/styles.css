@@ -1,0 +1,59 @@
+.year {
+  height: inherit;
+  overflow: auto;
+  overflow-x: hidden;
+  padding-bottom: 0rem;
+}
+.year td {
+  min-width: 8px !important;
+}
+.year .ant-picker-calendar-date-value {
+  color: #000;
+  background-color: #fff;
+}
+.year .col {
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px #0000001f;
+  transform: scale(0.9);
+  display: flex;
+  justify-content: center;
+  max-width: 230px;
+}
+.year .ant-picker-calendar.ant-picker-calendar-mini {
+  transform: scaleX(0.7);
+}
+.year .head {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.year .ant-picker-cell {
+  opacity: 0;
+  pointer-events: none;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.year .ant-picker-cell.ant-picker-cell-in-view {
+  opacity: 1;
+  pointer-events: all;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.year .ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner {
+  min-width: 15px;
+  height: 15px;
+  line-height: 15px;
+}
+.year .current {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #3a5ee3;
+}

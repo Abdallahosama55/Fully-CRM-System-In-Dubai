@@ -1,0 +1,18 @@
+.iframe-modal .ant-modal-content{
+    padding: 0;
+    height: calc(100dvh - 40px);
+    overflow: hidden;
+}
+
+.iframe-modal .ant-modal-close{
+    background-color: #fff !important;
+    padding: 4px !important;
+    height: 30px;
+    width: 30px;
+}
+
+.iframe-modal iframe{
+    border-radius: 8px;
+    height: calc(100dvh - 40px);
+    transform: scale(1.01);
+}

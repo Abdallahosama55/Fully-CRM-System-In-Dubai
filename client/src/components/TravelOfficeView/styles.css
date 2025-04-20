@@ -1,0 +1,50 @@
+.travel_office_view .ant-tabs-ink-bar {
+    display: none !important;
+}
+
+.travel_office_view_drawer .ant-drawer-body {
+    background: var(--vindo-light-grey-for-BG-color, #FAFAFB) !important;
+}
+
+.travel_office_view .ant-tabs-nav::before {
+    display: none;
+}
+
+.travel_office_view .ant-tabs-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.travel_office_view .ant-tabs-nav-list .ant-tabs-tab {
+    border-radius: 8px;
+    border: 1px solid #EFEFF1;
+    background: #FFF;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+}
+
+
+.travel_office_view .ant-tabs-nav-list .ant-tabs-tab-active {
+    background-color: #2D6ADB;
+}
+
+.travel_office_view .ant-tabs-nav-list .ant-tabs-tab-active * {
+    color: #fff;
+}
+
+.travel_office_view .ant-tabs-nav-list .ant-tabs-tab-icon {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 18px !important;
+}
+
+.travel_office_view .ant-tabs-tab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+}

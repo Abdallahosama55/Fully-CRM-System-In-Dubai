@@ -1,0 +1,71 @@
+.add-edit-community-form-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.add-edit-community-form-container .card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-edit-community-form-container .ant-card-head-title {
+  font-size: 20px;
+  color: #333;
+}
+
+.add-edit-community-form-container .ant-upload-list-picture-card .ant-upload-list-item {
+  width: 128px;
+  height: 128px;
+}
+
+.add-edit-community-form-container .submit-button {
+  width: 100%;
+  background-color: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.add-edit-community-form-container .add-edit-community-image-holder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+}
+
+.add-edit-community-form-container
+  .add-edit-community-image-holder
+  .add-edit-community-image-holder-close {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  padding: "16px";
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-edit-community-form-container .community-banner-upload .ant-upload {
+  width: 100% !important;
+  height: 220px !important;
+}
+
+.add-edit-community-form-container .community-banner-upload .add-edit-community-image-holder {
+  border-radius: 12px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}

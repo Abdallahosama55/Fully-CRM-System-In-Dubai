@@ -1,0 +1,10 @@
+.voucher_page {
+    background: var(--vbooking-c100);
+    min-height: 100dvh;
+}
+
+.voucher_page .voucher_page_container {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 963px;
+}

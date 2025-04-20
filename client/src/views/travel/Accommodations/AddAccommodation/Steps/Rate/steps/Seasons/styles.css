@@ -1,0 +1,38 @@
+.seasson_section {
+    border: 1px solid #E5E5EA;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.season_type {
+    background-color: #fff;
+}
+
+.seasson_type_card {
+    padding: 1rem;
+    height: 100% !important;
+    border: 1px solid #CCD5DF;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+.seasson_type_card:hover{
+    border: 1px solid #444ce78b;
+}
+
+.seasson_type_card.active_seasson {
+    border: 1px solid #444CE7;
+}
+
+.seasson_type_card.disabled {
+    border: 1px solid #dfdfdf;
+    background-color: #dfdfdf;
+    cursor: not-allowed !important;
+}
+
+.seasson_type_card.disabled.active {
+    border: 1px solid #dfdfdf;
+}

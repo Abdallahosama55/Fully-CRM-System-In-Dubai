@@ -1,0 +1,82 @@
+.customer-property-card {
+  height: 100%;
+  padding: 12px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #00000010;
+  border: 1px solid #efeff1;
+  border-radius: 12px;
+}
+.portal-details-card {
+  background-color: #ffffff;
+  padding: 24px;
+  box-shadow: 0px 3px 8px #00000010;
+  border: 1px solid #efeff1;
+  border-radius: 12px;
+}
+.portal-details-card .value {
+  font-weight: 500;
+}
+
+/* attachment card */
+.customer-attachment-card {
+  border: 1px solid #efeff1;
+  box-shadow: 0px 3px 8px #00000010;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14px;
+  /* border: 1px solid black; */
+  padding: 8px;
+}
+
+/* attachment card */
+
+.customer-attachment-card .image-and-title {
+  display: flex;
+  align-items: center;
+}
+.customer-attachment-card .title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.customer-attachment-card .date {
+  font-size: 12px;
+  color: #8e8e93;
+  display: flex;
+  align-items: center;
+}
+
+.customer-attachment-card .actions {
+  display: flex;
+}
+.customer-attachment-card .actions .icon {
+  background-color: #2729420a;
+  border-radius: 8px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.customer-attachment-card .date {
+  font-size: 12px;
+  color: #8e8e93;
+}
+
+.customer-attachment-card .actions {
+  display: flex;
+}
+.customer-attachment-card .actions .icon {
+  background-color: #2729420a;
+  border-radius: 8px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* end */

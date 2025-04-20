@@ -1,0 +1,40 @@
+.view-orders-table {
+  margin: 40px 20px;
+  border-radius: 14px;
+  border: 1.5px solid #2729420f;
+  padding: 16px;
+}
+
+.view-orders-main {
+  padding: 1.1rem 1.5rem;
+}
+
+.view-order-img {
+  border: 1px solid #d7dae2;
+  border-radius: 16px;
+  padding: 0.5rem;
+  max-height: 300px;
+  width: fit-content;
+}
+
+.view-order-img .ant-image-mask {
+  border-radius: 12px;
+}
+
+.view-orders .ant-statistic-content {
+  font-size: 16px !important;
+}
+
+.order-table-price {
+  max-width: 600px;
+  margin: 1rem 2rem;
+}
+
+.order-table-price > .ant-row {
+  border-top: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.order-table-price > .ant-row:last-child {
+  border-bottom: 1px solid #ccc;
+}

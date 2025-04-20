@@ -1,0 +1,22 @@
+.post-card {
+  margin-top: 20px;
+  padding: 16px;
+  max-width: 552px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+#editor-wrapper {
+  display: flex; /* Use flexbox for layout */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+#editor {
+  margin-left: 300px;
+  flex: 1; /* Take remaining space */
+  background: #fff;
+  overflow: hidden; /* Prevent overflow issues */
+}

@@ -1,0 +1,75 @@
+.tab-item {
+  display: flex;
+  padding: 10px 18px;
+  background-color: rgb(58, 94, 227);
+  width: 150px;
+  border: 1px solid #00000000;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.title-customer-item-info:nth-child(even) {
+  border-radius: 8px;
+  background-color: #f2f2f74d;
+  color: #8e8e93;
+  font-size: 11px;
+  padding-top: 4px;
+  text-align: left;
+  background: #ffffff;
+}
+.title-customer-item-info:nth-child(odd) {
+  background: #f9f9fa;
+  border-radius: 8px;
+  background-color: #f2f2f74d;
+  color: #8e8e93;
+  font-size: 11px;
+  padding-top: 4px;
+  text-align: left;
+}
+.title-customer-item {
+  padding-inline: 8px;
+}
+.customer-card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px 0px;
+}
+.customer-card img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px !important;
+}
+.customer-card .name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #030713;
+}
+.customer-card .job-title {
+  font-size: 17px;
+  color: #8e8e93;
+}
+
+.customer-info-card {
+  width: 100%;
+  padding: 10px;
+}
+.customer-info-card .label {
+  /* font-size: 16px; */
+  color: #8e8e93;
+}
+
+.customer-info-card .value {
+  color: #030713;
+  font-weight: 500;
+}
+
+.information-customer-text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #020714;
+}
+.item-customer-info svg {
+  flex: none;
+}

@@ -1,0 +1,58 @@
+.suppliers_page {
+    padding: 0 5px;
+}
+
+.suppliers_page .ant-picker-input {
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+
+.suppliers_page .select-with-prefix {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.suppliers_page .select-prefix-icon {
+    margin-right: 8px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+
+.suppliers_page .custom-select {
+    width: 100%;
+}
+
+
+.company_name_cell{
+    width: 240px;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 200px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+
+.suppliers_page .ant-select-selection-placeholder,
+.suppliers_page .ant-select-selection-item,
+.suppliers_page.ant-select-selection-search input {
+    text-indent: 24px !important;
+}
+
+.supplier_info_line_with_icon {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 12px 1fr;
+    gap: 8px;
+}
+
+.supplier_info_line_with_icon svg {
+    width: 12px;
+    height: 12px;
+}

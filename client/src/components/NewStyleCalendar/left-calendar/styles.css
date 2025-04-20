@@ -1,0 +1,111 @@
+.left-calendar {
+  background-color: white;
+  border: 1px solid #e5e5ea;
+  height: 100%;
+  border-radius: 0;
+  width: 100%;
+}
+
+.left-calendar .title {
+  color: #030713;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.left-calendar .container-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  max-height: 85px;
+  height: 100vh;
+  width: 100%;
+  padding-inline: 10px;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.left-calendar .prev-arrow svg path,
+.left-calendar .next-arrow svg path {
+  fill: #3a5ee3;
+}
+
+.left-calendar .prev-arrow,
+.left-calendar .next-arrow {
+  background: #ffffff;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #e5e5eab3;
+  border-radius: 5px;
+}
+
+.left-calendar .container-checkbox .title,
+.left-calendar .container-desks .title {
+  color: #030713;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.left-calendar .container-desks .ant-avatar {
+  margin: 0px 10px;
+}
+
+.left-calendar .ant-picker-calendar-mini,
+.left-calendar .ant-picker-body {
+  background-color: white !important;
+}
+
+.left-calendar .container-checkbox,
+.left-calendar .container-desks {
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  border-top: 1px solid #e5e5ea;
+  padding-top: 20px;
+  padding-inline: 10px;
+}
+
+.left-calendar .container-checkbox .ant-container-checkbox {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.left-calendar .container-checkbox .ant-container-checkbox > .ant-container-checkbox-item {
+  border-bottom: none;
+}
+
+.left-calendar .container-checkbox .ant-container-checkbox .ant-container-checkbox-content {
+  background-color: transparent;
+  border-top: none;
+}
+
+.left-calendar .container-checkbox .leaves .ant-checkbox-inner {
+  background-color: #f29e1c;
+  border: 0.5px solid #f29e1c;
+}
+
+.left-calendar .container-checkbox .leaves .ant-checkbox-inner:after {
+  border-color: white;
+}
+
+.left-calendar .container-checkbox .meet .ant-checkbox-inner {
+  background-color: #3a5ee3;
+  border-radius: 5px;
+  border: 0.5px solid #3a5ee3;
+}
+
+.left-calendar .container-checkbox .meet .ant-checkbox-inner:after {
+  border-color: white;
+}
+
+.left-calendar .container-checkbox .events .ant-checkbox-inner {
+  background-color: #5eaf30;
+  border: 0.5px solid #5eaf30;
+}
+
+.left-calendar .container-checkbox .events .ant-checkbox-inner:after {
+  border-color: white;
+}

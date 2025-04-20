@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1366px) {
+  .help-desk .hide-sider {
+    top: 16px;
+    right: 32px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .help-desk .hide-sider {
+    display: none;
+  }
+}

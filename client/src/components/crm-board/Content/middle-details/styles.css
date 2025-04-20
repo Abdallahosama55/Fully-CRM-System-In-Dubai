@@ -1,0 +1,159 @@
+.content .metaverse-activistes {
+  border-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #efeff1;
+  box-shadow: 0px 0px 70px #00000010;
+  padding: 18px 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.content .metaverse-activistes .time {
+  font-size: 10px;
+  color: #8e8e93;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.content .metaverse-activistes .name-img {
+  border-radius: 10px;
+  background: #f2f2f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 16px;
+}
+.content .carts {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #efeff1;
+  box-shadow: 0px 0px 70px #00000010;
+  padding: 16px;
+}
+.content .carts .cover {
+  position: relative;
+}
+.content .carts .cover .new {
+  position: absolute;
+  color: #fff;
+  top: 4px;
+  left: 4px;
+  background: #3a5ee3;
+  border-radius: 18px;
+  font-size: 8px;
+  width: 34px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .carts .cover .heart {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+}
+.content .carts .ant-card-body {
+  padding: 0 6px;
+  padding-bottom: 4px;
+}
+.content .carts .rate {
+  font-size: 11px;
+}
+
+.content .cart-des .name {
+  font-size: 12px;
+  color: #030713;
+}
+.content .cart-des .price {
+  font-size: 11px;
+  color: #3a5ee3;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.content .carts .cart-des .time {
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.content .purchases {
+  margin-bottom: 8px;
+}
+.content .purchases-des {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 37px 12px 25px;
+  color: #8e8e93;
+}
+.content .purchases-des.total {
+  background-color: #fbfbfd;
+  border-radius: 8px;
+}
+.content .web-activistes {
+  margin-bottom: 8px;
+}
+.content .web-activistes .time {
+  font-size: 10px;
+  color: #8e8e93;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.content .calls .ant-collapse {
+  background-color: #fff;
+}
+.content .calls .call-icon {
+  border-radius: 8px;
+  background-color: #27294205;
+  border: 1px solid #2729420f;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .calls .collapse-menu .ant-menu-submenu-title {
+  padding-left: 0 !important ;
+  height: 20px;
+  line-height: 20px;
+}
+.content .calls .collapse-menu .ant-menu-submenu-title:hover {
+  background-color: #fff;
+}
+.content .calls .notes {
+  background-color: #27294205;
+  border-radius: 12px;
+  border: 1.5px solid #2729420f;
+  padding: 7.5px 11px;
+  font-size: 10px;
+  margin-top: 12px;
+}
+.content .emails .collapse {
+  margin-bottom: 8px;
+}
+.content .emails .email-des {
+  border-radius: 12px;
+  border: 1px solid #efeff1;
+}
+.content .emails .email-des .email-header {
+  border-radius: 12px 12px 0px 0px;
+  border: 1px solid #efeff1;
+  padding: 7px 13px;
+}
+.content .emails .email-des .email-body {
+  border-radius: 0px 0px 12px 12px;
+  border: 1px solid #efeff1;
+  padding: 12px 13px;
+}

@@ -1,0 +1,51 @@
+.flight_card {
+    border-radius: 16px;
+    border: 1px solid #E5E5EA;
+    background: var(--base-white);
+    padding: 1rem 24px;
+    margin-top: 0.5rem;
+    max-width: 700px;
+}
+
+.flight_card p {
+    text-align: center;
+}
+
+
+.flight_card .airlines_company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flight_card .airlines_company img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: #ccc;
+}
+
+/* airlines_from_airport , airlines_to_airport */
+.flight_card .airlines_from_airport,
+.flight_card .airlines_to_airport {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.flight_card .ant-divider-inner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flight_card .ant-divider-inner-text span {
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+}

@@ -1,0 +1,19 @@
+.week {
+  margin: 20px;
+  background-color: #fafafa;
+}
+
+.week .fc-theme-standard td,
+.fc-theme-standard th {
+  border-top: 1px solid #ececef;
+}
+
+.week .fc .fc-timegrid-col.fc-day-today {
+  background-color: #eff2fd;
+}
+
+.week .fc .fc-col-header-cell-cushion {
+  color: #030713;
+  font-weight: 400;
+  margin-top: 12px;
+}

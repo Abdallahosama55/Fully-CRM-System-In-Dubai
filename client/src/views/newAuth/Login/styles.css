@@ -1,0 +1,37 @@
+.login-container-card {
+  padding: 23px 44px;
+  border-radius: 16px;
+  background-color: #fff;
+  width: 446px;
+}
+.login-container-card .login-title {
+  font-weight: 600;
+  font-size: 21px;
+  color: #9c25a0;
+  margin-bottom: 16px;
+}
+.login-container-card .login-title span {
+  color: #224a9a;
+}
+.login-container-card .login-checkbox-row {
+  margin-bottom: 23px;
+}
+.login-container-card .login-checkbox-row .forgot {
+  color: #2d63cf;
+  font-size: 14px;
+  font-weight: bold;
+}
+.login-container-card .account {
+  font-size: 12px;
+}
+.login-container-card .register {
+  color: #2d63cf;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 446px) {
+  .login-container-card {
+    width: auto;
+  }
+}

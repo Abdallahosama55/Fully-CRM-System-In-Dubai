@@ -1,0 +1,92 @@
+.verse-card .image-holder {
+  border-radius: 12px 12px 0px 0px;
+  overflow: hidden;
+  box-shadow: 0px 0px 24px 0px #0000001f;
+  border: 1px solid #f0f0f3;
+}
+
+.verse-card .image-holder .explore-card-img {
+  transition: transform 400ms;
+  aspect-ratio: 1.618;
+}
+.verse-card.explore-card:hover .explore-card-img {
+  transform: scale(1.2);
+}
+
+.verse-card.explore-card {
+  position: relative;
+}
+
+.verse-card.explore-card:hover .explore-card-title {
+  text-decoration: underline;
+}
+
+.verse-card.explore-card:hover .explore-card-img {
+  transform: scale(1.2);
+}
+
+.verse-card .explore-card-title {
+  font-size: 1.125rem !important;
+  line-height: 22px !important;
+  font-weight: 600;
+  transition: text-decoration 400ms;
+}
+
+.verse-card .explore-card-subtitle {
+  color: #000 !important;
+}
+
+.verse-card .explore-card-options {
+  /* padding: 0px 8px; */
+  height: 24px;
+  width: 36px;
+  border-radius: 15px;
+  background: #272942 !important;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verse-card .explore-card-options svg {
+  rotate: 0deg !important;
+}
+
+.verse-card .image-text-holder {
+  box-shadow: 0px 3px 8px #00000014;
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+  border-radius: 0px 0px 12px 12px;
+  padding: 12px 16px !important;
+  /* position: absolute;
+  bottom: 0px; */
+}
+
+.verse-card .employees {
+  color: #8e8e93;
+  font-size: 12px;
+}
+.verse-card .create-new-desk {
+  background-color: #3a5ee317;
+  border-radius: 12px;
+  border: 1px dotted #3a5ee3cc;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verse-card .create-new-desk .create-new {
+  font-size: 14px;
+  color: #272942;
+}
+.verse-card .create-new-desk > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}

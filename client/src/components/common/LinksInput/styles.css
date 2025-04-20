@@ -1,0 +1,19 @@
+.new_link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.link_item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.links_list {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-inline-end: 3px;
+}

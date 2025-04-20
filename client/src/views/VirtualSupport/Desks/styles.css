@@ -1,0 +1,19 @@
+.virtual-support .virtual-support-desks {
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
+}
+
+.virtual-support .virtual-support-desks .dim-info {
+  background-color: #fff;
+  padding: 12px 8px;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.virtual-support .virtual-support-desks .desk-info {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 12px 8px;
+  border-radius: 4px;
+  margin-top: 1rem;
+}

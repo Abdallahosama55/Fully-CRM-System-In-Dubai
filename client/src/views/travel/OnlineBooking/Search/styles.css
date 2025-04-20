@@ -1,0 +1,36 @@
+.results {
+  transform: translateY(-48px);
+  margin: 1rem auto;
+  max-width: 1440px;
+}
+
+.serach_block .ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.returning-col .ant-col.ant-form-item-label {
+  padding-bottom: 5px !important;
+}
+
+.returning-type {
+  width: 15px;
+  height: 15px;
+}
+.returning-type span {
+  width: 15px;
+  height: 15px;
+}
+.returning-type span span {
+  width: 15px !important;
+  height: 15px !important;
+}
+.returning-type span span::after {
+  width: 4.857143px !important;
+  height: 8.571429px !important;
+}
+
+@media screen and (max-width: 1440px) {
+  .results {
+    padding: 0 24px;
+  }
+}

@@ -1,0 +1,106 @@
+.new-style-calender-header {
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  border-bottom: 1px solid #e5e5ea;
+  border-top: 1px solid #e5e5ea;
+  border-right: 1px solid #e5e5ea;
+  row-gap: 10px;
+  column-gap: 3px;
+}
+@media only screen and (min-width: 1600px) {
+  .new-style-calender-header {
+    justify-content: space-between !important;
+  }
+}
+
+.new-style-calender-header .calender {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+.new-style-calender-header .today {
+  border: none;
+  box-shadow: none;
+  background-color: white;
+  color: #030713;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: normal;
+}
+
+.new-style-calender-header .arrows {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.new-style-calender-header .arrows span {
+  padding: 4px;
+  background-color: #ffffff;
+  color: #3a5ee3;
+  cursor: pointer;
+  border: 1px solid #e5e5eab3;
+  border-radius: 6px;
+}
+
+.new-style-calender-header .requests-btn {
+  border: 1px solid #e5e5ea;
+  border-radius: 10px;
+  color: #030713;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.new-style-calender-header .today-btn {
+  border: 1px solid #3a5ee3;
+  color: #3a5ee3;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.new-style-calender-header .divider {
+  height: 100%;
+  color: #e5e5ea;
+}
+
+.new-style-calender-header .day {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.new-style-calender-header .search .ant-input-group-addon {
+  background-color: #fff;
+  border-radius: 10px 0px 0px 10px;
+  border-left: 1px solid #e5e5ea;
+  border-top: 1px solid #e5e5ea;
+  border-bottom: 1px solid #e5e5ea;
+  border-right: 0px;
+}
+
+.new-style-calender-header .search .ant-input {
+  border: 1px solid #e5e5ea;
+  border-left: 0px;
+}
+
+.new-style-calender-header .convert-buttons {
+  display: flex;
+  align-items: center;
+  padding: 3px !important;
+  background-color: #1131da33;
+  border-radius: 8px;
+}
+.new-style-calender-header .convert-buttons button {
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.new-style-calender-header .convert-buttons button.active {
+  background-color: #3a5ee3;
+  color: #fff;
+}

@@ -1,0 +1,11 @@
+.discount-type {
+  background: #272942;
+  color: #fff !important;
+  border-radius: 8px;
+}
+.discount-type .ant-select-selector {
+  color: #fff !important;
+}
+.discount-type .ant-select-arrow {
+  color: #fff;
+}

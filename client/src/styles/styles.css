@@ -1,0 +1,88 @@
+.status {
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  color: #fff !important;
+}
+
+.active-status {
+  background: transparent linear-gradient(244deg, #64adae 0%, #8dc55c 100%) 0% 0% no-repeat
+    padding-box;
+}
+
+.draft-status {
+  background: #999;
+}
+
+.pending-status {
+  background: #f9b78c;
+}
+
+.confirmed-status {
+  background: #7db6c7;
+}
+
+.picked-up-status {
+  background: #75c796;
+}
+
+.on-the-way-status {
+  background: #7dbcff;
+}
+
+.delivered-status {
+  background: #8dc39d;
+}
+
+.cancel-status {
+  background: #ff7e92;
+}
+
+.table-bottom-info {
+  color: #a3a6b4 !important;
+  position: absolute !important;
+  left: 0;
+  bottom: 20px;
+}
+
+.table-filter-form {
+  margin-bottom: 2rem !important;
+}
+
+.table-filter-form .ant-input {
+  height: 50px;
+}
+
+.table-filter-form .ant-input-number-input {
+  height: 48px !important;
+  border-radius: 4px;
+}
+
+.table-filter-form .ant-form-item-label > label {
+  font-size: 1.2rem;
+}
+
+.table-filter-form .border-btn {
+  height: 50px !important;
+  color: #8dc37a;
+  border: 3px solid #8dc37a;
+}
+
+.table-filter-form .border-btn:focus {
+  color: #8dc37a;
+  border: 3px solid #8dc37a;
+}
+
+.table-filter-form .border-btn:hover {
+  color: #8dc37a;
+  border: 3px solid #8dc37a;
+  opacity: 0.8;
+}
+
+.ant-table-filter-dropdown-btns > button {
+  height: 30px !important;
+}
+
+.ant-dropdown-menu-item-selected,
+.ant-dropdown-menu-submenu-title-selected {
+  background-color: #e3e3e3 !important;
+}

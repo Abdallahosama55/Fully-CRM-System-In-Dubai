@@ -1,0 +1,102 @@
+.upload_container {
+    min-height: 250px;
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.ant-upload-drag-icon {
+    margin-bottom: 1.5rem;
+}
+
+.ant-upload-drag-icon svg {
+    width: unset;
+    height: unset;
+}
+
+.ant-upload-drag-container {
+    display: unset;
+    padding: 24px;
+}
+
+.ant-upload-btn_hint {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    color: #3A5EE3;
+    border: 1px solid #3A5EE3;
+    border-radius: 10px;
+    margin: 1rem auto 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.ant-upload-btn_hint:hover {
+    background-color: #3A5EE3;
+    color: #fff;
+}
+
+.ant-upload-list-item {
+    display: none !important;
+}
+
+.images {
+    margin: 1rem 0;
+}
+
+.img_card .uploaded_img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.img_card_footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_card_footer .ant-typography {
+    margin: unset !important;
+}
+
+.img_card_footer-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.img_card_footer-actions svg {
+    cursor: pointer;
+}
+
+.img_loading {
+    height: 100%;
+    min-height: 150px;
+    border-radius: 8px;
+    background-color: #DDDBDD;
+    position: relative;
+}
+
+.img_loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 20%,
+            rgba(255, 255, 255, 0.5) 60%,
+            rgba(255, 255, 255, 0) 100%);
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}

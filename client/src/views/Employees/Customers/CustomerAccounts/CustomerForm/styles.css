@@ -1,0 +1,96 @@
+.new-customer.new-customer {
+  border-radius: 38px 0px 0px 38px;
+}
+
+.new-customer.ant-drawer .ant-drawer-header {
+  border-bottom: none;
+  background-color: #fafafb;
+}
+.new-customer .ant-drawer-body {
+  background-color: #fafafb;
+}
+.new-customer .ant-drawer-content-wrapper.ant-drawer-content-wrapper {
+  border-radius: 38px 0px 0px 38px;
+  max-width: calc(100vw - 450px);
+  right: 81px;
+  background: transparent !important;
+}
+
+.new-customer .ant-drawer-content {
+  border-radius: 38px 0px 0px 38px;
+}
+
+.new-customer .ant-drawer-content-wrapper {
+  border-radius: 38px 0px 0px 38px;
+}
+
+.new-customer .ant-drawer-mask.ant-drawer-mask {
+  right: 81px;
+}
+
+.new-customer .ant-drawer-close {
+  position: absolute;
+  top: 23px;
+  left: -36px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.new-customer .ant-drawer-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.new-customer .QueueSVG path {
+  fill: #000;
+}
+.new-customer .Buttons {
+  gap: 12px;
+}
+
+.new-customer .Buttons .converButton {
+  background-color: #fff;
+  color: #d1d1d6;
+  border: 1px solid #d1d1d6;
+}
+.new-customer .add {
+  border: none;
+  background: #272942;
+  border-radius: 8px;
+  padding: 11px 32px 10px 31px;
+  color: #fff;
+  box-shadow: 0px 3px 8px #2729421f;
+  cursor: pointer;
+}
+.new-customer .cancel {
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  padding: 11px 32px 10px 31px;
+  color: #272942;
+  cursor: pointer;
+}
+.new-customer .form {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+}
+
+@media (max-width: 627px) {
+  .new-customer .ant-drawer-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .new-customer .ant-drawer-content-wrapper.ant-drawer-content-wrapper {
+    right: 0px;
+  }
+  .new-customer .ant-drawer-mask.ant-drawer-mask {
+    right: 0px;
+  }
+}

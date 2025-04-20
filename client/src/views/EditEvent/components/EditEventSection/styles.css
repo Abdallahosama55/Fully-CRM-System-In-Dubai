@@ -1,0 +1,26 @@
+.edit_event_section {
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #EFEFF1;
+    background: #FAFAFB;
+    margin-bottom: 24px;
+}
+
+.edit_event_section_header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #CCD5DF;
+}
+
+.edit_event_section_header.no_divider{
+    border-bottom: unset;
+}
+
+.edit_event_section_header_start.complex_header_start{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.edit_event_section_content{
+    margin-top: 1rem;
+}

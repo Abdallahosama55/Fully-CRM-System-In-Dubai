@@ -1,0 +1,79 @@
+.task-list {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.task-column-styles {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  /* margin: 8px; */
+  /* width: 100%; */
+    height: calc(100vh - 152px);;
+  min-width: 100%;
+  display: flex;
+  column-gap: 1%;
+  /* flex-wrap: wrap; */
+}
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 12px;
+  align-self: flex-start;
+}
+.title .number-of-card {
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 15px;
+  min-height: 106px;
+  border-radius: 5px;
+  background: white;
+  margin-top: 15px;
+}
+.leads .detele-card {
+  width: 404px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: #f400550b;
+  border: 1.5px dashed #f40055;
+  color: #f40055;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  position: fixed;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.leads .placeholder {
+  width: 100%;
+  height: 143.7px;
+  background-color: #e5e5ea;
+  border-radius: 12px;
+  box-shadow: 0px 3px 12px #00000014;
+  padding: 8px;
+  margin-top: 11px;
+}
+.selected-pipeline .ant-select-selection-item{  color: black;
+    font-weight: 600;
+}
+

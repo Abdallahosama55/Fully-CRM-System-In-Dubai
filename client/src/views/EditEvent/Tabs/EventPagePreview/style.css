@@ -1,0 +1,8 @@
+.event-page-preview {
+  height: 100%;
+}
+.event-page-preview iframe {
+  border: unset;
+  height: calc(100vh - 160px);
+  width: 100%;
+}

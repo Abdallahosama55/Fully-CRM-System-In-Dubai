@@ -1,0 +1,18 @@
+.desks-desks-file-file-card {
+  flex: none;
+  width: 250px;
+  height: 175px;
+}
+
+.desks-desks-file-file-card .ant-card-head {
+  padding-inline: 4px;
+}
+
+.desks-desks-file-file-card .ant-card-cover > img {
+  height: 118px;
+  border-radius: 0 0 10px 10px;
+}
+
+.desks-desks-file-file-card .ant-card-body {
+  padding: 0;
+}

@@ -1,0 +1,87 @@
+.service-type-header {
+  padding: 16px 24px;
+  border-radius: 14px 14px 0 0;
+  background: #2729420a;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-type-main {
+  border: 1.5px solid #2729420f;
+  border-radius: 14px;
+  height: 100%;
+}
+
+.service-type-left-content {
+  padding: 24px 65px;
+}
+
+.service-type-right-content {
+  padding: 12px 0px 7px;
+}
+
+.service-type-code-content {
+  padding: 12px 16px;
+  max-height: 225px;
+  overflow-y: auto;
+}
+
+.service-type-option {
+  background: white;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  height: 200px;
+  box-shadow: 0px 0px 16px #27294214;
+  transition: all 0.2s ease-in-out;
+}
+
+.service-type-option svg path {
+  transition: all 0.2s ease-in-out;
+}
+
+.service-type-option:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 16px #2729421a;
+}
+
+.service-type-option:hover svg path {
+  fill: #0318d6;
+  background: #0318d6;
+}
+
+.service-type-option-active {
+  border-color: #0318d6;
+}
+
+.service-type-option-active:hover {
+  scale: 1;
+}
+
+.service-type-option-active svg path {
+  fill: #0318d6;
+  background: #0318d6;
+}
+
+.create-desk-next {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+
+  background-color: #fff;
+  padding: 14px 1rem;
+  border-top: 1px solid #27294240;
+  transition: all 0.2s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .create-desk-next {
+    left: 0px !important;
+    width: calc(100% - 80px) !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .create-desk-next {
+    width: 100% !important;
+  }
+}

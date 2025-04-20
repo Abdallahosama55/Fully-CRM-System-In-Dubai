@@ -1,0 +1,327 @@
+.virtual-support {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.virtual-support .virtual-support-main {
+  padding: 8px 32px;
+  background-color: #f2f2f773;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.virtual-support .meeting-screens-holder {
+  padding: 12px 16px;
+  height: 100%;
+  border-left: 1px solid #fff;
+}
+.virtual-support .meeting-screens-minimize {
+  background: unset !important;
+  border-left: unset;
+  position: fixed;
+  z-index: 1212;
+  width: 400px;
+  height: 380px;
+  bottom: 20px;
+  right: 80px;
+}
+
+.virtual-support .meet-asaider {
+  width: 374px;
+  padding: 26px 16px;
+  height: 100%;
+  background: #f6f6f7;
+  border-left: 1px solid #e5e5ea;
+  border-right: 1px solid #e5e5ea;
+  box-shadow: -2px 3px 3px 0px #00000006;
+}
+
+.virtual-support .mobile-menu .meet-asaider {
+  height: 100%;
+}
+
+.virtual-support .mobile-menu {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% - 70px);
+  background: #f2f2f7;
+  padding: 1rem;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.virtual-support .mobile-menu .support-chat,
+.virtual-support .mobile-menu .counter-section {
+  height: calc(100% - 53px);
+}
+
+.virtual-support .mobile-menu .hide-sider {
+  display: none;
+}
+
+.virtual-support .virtual-support-main .meet-time {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 18px;
+  border: 1px solid #b6b6b6;
+  padding: 0.1rem 0.7rem;
+}
+
+.virtual-support .virtual-support-aside {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f773;
+  padding: 32px 1rem 32px 36px;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.virtual-support .main-screen-sound {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.virtual-support .main-screen-sound .item {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.virtual-support .friend-screen-container {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  overflow: auto;
+}
+
+.virtual-support .friend-screen-sound {
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.39);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.virtual-support .main-screen-sound {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.virtual-support .virtual-support-nav-sider {
+  width: 100%;
+  max-width: 75px;
+  height: 100%;
+  background-color: #f2f2f773;
+  border-radius: 30px 0px 0px 30px;
+  padding: 30px 1rem;
+  border-right: 1px solid #fff;
+  flex: 1;
+}
+
+.virtual-support .virtual-support-nav-sider > .ant-row {
+  row-gap: 80px;
+  height: 100%;
+  flex-direction: column;
+}
+
+.holomeet-modal {
+  width: fit-content !important;
+}
+
+.holomeet-modal .ant-modal-content {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 50px;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.virtual-support .virtual-support-mobile-nav {
+  display: none;
+}
+
+.virtual-support .waiting-users-notification {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+.virtual-support .waiting-room-wait {
+  background: #3a5ee3;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-inline: 6px;
+}
+
+.virtual-support .users-shared-data-notification {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+.meet-block-modal .ant-modal-content {
+  min-width: 670px !important;
+}
+
+@media only screen and (max-width: 1366px) {
+  .virtual-support .virtual-support-aside {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .virtual-support {
+    flex-direction: column;
+  }
+
+  .virtual-support .virtual-support-mobile-nav {
+    display: flex;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .virtual-support .meet-asaider {
+    display: none;
+  }
+  .virtual-support .meeting-screens-holder {
+    height: calc(100vh - 70px);
+  }
+
+  .virtual-support .virtual-support-aside-hide {
+    display: none;
+  }
+
+  .virtual-support .virtual-support-nav-sider-holder {
+    flex: 1;
+  }
+
+  .virtual-support .virtual-support-aside,
+  .virtual-support .virtual-support-nav-sider {
+    border-radius: 30px;
+  }
+
+  .virtual-support .virtual-support-nav-sider {
+    height: fit-content;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .virtual-support .virtual-support-nav-sider > .ant-row {
+    row-gap: 0px;
+    column-gap: 20px;
+    flex-direction: row;
+  }
+
+  .virtual-support-nav-sider .virtual-support-nav-sider-btns-wraper {
+    width: auto;
+    height: 100%;
+    flex: 1;
+    margin: 0 10rem;
+  }
+
+  .virtual-support-nav-sider .virtual-support-nav-sider > .ant-row,
+  .virtual-support-nav-sider .virtual-support-nav-sider .virtual-support-nav-sider-btns {
+    flex-direction: row;
+  }
+
+  .virtual-support-nav-sider .virtual-support-nav-sider .virtual-support-nav-sider-btns,
+  .virtual-support .virtual-support-nav-sider .virtual-support-nav-sider-btns > .ant-col {
+    width: auto;
+  }
+
+  .virtual-support-nav-sider .sider-active-btn::after {
+    bottom: -16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 32px;
+    height: 3px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .virtual-support-nav-sider .virtual-support-avatar {
+    flex: 0;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  /* Your CSS rules for screens larger than 1200 pixels go here */
+  .mobile-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .virtual-support {
+    padding: 0rem;
+    margin: 0 !important;
+  }
+
+  .virtual-support .virtual-support-main {
+    padding: 10px;
+  }
+
+  .virtual-support .virtual-support-nav-sider {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .virtual-support-nav-sider .virtual-support-nav-sider-btns-wraper {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+
+  .virtual-support-nav-sider .virtual-support-nav-sider-btns {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+
+  .meet-block-modal.ant-modal-content {
+    min-width: 300px;
+  }
+  .virtual-support .mobile-menu {
+    height: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

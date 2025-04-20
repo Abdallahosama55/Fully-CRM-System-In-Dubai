@@ -1,0 +1,79 @@
+.cem-personal-card {
+  padding: 10px 10px;
+  box-shadow: 0px 0px 12px #00000010;
+  border: 1px solid #efeff1;
+  border-radius: 12px;
+  text-align: center;
+}
+.cem-personal-card .personal-img {
+  border-radius: 50%;
+  margin: 16px 0px;
+}
+.cem-personal-card .personal-name {
+  text-align: center;
+  font: normal normal medium 13px/20px Poppins;
+  letter-spacing: 0.26px;
+  color: #030713;
+  opacity: 1;
+}
+.cem-personal-card .personal-job-title {
+  text-align: center;
+  font: normal normal normal 11px/17px Poppins;
+  letter-spacing: 0.22px;
+  color: #8e8e93;
+  opacity: 1;
+}
+.cem-personal-card .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.cem-personal-card .icons div {
+  border-radius: 8px;
+  background-color: #27294205;
+  border: 1px solid #2729420f;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cem-personal-card .ant-tabs-tab {
+  color: #aeaeb2;
+}
+.cem-personal-card .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #000;
+}
+.cem-personal-card .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+  background: transparent linear-gradient(269deg, #3a5ee3 0%, #8fcaf3 100%) 0% 0% no-repeat
+    padding-box;
+}
+.cem-personal-card .address-title {
+  border-radius: 8px;
+  background-color: #f2f2f74d;
+  color: #8e8e93;
+  font-size: 11px;
+  padding: 8px;
+  text-align: left;
+}
+.cem-personal-card .address-info {
+  color: #000;
+  font-size: 11px;
+  padding: 8px;
+  text-align: left;
+}
+
+.common-customer-card-collapse .ant-collapse-header {
+  padding: 12px 8px;
+}
+
+.common-customer-card-collapse .ant-collapse-header-text {
+  font-size: 12px;
+  padding: 0;
+}
+
+.common-customer-card-collapse .ant-collapse-content-active {
+  border-top: unset;
+}

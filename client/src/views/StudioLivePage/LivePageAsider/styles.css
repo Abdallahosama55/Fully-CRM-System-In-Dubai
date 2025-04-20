@@ -1,0 +1,148 @@
+.live-page-asider {
+  max-height: 99vh;
+  background: #fff;
+  width: 100%;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.live-page-asider .live-page-asider-cams {
+  height: 37vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.live-page-asider .live-actions {
+  border: 2px solid #e5e5ea;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.live-page-asider .live-actions-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4px;
+}
+
+.live-page-asider .live-actions-color {
+  background: transparent;
+  border: none;
+  padding: 0px;
+  width: 14px;
+  height: 14px;
+  box-shadow: none;
+}
+
+.live-page-asider .live-actions-color .ant-color-picker-color-block {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.live-page-asider .live-actions-divider {
+  height: 36px;
+  width: 1px;
+  background: #e5e5ea;
+}
+
+.live-page-asider .live-actions-color-btn {
+  width: 64px;
+  height: 32px;
+  border-radius: 2rem;
+  background: #000;
+  cursor: pointer;
+}
+
+.live-page-asider .live-actions-transition-duration,
+.live-page-asider .live-actions-transition-active {
+  border-radius: 2rem;
+  width: 64px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+
+.live-page-asider .live-actions-transition-active {
+  cursor: pointer;
+}
+
+.live-page-asider
+  .live-actions-transition-duration
+  .ant-input-number-sm
+  input.ant-input-number-input {
+  padding: 0px;
+  height: 20px;
+  text-align: center;
+}
+
+.live-page-asider .live-actions-color-btn-text {
+  color: #fff;
+}
+
+.live-page-asider .drag-and-drop {
+  aspect-ratio: 2.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f2f2f7;
+  border: 1px dashed #d1d1d6;
+}
+
+.live-page-asider .drag-and-drop-close {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-page .live-page-asider .live-page-live-status {
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(
+    120deg,
+    #96d3f5 -30%,
+    #3a62da 0%,
+    #744aba 45%,
+    #bd3a99 90%,
+    #f42d80 110%,
+    #ff2b7b 135%
+  );
+  cursor: pointer;
+  border-radius: 14px;
+}
+
+.live-page .live-page-asider .live-page-live {
+  padding: 6px 8px;
+  border-radius: 12px;
+  color: #fff;
+  background: #fd1212;
+  cursor: pointer;
+}
+
+.live-page .live-page-asider .live-page-live .live-page-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}

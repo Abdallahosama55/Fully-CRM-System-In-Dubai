@@ -1,0 +1,30 @@
+.view-product-section .image-holder {
+  border: 1px solid #d7dae2;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  max-height: 208px;
+  margin-bottom: 0.5rem;
+}
+
+.view-product-section .image-holder .ant-image-mask {
+  border-radius: 15px;
+}
+
+.read-only-input {
+  background: #f9f9fb;
+  border-radius: 4px;
+  border: 1px solid #d7dae2;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.05);
+  height: 50px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+}
+
+.sec-input {
+  border-left: 1px solid #d7dae2;
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}

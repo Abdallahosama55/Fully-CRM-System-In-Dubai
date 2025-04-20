@@ -1,0 +1,119 @@
+.web_builder_container .gjs-editor-cont {
+  height: 100vh !important;
+}
+
+.web_builder_container .gjs-editor {
+  height: 100vh !important;
+}
+/* .web_builder_container .gjs-one-bg {
+  background-color: #00080f;
+} */
+
+.web_builder_container .gjs-two-color {
+  color: #ffffff;
+}
+
+.web_builder_container .gjs-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.web_builder_container .gjs-title i {
+  display: none;
+}
+
+/* fix the scroll */
+
+.gjs-pn-panel > div:has(> div.gjs-blocks-cs) {
+  height: calc(100dvh - 40px);
+  overflow: auto;
+  position: absolute !important;
+  top: 40px !important;
+  inset-inline-start: 0 !important;
+  width: 100%;
+}
+
+/* // */
+
+.container-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
+  margin-top: 10px;
+}
+.container-buttons .blocks,
+.container-buttons .widgets {
+  width: 50%;
+  padding: 6px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.container-buttons .blocks:hover,
+.container-buttons .widgets:hover,
+.container-buttons .blocks.active,
+.container-buttons .widgets.active {
+  border-bottom: 1px solid #d97aa6;
+  color: #d97aa6;
+  background-color: #ffffff29;
+}
+.container-search {
+  margin-top: 5px;
+}
+.container-search input {
+  width: 90%;
+  padding: 4px 6px;
+}
+
+/* style for layout */
+.tabsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.tabBtn {
+  flex: 1;
+  background-color: rgb(185, 165, 166);
+  border: none;
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.tabBtn.active {
+  background-color: rgb(217, 122, 166);
+}
+.tabBtn i {
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+
+/* content side */
+.text-content {
+  margin-top: 7px;
+}
+.text-content textarea {
+  width: 100%;
+  color: #00080f !important;
+}
+
+.gjs-trt-trait--textarea {
+  flex-direction: column;
+  align-items: normal;
+  gap: 10px;
+}
+.gjs-trt-trait--textarea .gjs-label-wrp {
+  width: 100%;
+  min-width: 100%;
+}
+.gjs-trt-trait--textarea .gjs-label {
+  text-align: center;
+}

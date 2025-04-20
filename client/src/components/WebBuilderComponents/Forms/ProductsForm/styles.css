@@ -1,0 +1,21 @@
+.product_option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product_option img {
+    width: 55px;
+    height: 55px;
+    border-radius: 4px;
+}
+
+.ant-select-selection-item-content .product_option img {
+    width: 35px;
+    height: 35px;
+}
+
+.ant-select-selection-item-content .product_option .product_name {
+    max-width: 150px;
+}

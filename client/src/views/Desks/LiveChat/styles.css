@@ -1,0 +1,91 @@
+.desk-live-chat .desk-live-chat-main {
+  border: 1.5px solid #f2f2f4;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  min-height: calc(100vh - 162px);
+}
+
+.desk-live-chat .new-message {
+  padding: 6px;
+  font-size: 12px;
+  border-radius: 8px;
+  background: #f400551a;
+  color: #f40055;
+}
+
+.desk-live-chat .search-btn,
+.desk-live-chat .add-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.desk-live-chat .search-btn:hover {
+  background: #f2f2f4;
+}
+
+.desk-live-chat .add-btn {
+  background: #1131da;
+}
+
+.desk-live-chat .chat-type-btns-wraper {
+  border-radius: 8px;
+  background: #2729420a;
+  padding: 8px;
+}
+
+.desk-live-chat .chat-type-btn {
+  padding: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px #0000000a;
+  background: #fff;
+  color: #aeaeb2;
+  transition: all 0.2s ease-in-out;
+}
+
+.desk-live-chat .chat-type-btn-active {
+  color: #1131da;
+  font-weight: 500 !important;
+}
+
+.desk-live-chat .unread-message-number {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #f40055;
+  font-size: 8px;
+}
+
+.desk-live-chat .not-select {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.desk-live-chat .chat-icon-not-select {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #272942;
+  margin-bottom: 8px;
+}

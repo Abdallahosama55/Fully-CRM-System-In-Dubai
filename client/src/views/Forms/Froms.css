@@ -1,0 +1,12 @@
+.custom-action-button {
+    background-color: #D0D5DD !important;
+    border-color: #D0D5DD !important;
+    color: #fff;
+  }
+  
+  .custom-action-button:hover,
+  .custom-action-button:focus {
+    background-color: #b8bec7 !important; /* Optional: slightly darker hover effect */
+    border-color: #b8bec7 !important;
+  }
+  

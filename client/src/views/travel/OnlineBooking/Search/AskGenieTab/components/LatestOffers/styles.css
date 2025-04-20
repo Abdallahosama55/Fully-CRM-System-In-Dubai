@@ -1,0 +1,74 @@
+.latest_offers .latest_offers_card_wrapper {
+    padding: 0 8px;
+    margin-bottom: 1rem;
+}
+
+.latest_offers .latest_offers_card_wrapper:nth-of-type(1) {
+    padding-left: 0;
+}
+
+.latest_offers .latest_offers_card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.latest_offers .latest_offers_card .latest_offers_card_title {
+    color: var(--font-primary);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.latest_offers .latest_offers_card_img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.latest_offers .latest_offers_card_body {
+    padding: 1rem;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    
+    flex-direction: column;
+}
+
+.latest_offers .location {
+    color: var(--font-secondary);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.latest_offers .features {
+    display: flex;
+    gap: 6px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+}
+
+.latest_offers .latest_offers_card_footer {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+    align-items: center;
+    border-top: 1px solid var(--gray-200);
+    padding-top: 1rem;
+}
+
+.latest_offers_card .price {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--font-blue);
+    line-height: 20px;
+}

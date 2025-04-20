@@ -1,0 +1,12 @@
+.ask_genie_home_section {
+    height: 100%;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #E5E5EA;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.ask_genie_home_section .ask_genie_home_section_title {
+    color: var(--font-primary);
+    margin-bottom: 1rem;
+}

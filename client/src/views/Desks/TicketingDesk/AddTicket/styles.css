@@ -1,0 +1,30 @@
+.from-google-drive {
+  background: #fff;
+  height: 160px;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px dashed #d1d1d6;
+  transition: all 0.2s ease-in-out;
+}
+
+.from-google-drive:hover {
+  border: 1px dashed #000;
+}
+
+.file-uploaded {
+  padding: 12px 16px;
+  margin-inline-end: 6px;
+}
+
+.ticket_priority_option{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.add_ticket_attachments_actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+

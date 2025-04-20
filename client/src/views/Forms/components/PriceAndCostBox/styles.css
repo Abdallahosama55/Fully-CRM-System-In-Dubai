@@ -1,0 +1,10 @@
+.travel-charters-comp-price-and-cost-switch {
+  min-width: 38px !important;
+  height: 20px !important;
+  line-height: 18px;
+}
+
+.travel-charters-comp-price-and-cost-switch .ant-switch-handle {
+  width: 17px !important;
+  height: 16px !important;
+}

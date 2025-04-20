@@ -1,0 +1,9 @@
+.employee_address_info .address_info_row {
+    padding: 18px 24px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.employee_address_info .address_info_row:nth-child(odd) {
+    background: #FBFBFD;
+}

@@ -1,0 +1,39 @@
+.chat {
+  background-color: #fafafa;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 0px;
+  height: 100%;
+}
+
+.chat .verse-action-btns {
+  padding: 0 8px;
+  border-radius: 14px;
+  border: none;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  min-width: 40px;
+  cursor: pointer;
+}
+.chat .comments-holder {
+  height: calc(100vh - 215px);
+  overflow: auto;
+}
+.chat .comment-input {
+  padding: 12px 0px !important;
+  border-radius: 0px !important;
+  border: none;
+}
+.chat .comment-input::placeholder {
+  color: #8e8e93;
+  font-weight: 300;
+}
+
+.form-comment {
+  border: 1px solid #ccc;
+  border-radius: 14px 0 14px 0;
+}

@@ -1,0 +1,91 @@
+.add-product {
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-inline-end: 12px;
+}
+
+.add-product-header {
+  margin-bottom: 16px;
+}
+.options-form .option-input {
+  margin: 0 !important;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+  background: #fff;
+}
+.options-form .option-input .ant-input {
+  border: none;
+}
+.options-form .option-input .flag {
+  border: 1.5px solid #2729420f;
+  margin-left: 3px;
+  border-radius: 8px;
+  padding: 6px;
+  background: #27294205;
+}
+.options-form .ant-collapse-header {
+  flex-direction: row !important;
+}
+.options-form .ant-collapse-content.ant-collapse-content-active {
+  background-color: #27294205;
+}
+.options-form .ant-collapse-content-box {
+  padding: 12.5px 25px !important;
+}
+.options-form .attribute-option {
+  background: #fff;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+.options-form .attribute-option .attribute-option-dragg {
+  background: #3a5ee3;
+  border-radius: 8px 0px 0px 8px;
+  margin-left: 8px;
+  padding: 11px 5px;
+}
+.options-form .attribute-option .attribute-option-dragg svg {
+  margin-bottom: -2px;
+}
+.options-form .attribute-option .ant-radio {
+  background: #3a5ee3;
+  padding: 14px;
+}
+.options-form .attribute-option .option-lang {
+  background: #27294205;
+  border: 1.5px solid #2729420f;
+  display: flex;
+  border-radius: 8px;
+  height: 32px;
+  margin-top: 5px;
+  padding: 0px 9px;
+}
+
+.options-form .attribute-option .attribute-option-delete {
+  height: 32px;
+  margin-right: 17px;
+  margin-top: 9px;
+}
+
+.options-form .attribute-option .ant-radio-wrapper span:nth-child(2) {
+  flex: 1;
+}
+.options-form .attribute-option .color {
+  height: 44px;
+  width: 44px;
+  margin-right: 5px;
+  border: none;
+}
+.inventory .ant-drawer-wrapper-body {
+  padding: 24px 0;
+}
+.remove-opitons {
+  background: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 19px;
+  padding-right: 19px;
+  border: none;
+  height: 32px;
+}

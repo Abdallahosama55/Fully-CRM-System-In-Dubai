@@ -1,0 +1,16 @@
+node_modules
+/client/build
+/client/new-WebGL
+client/analyse.html
+new-WebGL
+.vscode/settings.json
+build
+.nx/cacheserver
+.nx
+# Sentry Config File
+.env.sentry-build-plugin
+
+# Sentry Config File
+.env.sentry-build-plugin
+.eslintcache
+vite.config.js.*

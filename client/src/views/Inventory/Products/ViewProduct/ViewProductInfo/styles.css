@@ -1,0 +1,20 @@
+.view-product-info {
+  padding: 3.5rem 1.4rem;
+  border-radius: 16px;
+  background-color: #fff;
+  margin: 36px 0 24px;
+}
+
+.view-product-info .image-holder {
+  border: 1px solid #d7dae2;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  max-height: 208px;
+}
+
+.view-product-info .info-box {
+  padding: 18px 13px;
+  border: 1px solid #d7dae2;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}

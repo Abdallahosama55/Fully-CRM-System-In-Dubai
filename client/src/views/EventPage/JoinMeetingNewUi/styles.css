@@ -1,0 +1,91 @@
+.registration-flow {
+  border-bottom: 1px solid #e5e5ea;
+
+  .ant-btn-default {
+    border-color: #3a5ee3;
+    color: #3a5ee3;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .ant-btn-primary {
+    background-color: #3a5ee3;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .send-agin-lbl {
+    color: #5eaf2f;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  button {
+    width: 90px;
+  }
+
+  #btn-guest {
+    border: 1px solid #61636c;
+    color: #61636c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #btn-join-green {
+    background-color: #699d48;
+    color: #fff;
+  }
+
+  #btn-join-blue {
+    background-color: #3a5ee3;
+    color: #fff;
+  }
+  .ant-btn-primary:disabled,
+  .ant-btn-primary.ant-btn-disabled {
+    opacity: 0.3 !important;
+  }
+}
+
+.lbl-meeting-url {
+  color: #454545;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #d1d1d659;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-description {
+  color: #030713;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.lbl-description {
+  color: #454545;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.text-title {
+  color: #030713;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}

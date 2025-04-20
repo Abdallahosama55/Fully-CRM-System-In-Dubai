@@ -1,0 +1,25 @@
+.img-section {
+    align-items: center !important;
+    display: flex !important;
+}
+
+/* .img-section .employee-img {
+    height: 80px !important
+} */
+
+.img-section img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px !important;
+}
+
+.img-section h6 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.img-section p {
+    margin: 0;
+    font-size: 13px;
+
+}

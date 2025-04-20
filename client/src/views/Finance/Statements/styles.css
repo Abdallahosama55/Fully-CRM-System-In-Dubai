@@ -1,0 +1,43 @@
+.statment_status {
+    display: flex;
+    border-radius: 16px;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    text-transform: lowercase !important;
+}
+
+.canceled {
+    background: #FFCBC8;
+    color: #C40000;
+}
+
+/* company_name_cell */
+.company_name_cell {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 200px;
+    gap: 8px;
+}
+
+/* statement_info_line_with_icon */
+
+.statement_info_line_with_icon {
+    display: grid;
+    grid-template-columns: 12px 1fr;
+    align-items: center;
+    gap: 8px;
+}
+
+.statement_info_line_with_icon svg {
+    width: 12px;
+    height: 12px;
+}
+
+.ant-popconfirm-message-icon {
+    display: none !important;
+}

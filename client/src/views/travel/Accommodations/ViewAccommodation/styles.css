@@ -1,0 +1,92 @@
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+
+.accommodation_page {
+    padding: 1rem;
+}
+
+.accommodation_page .rate_conditions {
+    list-style: inside;
+}
+
+.accommodation_page .page_content {
+    max-width: 1440px;
+    margin: 0 auto !important;
+}
+
+.accommodation_page .info_with_icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 0;
+}
+
+.section {
+    margin-bottom: 12px;
+}
+
+.icon_circle {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #E5E5EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-inline-end: 8px;
+}
+
+/* title */
+.accommodation_page .title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accommodation_page .title h2 {
+    margin-bottom: 0;
+}
+
+.accommodation_page .rate_stars {
+    margin-inline-start: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accommodation_page .rate_stars svg {
+    transform: scale(1.4);
+}
+
+/* location */
+.accommodation_page .location span {
+    color: #697281;
+    max-width: 70%;
+}
+
+.show_more {
+    color: #3A5EE3;
+    cursor: pointer;
+}
+
+.map_card {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.map {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.map_card .card_body {
+    padding: 10px;
+    border: 1px solid #E5E5EA;
+    border-radius: 0px 0px 8px 8px;
+}
+
+@media screen and (max-width:992px) {
+    .accommodation_page {
+        padding: 1rem 0rem !important;
+    }
+}

@@ -1,0 +1,25 @@
+.main_layout_large_screens_header {
+    gap: 8px;
+    padding: 8px 4px 8px 0;
+}
+
+.main_layout_large_screens_header .search_input {
+    width: 400px;
+    min-width: 450px;
+    border-radius: 8px;
+    height: 34px;
+    border: 1px solid var(--gray-300) !important;
+}
+
+.main_layout_large_screens_header .header_small_card {
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.10);
+    background: var(--base-white);
+    color: var(--font-link);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 34px;
+    cursor: pointer;
+}

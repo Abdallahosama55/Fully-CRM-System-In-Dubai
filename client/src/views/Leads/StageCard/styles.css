@@ -1,0 +1,71 @@
+.piplines-item-card {
+  top: 0px;
+  position: sticky;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+  width: 100%;
+
+}
+
+.piplines-item-card>div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.piplines-point {
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piplines-droppable {
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.piplines-draggable {
+  width: 19%;
+}
+
+
+/* leads title arrows */
+.has_next_lead,
+.has_prev_lead {
+  position: relative;
+}
+
+.has_next_lead::after,
+.has_prev_lead::before {
+  content: "";
+
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 100%;
+  top: 50%;
+
+  background: #BCCBD2;
+  background: inherit;
+  border-top-right-radius: 6px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+
+.has_prev_lead::before {
+  background: #fff;
+  right: 100%;
+  left: unset;
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+}

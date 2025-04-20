@@ -1,0 +1,14 @@
+.add-charter-drawer {
+  height: 100%;
+}
+
+.add-charter-drawer .header .divider {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.add-charter-drawer .ant-form-item .ant-form-item-label > label {
+  color: #23262b;
+  font-size: 12px;
+  font-weight: 400;
+}

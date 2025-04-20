@@ -1,0 +1,8 @@
+const SECTIONS_TYPES = {
+    SLIDER: "SLIDER",
+    BANNER: "BANNER",
+    CATEGORIES: "CATEGORIES",
+    PRODUCTS: "PRODUCTS"
+}
+
+export default SECTIONS_TYPES;

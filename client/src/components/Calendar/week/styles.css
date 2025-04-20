@@ -1,0 +1,61 @@
+.week {
+  height: inherit;
+  overflow: auto;
+}
+.week .ant-table-body {
+  overflow: auto !important;
+  max-height: none !important;
+}
+.week .ant-table-container {
+  border: none !important;
+  border-radius: 0px;
+}
+
+.week .ant-table-header {
+  border-radius: 0px;
+}
+.week .ant-table-wrapper .ant-table-thead > tr > th {
+  color: #000;
+}
+.week .ant-table-thead {
+  background-color: #fafafb;
+}
+
+.week .ant-table-cell {
+  border-bottom: 1px solid #fafafb !important;
+  border-inline-end: 1px solid #aeaeb2 !important;
+}
+.week .header-week {
+  background: rgb(58, 94, 227);
+  border-radius: 8px;
+  position: absolute;
+  width: 94%;
+  height: 83%;
+  top: 7px;
+  left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.week .event-block {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-color: #3a5ee3;
+  border-style: solid;
+  padding: 5px;
+  border-width: 1px;
+  border-radius: 12px;
+  z-index: 1;
+}
+.week .event-title {
+  color: #000;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.week .event-time {
+  padding-left: 5px;
+  color: #aeaeb2;
+  font-size: 10px;
+}

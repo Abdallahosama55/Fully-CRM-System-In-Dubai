@@ -1,0 +1,120 @@
+.help-desk {
+  width: 100%;
+}
+
+.help-desk .help-desk-aside {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f773;
+  padding: 2rem 1rem;
+  min-width: 330px;
+}
+
+.help-desk .help-desk-nav-sider {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f773;
+  border-right: 1px solid #fff;
+  flex: 1;
+  border-radius: 38px 0 0 38px;
+}
+
+.help-desk .help-desk-nav-sider > .ant-row {
+  row-gap: 80px;
+  height: 100%;
+  flex-direction: column;
+}
+
+.help-desk-wraper .switch-btn {
+  background: #e7e7ea;
+  padding: 6px;
+  border-radius: 8px;
+  color: #3a5ee3;
+  font-size: 11px;
+  font-weight: 500;
+  border: none;
+}
+
+.meet-asider-holder {
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .help-desk .help-desk-aside {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .meet-asider-holder {
+    max-width: 100%;
+  }
+
+  .help-desk .help-desk-aside-hide {
+    display: none !important;
+  }
+
+  .help-desk .help-desk-nav-sider-holder {
+    flex: 1;
+  }
+
+  .help-desk .help-desk-nav-sider {
+    height: fit-content;
+    padding: 10px;
+    max-width: 100%;
+    width: 100vw;
+  }
+
+  .help-desk .help-desk-nav-sider > .ant-row {
+    row-gap: 0px;
+    column-gap: 20px;
+    flex-direction: row;
+  }
+
+  .help-desk-nav-sider .help-desk-nav-sider-btns-wraper {
+    width: auto;
+    height: 100%;
+    flex: 1;
+    margin: 0 10rem;
+  }
+
+  .help-desk-nav-sider .help-desk-nav-sider > .ant-row,
+  .help-desk-nav-sider .help-desk-nav-sider .help-desk-nav-sider-btns {
+    flex-direction: row;
+  }
+
+  .help-desk-nav-sider .help-desk-nav-sider .help-desk-nav-sider-btns,
+  .help-desk .help-desk-nav-sider .help-desk-nav-sider-btns > .ant-col {
+    width: auto;
+  }
+
+  .help-desk-nav-sider .sider-active-btn::after {
+    bottom: -16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 32px;
+    height: 3px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .help-desk-nav-sider .help-desk-avatar {
+    flex: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .help-desk .help-desk-nav-sider {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .help-desk-nav-sider .help-desk-nav-sider-btns-wraper {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+
+  .help-desk-nav-sider .help-desk-nav-sider-btns {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+}

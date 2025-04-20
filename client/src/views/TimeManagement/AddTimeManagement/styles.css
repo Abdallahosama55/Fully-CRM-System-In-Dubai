@@ -1,0 +1,31 @@
+.custom-phone-input
+  .ant-input-group
+  .ant-input-group-addon
+  .ant-select.ant-select-single:not(.ant-select-customize-input)
+  .ant-select-selector {
+  background-color: #fff;
+  border-left: none;
+  border-right: none;
+  border-color: #d1d1d6;
+}
+
+.custom-phone-input .ant-input-group > .ant-input:last-child {
+  border-left: none;
+}
+
+.custom-phone-input .ant-input-group > .ant-input:last-child:hover,
+.custom-phone-input .ant-input-group > .ant-input:last-child:focus {
+  border-color: #d1d1d6;
+}
+
+.custom-phone-input
+  .ant-select-single.ant-select-show-arrow
+  .ant-select-selection-item
+  .ant-col:first-of-type {
+  display: none;
+}
+
+.custom-phone-input .ant-select .ant-select-arrow {
+  inset-inline-end: 3px;
+  margin-top: -4px;
+}

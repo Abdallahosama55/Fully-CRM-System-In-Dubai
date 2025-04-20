@@ -1,0 +1,23 @@
+.community-main-view .community-main-view-header {
+  height: 400px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+}
+
+.community-main-view .community-main-view-header .community-main-view-header-info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -120px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.community-main-view .community-main-view-body {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding-bottom: 3rem;
+}

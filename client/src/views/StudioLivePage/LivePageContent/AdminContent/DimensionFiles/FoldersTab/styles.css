@@ -1,0 +1,109 @@
+.media-folders {
+  height: 35vh;
+  overflow-y: auto;
+}
+
+.ant-tree.ant-tree-directory
+  .ant-tree-treenode
+  .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  margin: auto 0;
+}
+
+.media-tree .ant-tree-treenode .ant-tree-node-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.media-tree .ant-tree-treenode-switcher-open .ant-tree-node-content-wrapper {
+  font-weight: 600;
+}
+
+.media-tree .ant-tree-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-tree .ant-tree-treenode {
+  overflow-x: hidden;
+}
+
+.media-tree
+  .ant-tree-treenode:not(.ant-tree-treenode-switcher-open, .ant-tree-treenode-switcher-close)
+  .ant-tree-node-content-wrapper
+  .ant-tree-iconEle {
+  display: none;
+}
+
+.media-tree .ant-tree-draggable-icon {
+  opacity: 1 !important;
+}
+
+.ant-tree-treenode:not(.ant-tree-treenode-switcher-open, .ant-tree-treenode-switcher-close)
+  .ant-tree-draggable-icon {
+  margin: auto 0;
+}
+
+.ant-tree-treenode:not(.ant-tree-treenode-switcher-open, .ant-tree-treenode-switcher-close)
+  .ant-tree-switcher {
+  display: none;
+}
+
+.media-tree .ant-tree-treenode-selected::before {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.media-tree .ant-tree-node-selected {
+  color: #000 !important;
+}
+
+.media-tree .ant-tree-treenode-selected .ant-tree-switcher {
+  color: #000 !important;
+}
+
+.media-tree .ant-tree-title {
+  width: 100%;
+}
+
+.media-tree .ant-tree-treenode:first-child {
+  padding-top: 6px;
+}
+
+.media-tree .ant-tree-treenode:last-child {
+  padding-bottom: 6px;
+}
+
+.side-folder-tree
+  .ant-tree-list-holder
+  .ant-tree-list-holder-inner
+  div:first-of-type
+  .ant-tree-draggable-icon,
+.side-folder-tree
+  .ant-tree-list-holder
+  .ant-tree-list-holder-inner
+  div:first-of-type
+  .ant-tree-switcher-noop {
+  display: none;
+}
+
+.media-folders .tree-loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+
+.folder-tree-submenu.ant-dropdown-menu-submenu .ant-dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
+}

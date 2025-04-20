@@ -1,0 +1,42 @@
+.service-section-main .date-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 99px #a9a9a91f;
+  padding: 8px 14px;
+  text-align: center;
+  color: #030713a6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  cursor: pointer;
+}
+
+.service-section-main .date-item-active {
+  background: #3f65e4;
+  color: #fff;
+}
+
+.service-section-main .time-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px 8px;
+  display: flex;
+  column-gap: 4px;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+
+.service-section-main .time-item-active {
+  background: #3f65e4;
+  color: #fff;
+}
+
+.service-section-main .success-check {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #3f65e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

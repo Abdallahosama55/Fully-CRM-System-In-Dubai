@@ -1,0 +1,26 @@
+.accomdation_section {
+    padding: 2rem;
+    background-color: #F6F6F7;
+    border-radius: 8px;
+    border: 1px solid #E5E5EA;
+    margin: 0 0 1.5rem 0;
+}
+
+.section_header {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px dashed #D7D7DD;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.section_header .icon {
+    height: 20px;
+    width: 20px;
+}
+
+.section_header .title {
+    line-height: 20px;
+}

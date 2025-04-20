@@ -1,0 +1,63 @@
+{
+    "token": {
+      "colorPrimary": "var(--vbooking-b700)",
+      "colorInfo": "var(--vbooking-b700)",
+      "colorError": "#f04438",
+      "colorWarning": "#f79009",
+      "colorSuccess": "#12b76a",
+      "colorLink": "var(--font-link)",
+      "colorPrimaryHover": "var(--vbooking-b900)",
+      "borderRadius": 8,
+      "fontFamily": "Poppins, sans-serif",
+      "fontSizeHeading1": "72px",
+      "fontSizeHeading2": "60px",
+      "fontSizeHeading3": "48px",
+      "fontSizeHeading4": "36px",
+      "fontSizeHeading5": "30px",
+      "fontSizeHeading6": "24px",
+      "lineHeightHeading1": "90px",
+      "lineHeightHeading2": "72px",
+      "lineHeightHeading3": "60px",
+      "lineHeightHeading4": "44px",
+      "lineHeightHeading5": "38px",
+      "lineHeightHeading6": "32px",
+      "fontWeightHeading1": 700,
+      "fontWeightHeading2": 600,
+      "fontWeightHeading3": 500,
+      "fontWeightText": 400,
+      "fontSizeBase": "16px",
+      "lineHeightBase": "1.75",
+      "colorTextBase": "var(--base-black)"
+    },
+    "components": {
+      "Button": {
+        "paddingBlock": 10,
+        "paddingBlockSM": 8,
+        "paddingInlineSM": 14,
+        "paddingInline": 18,
+        "paddingBlockLG": 12,
+        "paddingInlineLG": 20,
+        "contentFontSize": 16,
+        "contentLineHeightSM": 1.25,
+        "contentLineHeight": 1.5,
+        "contentFontSizeLG": 18,
+        "contentLineHeightLG": 1.75,
+        "defaultHoverBg": "rgb(248,250,251)"
+      },
+      "Typography": {
+        "fontFamilyCode": "Poppins, sans-serif"
+      },
+      "Select": {
+        "colorPrimary": "var(--vbooking-b800)"
+      },
+      "DatePicker": {
+        "colorPrimary": "var(--vbooking-b800)",
+        "cellHeight": 20,
+        "cellWidth": 32
+      },
+      "Switch": {
+        "colorPrimary": "var(--vbooking-b800)",
+        "colorTextQuaternary": "rgb(242,244,247)"
+      }
+    }
+  }

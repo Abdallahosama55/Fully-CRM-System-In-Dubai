@@ -1,0 +1,931 @@
+/* Colors */
+.pc {
+  color: var(--vbooking-b700) !important;
+}
+
+.sc {
+  color: var(--base-black) !important;
+}
+
+.gc {
+  color: var(--gray-500) !important;
+}
+
+.wc {
+  color: var(--base-white) !important;
+}
+
+.bc {
+  color: var(--base-black) !important;
+}
+
+.color-b900 {
+  color: var(--vbooking-b900);
+}
+
+.color-b800 {
+  color: var(--vbooking-b800);
+}
+
+.color-b700 {
+  color: var(--vbooking-b700);
+}
+
+.color-b600 {
+  color: var(--vbooking-b600);
+}
+
+.color-b500 {
+  color: var(--vbooking-b500);
+}
+
+.color-b400 {
+  color: var(--vbooking-b400);
+}
+
+.color-b300 {
+  color: var(--vbooking-b300);
+}
+
+.color-b200 {
+  color: var(--vbooking-b200);
+}
+
+.color-b100 {
+  color: var(--vbooking-b100);
+}
+
+/* Background Color Classes */
+.bg-b900 {
+  background-color: var(--vbooking-b900);
+}
+
+.bg-b800 {
+  background-color: var(--vbooking-b800);
+}
+
+.bg-b700 {
+  background-color: var(--vbooking-b700);
+}
+
+.bg-b600 {
+  background-color: var(--vbooking-b600);
+}
+
+.bg-b500 {
+  background-color: var(--vbooking-b500);
+}
+
+.bg-b400 {
+  background-color: var(--vbooking-b400);
+}
+
+.bg-b300 {
+  background-color: var(--vbooking-b300);
+}
+
+.bg-b200 {
+  background-color: var(--vbooking-b200);
+}
+
+.bg-b100 {
+  background-color: var(--vbooking-b100);
+}
+
+/* ====================== */
+/* Cyan/Teal Color Group (--vbooking-c*) */
+/* ====================== */
+
+/* Text Colors */
+.color-c900 {
+  color: var(--vbooking-c900);
+}
+
+.color-c800 {
+  color: var(--vbooking-c800);
+}
+
+.color-c700 {
+  color: var(--vbooking-c700);
+}
+
+.color-c600 {
+  color: var(--vbooking-c600);
+}
+
+.color-c500 {
+  color: var(--vbooking-c500);
+}
+
+.color-c400 {
+  color: var(--vbooking-c400);
+}
+
+.color-c300 {
+  color: var(--vbooking-c300);
+}
+
+.color-c200 {
+  color: var(--vbooking-c200);
+}
+
+.color-c100 {
+  color: var(--vbooking-c100);
+}
+
+/* Background Colors */
+.bg-c900 {
+  background-color: var(--vbooking-c900);
+}
+
+.bg-c800 {
+  background-color: var(--vbooking-c800);
+}
+
+.bg-c700 {
+  background-color: var(--vbooking-c700);
+}
+
+.bg-c600 {
+  background-color: var(--vbooking-c600);
+}
+
+.bg-c500 {
+  background-color: var(--vbooking-c500);
+}
+
+.bg-c400 {
+  background-color: var(--vbooking-c400);
+}
+
+.bg-c300 {
+  background-color: var(--vbooking-c300);
+}
+
+.bg-c200 {
+  background-color: var(--vbooking-c200);
+}
+
+.bg-c100 {
+  background-color: var(--vbooking-c100);
+}
+
+/* ====================== */
+/* Violet/Purple Color Group (--vbooking-v*) */
+/* ====================== */
+
+/* Text Colors */
+.color-v900 {
+  color: var(--vbooking-v900);
+}
+
+.color-v800 {
+  color: var(--vbooking-v800);
+}
+
+.color-v700 {
+  color: var(--vbooking-v700);
+}
+
+.color-v600 {
+  color: var(--vbooking-v600);
+}
+
+.color-v500 {
+  color: var(--vbooking-v500);
+}
+
+.color-v400 {
+  color: var(--vbooking-v400);
+}
+
+.color-v300 {
+  color: var(--vbooking-v300);
+}
+
+.color-v200 {
+  color: var(--vbooking-v200);
+}
+
+.color-v100 {
+  color: var(--vbooking-v100);
+}
+
+/* Background Colors */
+.bg-v900 {
+  background-color: var(--vbooking-v900);
+}
+
+.bg-v800 {
+  background-color: var(--vbooking-v800);
+}
+
+.bg-v700 {
+  background-color: var(--vbooking-v700);
+}
+
+.bg-v600 {
+  background-color: var(--vbooking-v600);
+}
+
+.bg-v500 {
+  background-color: var(--vbooking-v500);
+}
+
+.bg-v400 {
+  background-color: var(--vbooking-v400);
+}
+
+.bg-v300 {
+  background-color: var(--vbooking-v300);
+}
+
+.bg-v200 {
+  background-color: var(--vbooking-v200);
+}
+
+.bg-v100 {
+  background-color: var(--vbooking-v100);
+}
+
+/* ====================== */
+/* Travel Color Utilities */
+/* ====================== */
+
+/* Flight Colors */
+.color-flight1 {
+  color: var(--travel-flight1);
+}
+
+.color-flight2 {
+  color: var(--travel-flight2);
+}
+
+.bg-flight1 {
+  background-color: var(--travel-flight1);
+}
+
+.bg-flight2 {
+  background-color: var(--travel-flight2);
+}
+
+.border-flight1 {
+  border-color: var(--travel-flight1);
+}
+
+.hover-bg-flight1:hover {
+  background-color: var(--travel-flight1);
+}
+
+/* Hotel Colors */
+.color-hotel1 {
+  color: var(--travel-hotel1);
+}
+
+.color-hotel2 {
+  color: var(--travel-hotel2);
+}
+
+.bg-hotel1 {
+  background-color: var(--travel-hotel1);
+}
+
+.bg-hotel2 {
+  background-color: var(--travel-hotel2);
+}
+
+.border-hotel1 {
+  border-color: var(--travel-hotel1);
+}
+
+.hover-bg-hotel2:hover {
+  background-color: var(--travel-hotel2);
+}
+
+/* Transfer Colors */
+.color-transfer1 {
+  color: var(--travel-transfer1);
+}
+
+.color-transfer2 {
+  color: var(--travel-transfer2);
+}
+
+.bg-transfer1 {
+  background-color: var(--travel-transfer1);
+}
+
+.bg-transfer2 {
+  background-color: var(--travel-transfer2);
+}
+
+.border-transfer1 {
+  border-color: var(--travel-transfer1);
+}
+
+.hover-color-transfer1:hover {
+  color: var(--travel-transfer1);
+}
+
+/* Experience Colors */
+.color-experience1 {
+  color: var(--travel-experience1);
+}
+
+.color-experience2 {
+  color: var(--travel-experience2);
+}
+
+.bg-experience1 {
+  background-color: var(--travel-experience1);
+}
+
+.bg-experience2 {
+  background-color: var(--travel-experience2);
+}
+
+.border-experience1 {
+  border-color: var(--travel-experience1);
+}
+
+.hover-bg-experience2:hover {
+  background-color: var(--travel-experience2);
+}
+
+/* Restaurant Colors */
+.color-resturants1 {
+  color: var(--travel-resturants1);
+}
+
+.color-resturants2 {
+  color: var(--travel-resturants2);
+}
+
+.bg-resturants1 {
+  background-color: var(--travel-resturants1);
+}
+
+.bg-resturants2 {
+  background-color: var(--travel-resturants2);
+}
+
+.border-resturants1 {
+  border-color: var(--travel-resturants1);
+}
+
+.hover-color-resturants1:hover {
+  color: var(--travel-resturants1);
+}
+
+/* ====================== */
+/* Font Color Utilities */
+/* ====================== */
+
+/* Primary Font Colors */
+.color-primary {
+  color: var(--font-primary);
+}
+
+
+/* Secondary Font Colors */
+.color-secondary {
+  color: var(--font-secondary);
+}
+
+/* Disabled State Colors */
+.color-disabled {
+  color: var(--font-disabled);
+}
+
+/* Link Colors */
+.color-link {
+  color: var(--font-link);
+}
+
+
+/* Blue Font Colors */
+.color-blue {
+  color: var(--font-blue);
+}
+
+/* ====================== */
+/* Gray Color Utilities */
+/* ====================== */
+
+/* Text Colors */
+.color-gray-900 {
+  color: var(--gray-900);
+}
+
+.color-gray-800 {
+  color: var(--gray-800);
+}
+
+.color-gray-700 {
+  color: var(--gray-700);
+}
+
+.color-gray-600 {
+  color: var(--gray-600);
+}
+
+.color-gray-500 {
+  color: var(--gray-500);
+}
+
+.color-gray-400 {
+  color: var(--gray-400);
+}
+
+.color-gray-300 {
+  color: var(--gray-300);
+}
+
+.color-gray-200 {
+  color: var(--gray-200);
+}
+
+.color-gray-100 {
+  color: var(--gray-100);
+}
+
+.color-gray-50 {
+  color: var(--gray-50);
+}
+
+.color-gray-25 {
+  color: var(--gray-25);
+}
+
+/* Background Colors */
+.bg-gray-900 {
+  background-color: var(--gray-900);
+}
+
+.bg-gray-800 {
+  background-color: var(--gray-800);
+}
+
+.bg-gray-700 {
+  background-color: var(--gray-700);
+}
+
+.bg-gray-600 {
+  background-color: var(--gray-600);
+}
+
+.bg-gray-500 {
+  background-color: var(--gray-500);
+}
+
+.bg-gray-400 {
+  background-color: var(--gray-400);
+}
+
+.bg-gray-300 {
+  background-color: var(--gray-300);
+}
+
+.bg-gray-200 {
+  background-color: var(--gray-200);
+}
+
+.bg-gray-100 {
+  background-color: var(--gray-100);
+}
+
+.bg-gray-50 {
+  background-color: var(--gray-50);
+}
+
+.bg-gray-25 {
+  background-color: var(--gray-25);
+}
+
+/* Border Colors */
+.border-gray-900 {
+  border-color: var(--gray-900);
+}
+
+.border-gray-800 {
+  border-color: var(--gray-800);
+}
+
+.border-gray-700 {
+  border-color: var(--gray-700);
+}
+
+.border-gray-600 {
+  border-color: var(--gray-600);
+}
+
+.border-gray-500 {
+  border-color: var(--gray-500);
+}
+
+.border-gray-400 {
+  border-color: var(--gray-400);
+}
+
+.border-gray-300 {
+  border-color: var(--gray-300);
+}
+
+.border-gray-200 {
+  border-color: var(--gray-200);
+}
+
+.border-gray-100 {
+  border-color: var(--gray-100);
+}
+
+.border-gray-50 {
+  border-color: var(--gray-50);
+}
+
+.border-gray-25 {
+  border-color: var(--gray-25);
+}
+
+::placeholder {
+  color: var(--gray-400);
+}
+
+
+/* Spacing (padding & margin) */
+.pl-1 {
+  padding-inline-start: 1rem;
+}
+
+.pr-1 {
+  padding-inline-end: 1rem;
+}
+
+.pt-1 {
+  padding-block-start: 1rem;
+}
+
+.pb-1 {
+  padding-block-end: 1rem;
+}
+
+.ml-1 {
+  margin-inline-start: 1rem;
+}
+
+.mr-1 {
+  margin-inline-end: 1rem;
+}
+
+.mt-0 {
+  margin-block-start: 0;
+}
+
+.mt-1 {
+  margin-block-start: 1rem;
+}
+
+.mb-1 {
+  margin-block-end: 1rem;
+}
+
+.mb-0 {
+  margin-block-end: 0;
+}
+
+/* Sizing (Width & Height) */
+.w-50 {
+  width: 50% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+/* Font (Size, Weight) */
+.main-header {
+  font-size: 2.5rem !important;
+}
+
+.sub-header {
+  font-size: 2rem !important;
+}
+
+.description-text {
+  font-size: 1rem !important;
+}
+
+.fz-10 {
+  font-size: 0.625rem !important;
+}
+
+.fz-12 {
+  font-size: 0.75rem !important;
+}
+
+.fz-14 {
+  font-size: 0.875rem !important;
+}
+
+.fz-16 {
+  font-size: 1rem !important;
+}
+
+.fz-18 {
+  font-size: 1.125rem !important;
+}
+
+.fz-20 {
+  font-size: 1.25rem !important;
+  line-height: 1.25rem !important;
+}
+
+.fz-22 {
+  font-size: 1.375rem !important;
+}
+
+.fz-24 {
+  font-size: 1.5rem !important;
+}
+
+.fz-26 {
+  font-size: 1.6rem !important;
+  line-height: 2.2rem !important;
+}
+
+.fz-28 {
+  font-size: 1.75rem !important;
+}
+
+.fz-32 {
+  font-size: 2rem !important;
+  line-height: 45px !important;
+}
+
+.fz-36 {
+  font-size: 2.1rem !important;
+  line-height: 2.4rem !important;
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+/* Placement */
+.center-items {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.space-between {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Custom */
+.clickable {
+  cursor: pointer;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.table-bottom-info {
+  color: #a3a6b4 !important;
+  position: absolute !important;
+  left: 0;
+  bottom: 20px;
+}
+
+.table-bottom-count {
+  color: #272944;
+  position: absolute !important;
+  left: 0;
+  bottom: 20px;
+}
+
+.gradiant-btn {
+  background: transparent linear-gradient(269deg, #3a5ee3 0%, #8fcaf3 100%) 0% 0% no-repeat padding-box;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1366px) {
+  .fz-16 {
+    font-size: 0.9rem !important;
+  }
+
+  .fz-18 {
+    font-size: 1rem !important;
+  }
+
+  .fz-20 {
+    font-size: 1.125rem !important;
+    line-height: 1.25rem !important;
+  }
+
+  .fz-22 {
+    font-size: 1.25rem !important;
+  }
+
+  .fz-24 {
+    font-size: 1.375rem !important;
+  }
+
+  .fz-26 {
+    font-size: 1.5rem !important;
+  }
+
+  .fz-28 {
+    font-size: 1.6rem !important;
+  }
+
+  .fz-32 {
+    font-size: 1.75rem !important;
+    line-height: 2rem !important;
+  }
+
+  .fz-36 {
+    font-size: 1.8rem !important;
+    line-height: 2.2rem !important;
+  }
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.d-none {
+  display: none;
+}
+
+.table_action_button {
+  display: flex;
+  width: 24px !important;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.table_action_button svg {
+  width: 14px;
+  height: 14px;
+}
+
+.select_item_with_icon {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 8px;
+}
+
+.select_item_with_icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.capital_first_letter:first-letter {
+  text-transform: uppercase !important;
+}
+
+.capital_first_letter *:first-letter {
+  text-transform: uppercase !important;
+}
+
+.select-with-prefix {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.select-prefix-icon {
+  margin-right: 8px;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  z-index: 999;
+  transform: translateY(-50%);
+}
+
+.custom-select {
+  width: 100%;
+}
+
+.select-with-prefix .ant-select-selection-placeholder,
+.select-with-prefix .ant-select-selection-item,
+.select-with-prefix .ant-select-selection-search input {
+  text-indent: 24px !important;
+}
+
+.gray_bg_drawer .ant-drawer-content {
+  background-color: #FAFAFB !important;
+}
+
+.gray_bg_drawer .ant-drawer-body {
+  padding: 1rem 6px 1rem 1rem;
+}
+
+.gray_bg_drawer .gray_bg_drawer_body {
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - 36px);
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid var(--gray-100);
+  border-radius: 1rem;
+  overflow: auto;
+}
+
+
+/* Customize the scrollbar */
+.gray_bg_drawer .gray_bg_drawer_body ::-webkit-scrollbar {
+  width: 6px;
+  /* Scrollbar thickness */
+  background-color: #f5f5f5;
+  /* Background color for the track */
+}
+
+.gray_bg_drawer .gray_bg_drawer_body ::-webkit-scrollbar-thumb {
+  background-color: var(--vbooking-c500);
+  /* Scrollbar color */
+  border-radius: 10px;
+  /* Rounded scrollbar */
+  border: 2px solid #f5f5f5;
+  /* Adds space around the thumb */
+}
+
+.gray_bg_drawer .gray_bg_drawer_body ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--vbooking-c800);
+  /* Darker color on hover */
+}
+
+.gray_bg_drawer .gray_bg_drawer_body ::-webkit-scrollbar-track {
+  background-color: #d9dfe981;
+  /* Track background color */
+  border-radius: 10px;
+  /* Rounded track edges */
+}
+
+.ant-empty-image:has(img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

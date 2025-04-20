@@ -1,0 +1,56 @@
+.custom-tabel .more-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #2729420a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumb-order {
+  margin-bottom: 12px;
+  margin-top: -12px;
+}
+.card {
+  margin-top: 50px;
+}
+
+.status {
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+}
+
+.active-status {
+  background: #3a5ee326;
+  color: #3a5ee3;
+}
+
+.draft-status {
+  background: #999;
+}
+
+.pending-status {
+  background: #f9b78c;
+}
+
+.confirmed-status {
+  background: #7db6c7;
+}
+
+.picked-up-status {
+  background: #75c796;
+}
+
+.on-the-way-status {
+  background: #7dbcff;
+}
+
+.delivered-status {
+  background: #8dc39d;
+}
+
+.cancel-status {
+  background: #f400550f;
+  color: #f40055;
+}

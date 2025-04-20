@@ -1,0 +1,33 @@
+/* تنسيق الخلفية الداكنة والنص الفاتح */
+.cm-theme-light .cm-editor {
+  background: #2a2b3c;
+  color: #d5d3d5;
+}
+
+/* تخصيص التمييز للأسطر النشطة */
+.cm-theme-light .cm-activeLine {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* تخصيص المساطر الجانبية (gutters) */
+.cm-theme-light .cm-gutters {
+  background: #1e1e2f;
+  color: #d5d3d5;
+}
+
+/* تخصيص خلفية الأسطر التي تحتوي على الخطأ */
+.cm-theme-light .cm-error {
+  background-color: #ff6666;
+}
+
+/* تخصيص لون النص عند التحديد */
+.cm-theme-light .cm-selectionBackground {
+  background: #4a4a6a;
+}
+
+/* تخصيص النصوص داخل المحرر */
+.CodeMirror {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Courier New", monospace;
+}

@@ -1,0 +1,33 @@
+.ant-form-item-label {
+    padding: 0px !important;
+}
+
+.edit-page .ant-form-item .ant-form-item-label>label {
+    flex-direction: row !important;
+}
+
+.edit-page .ant-form-item.css-dev-only-do-not-override-cek2jh {
+    margin-bottom: 0px !important;
+}
+
+.ant-form-item-optional {
+    display: none !important;
+}
+
+.ant-upload-drag {
+    margin: auto;
+}
+.btn-add {
+    flex: 1 1 auto;
+  
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 150% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #3A5EE3 0%, #8FCAF3 51%);
+  
+  }

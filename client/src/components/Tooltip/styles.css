@@ -1,0 +1,41 @@
+.tooltip-ticket{
+    max-width: 408px;
+}
+.tooltip-ticket .tooltip-ticket-title.tooltip-ticket-title{
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.tooltip-ticket .title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.tooltip-ticket .description{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.tooltip-ticket .close-button {
+    text-align: end;
+    margin-top:16px ;
+}
+
+.tooltip-ticket .close-button button{
+    color: #fff;
+    background-color: #272942;
+    padding: 10px 24px;
+}
+.tooltip-ticket .close-button button:hover{
+    color: #fff;
+    background-color: #272942;
+    padding: 10px 24px;
+    border:none
+}

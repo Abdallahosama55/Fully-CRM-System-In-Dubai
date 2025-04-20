@@ -1,0 +1,10 @@
+.edit_employee_container .ant-form-item .ant-form-item-label {
+  padding: 0 0 4px 0;
+}
+.edit_employee_container .ant-form-item .ant-form-item-label > label {
+  height: unset;
+}
+
+.edit_employee_container {
+  padding: 0 var(--container-padding);
+}

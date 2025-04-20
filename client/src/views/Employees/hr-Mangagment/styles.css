@@ -1,0 +1,40 @@
+.body-content.hr-management {
+  padding: 16px;
+}
+.hr-management .more-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #2729420a;
+  cursor: pointer;
+}
+.hr-management .filter-svg {
+  margin-top: 3px;
+}
+.ticketing-actions .ant-dropdown-menu .ant-dropdown-menu-item {
+  padding: 8px 10px;
+}
+
+.ticketing-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: auto;
+  z-index: 1;
+}
+.right-drawer .add-time-form {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: calc(100vh - 100px);
+}
+
+.right-drawer .add-time-form .ant-picker-input {
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.right-drawer .add-time-form .hidden label {
+  visibility: hidden;
+}

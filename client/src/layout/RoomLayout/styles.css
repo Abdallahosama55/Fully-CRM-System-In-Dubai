@@ -1,0 +1,34 @@
+.room_management .enabled,
+.room_management .disabled {
+  padding: 5px 10px;
+  border-radius: 8px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.room_management .enabled {
+  color: #37bb00;
+}
+
+.room_management .disabled {
+  color: #f40055;
+}
+
+.room_management .enabled::before,
+.room_management .disabled::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline-start: -5px;
+  border-radius: 8px;
+  width: 8px;
+  height: 100%;
+}
+
+.room_management .enabled::before {
+  background-color: #37bb000f;
+}
+
+.room_management .disabled::before {
+  background-color: #f400550f;
+}

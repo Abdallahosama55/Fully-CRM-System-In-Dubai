@@ -1,0 +1,343 @@
+/* Global font family */
+* {
+  font-family: "Poppins" !important;
+}
+
+.fa {
+  font: normal normal normal 14px/1 FontAwesome !important;
+}
+
+/* FONTS */
+.xxl_display_regular,
+.xl_display_regular,
+.lg_display_regular,
+.md_display_regular,
+.sm_display_regular .xs_display_regular,
+.xxl_text_regular,
+.xl_text_regular,
+.lg_text_regular,
+.md_text_regular,
+.sm_text_regular .xs_text_regular {
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+.xxl_display_medium,
+.xl_display_medium,
+.lg_display_medium,
+.md_display_medium,
+.sm_display_medium .xs_display_medium,
+.xxl_text_medium,
+.xl_text_medium,
+.lg_text_medium,
+.md_text_medium,
+.sm_text_medium .xs_text_medium {
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+
+.xxl_display_semibold,
+.xl_display_semibold,
+.lg_display_semibold,
+.md_display_semibold,
+.sm_display_semibold .xs_display_semibold,
+.xxl_text_semibold,
+.xl_text_semibold,
+.lg_text_semibold,
+.md_text_semibold,
+.sm_text_semibold .xs_text_semibold {
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+
+.xxl_display_bold,
+.xl_display_bold,
+.lg_display_bold,
+.md_display_bold,
+.sm_display_bold .xs_display_bold,
+.xxl_text_bold,
+.xl_text_bold,
+.lg_text_bold,
+.md_text_bold,
+.sm_text_bold .xs_text_bold {
+  font-style: normal !important;
+  font-weight: 700 !important;
+}
+/* XXL - display */
+.xxl_display_regular,
+.xxl_display_medium,
+.xxl_display_semibold,
+.xxl_display_bold {
+  font-size: 72px !important;
+  line-height: 90px !important;
+  letter-spacing: -1.44px !important;
+}
+
+/* XL - display*/
+.xl_display_regular,
+.xl_display_medium,
+.xl_display_semibold,
+.xl_display_bold {
+  font-size: 60px !important;
+  line-height: 72px !important;
+  letter-spacing: -1.2px !important;
+}
+
+/* LG - display */
+.lg_display_regular,
+.lg_display_medium,
+.lg_display_semibold,
+.lg_display_bold {
+  font-size: 48px !important;
+  line-height: 60px !important;
+  letter-spacing: -0.96px !important;
+}
+
+/* MD - display */
+.md_display_regular,
+.md_display_medium,
+.md_display_semibold,
+.md_display_bold {
+  font-size: 36px !important;
+  line-height: 44px !important;
+  letter-spacing: -0.72px !important;
+}
+
+/* SM - display  */
+.sm_display_regular,
+.sm_display_medium,
+.sm_display_semibold,
+.sm_display_bold {
+  font-size: 30px !important;
+  line-height: 38px !important;
+}
+
+/* XS - display */
+.xs_display_regular,
+.xs_display_medium,
+.xs_display_semibold,
+.xs_display_bold {
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+/* TEXT FONTS */
+/* XL - text*/
+.xl_text_regular,
+.xl_text_medium,
+.xl_text_semibold,
+.xl_text_bold {
+  font-size: 20px !important;
+  line-height: 30px !important;
+}
+
+/* LG - text */
+.lg_text_regular,
+.lg_text_medium,
+.lg_text_semibold,
+.lg_text_bold {
+  font-size: 18px !important;
+  line-height: 28px !important;
+}
+
+/* MD - text */
+.md_text_regular,
+.md_text_medium,
+.md_text_semibold,
+.md_text_bold {
+  font-size: 16px !important;
+  line-height: 28px !important;
+}
+
+/* SM - text  */
+.sm_text_regular,
+.sm_text_medium,
+.sm_text_semibold,
+.sm_text_bold {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+/* XS - text */
+.xs_text_regular,
+.xs_text_medium,
+.xs_text_semibold,
+.xs_text_bold {
+  font-size: 12px !important;
+  line-height: 18px !important;
+}
+
+/* for antd table */
+/* Global font family */
+table * {
+  font-family: "Poppins" !important;
+}
+
+/* FONTS */
+table .xxl_display_regular,
+table .xl_display_regular,
+table .lg_display_regular,
+table .md_display_regular,
+table .sm_display_regular,
+table .xs_display_regular,
+table .xxl_text_regular,
+table .xl_text_regular,
+table .lg_text_regular,
+table .md_text_regular,
+table .sm_text_regular,
+table .xs_text_regular {
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+table .xxl_display_medium,
+table .xl_display_medium,
+table .lg_display_medium,
+table .md_display_medium,
+table .sm_display_medium,
+table .xs_display_medium,
+table .xxl_text_medium,
+table .xl_text_medium,
+table .lg_text_medium,
+table .md_text_medium,
+table .sm_text_medium,
+table .xs_text_medium {
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+
+table .xxl_display_semibold,
+table .xl_display_semibold,
+table .lg_display_semibold,
+table .md_display_semibold,
+table .sm_display_semibold,
+table .xs_display_semibold,
+table .xxl_text_semibold,
+table .xl_text_semibold,
+table .lg_text_semibold,
+table .md_text_semibold,
+table .sm_text_semibold,
+table .xs_text_semibold {
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+
+table .xxl_display_bold,
+table .xl_display_bold,
+table .lg_display_bold,
+table .md_display_bold,
+table .sm_display_bold,
+table .xs_display_bold,
+table .xxl_text_bold,
+table .xl_text_bold,
+table .lg_text_bold,
+table .md_text_bold,
+table .sm_text_bold,
+table .xs_text_bold {
+  font-style: normal !important;
+  font-weight: 700 !important;
+}
+
+/* XXL - display */
+table .xxl_display_regular,
+table .xxl_display_medium,
+table .xxl_display_semibold,
+table .xxl_display_bold {
+  font-size: 72px !important;
+  line-height: 90px !important;
+  letter-spacing: -1.44px !important;
+}
+
+/* XL - display*/
+table .xl_display_regular,
+table .xl_display_medium,
+table .xl_display_semibold,
+table .xl_display_bold {
+  font-size: 60px !important;
+  line-height: 72px !important;
+  letter-spacing: -1.2px !important;
+}
+
+/* LG - display */
+table .lg_display_regular,
+table .lg_display_medium,
+table .lg_display_semibold,
+table .lg_display_bold {
+  font-size: 48px !important;
+  line-height: 60px !important;
+  letter-spacing: -0.96px !important;
+}
+
+/* MD - display */
+table .md_display_regular,
+table .md_display_medium,
+table .md_display_semibold,
+table .md_display_bold {
+  font-size: 36px !important;
+  line-height: 44px !important;
+  letter-spacing: -0.72px !important;
+}
+
+/* SM - display  */
+table .sm_display_regular,
+table .sm_display_medium,
+table .sm_display_semibold,
+table .sm_display_bold {
+  font-size: 30px !important;
+  line-height: 38px !important;
+}
+
+/* XS - display */
+table .xs_display_regular,
+table .xs_display_medium,
+table .xs_display_semibold,
+table .xs_display_bold {
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+/* TEXT FONTS */
+/* XL - text */
+table .xl_text_regular,
+table .xl_text_medium,
+table .xl_text_semibold,
+table .xl_text_bold {
+  font-size: 20px !important;
+  line-height: 30px !important;
+}
+
+/* LG - text */
+table .lg_text_regular,
+table .lg_text_medium,
+table .lg_text_semibold,
+table .lg_text_bold {
+  font-size: 18px !important;
+  line-height: 28px !important;
+}
+
+/* MD - text */
+table .md_text_regular,
+table .md_text_medium,
+table .md_text_semibold,
+table .md_text_bold {
+  font-size: 16px !important;
+  line-height: 28px !important;
+}
+
+/* SM - text  */
+table .sm_text_regular,
+table .sm_text_medium,
+table .sm_text_semibold,
+table .sm_text_bold {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+/* XS - text */
+table .xs_text_regular,
+table .xs_text_medium,
+table .xs_text_semibold,
+table .xs_text_bold {
+  font-size: 12px !important;
+  line-height: 18px !important;
+}

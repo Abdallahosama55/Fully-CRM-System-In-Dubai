@@ -1,0 +1,53 @@
+.icons_container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.icon_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.icon_card:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.icon_card:hover svg {
+    filter: unset;
+}
+
+.icon_card svg {
+    height: 70px;
+    width: 70px;
+    filter: brightness(0%);
+}
+
+@media (max-width:1500px) {
+    .icons_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width:1200px) {
+    .icons_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    .icons_container {
+        grid-template-columns: 1fr;
+    }
+}

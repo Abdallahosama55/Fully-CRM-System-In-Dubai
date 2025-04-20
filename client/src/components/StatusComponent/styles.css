@@ -1,0 +1,15 @@
+.sactive {
+  background-color: #0318d60f;
+  color: #3a5ee3;
+  text-align: center;
+  width: 70px;
+  border-radius: 5px;
+}
+
+.in-active {
+  background-color: #f400550f;
+  color: #e81224;
+  text-align: center;
+  width: 70px;
+  border-radius: 5px;
+}

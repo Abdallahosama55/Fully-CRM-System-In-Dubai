@@ -1,0 +1,109 @@
+.metaverse {
+  padding: 1rem;
+}
+
+.metaverse-flex-end {
+  display: flex;
+  align-items: center;
+}
+
+.metaverse-mr {
+  margin-inline-end: 0.5rem;
+}
+
+.join-meet {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  overflow-x: hidden !important;
+}
+
+.join-meet .meet-blur {
+  background: rgba(0, 0, 0, 0.21);
+  backdrop-filter: blur(15px);
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-meet .join-meet-main {
+  padding: 30px 24px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(17px);
+  max-width: 500px;
+  width: 100%;
+}
+
+.join-meet .icon-wrapper {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.join-meet .join-meet-form label {
+  color: #fff !important;
+}
+
+.join-meet .join-meet-form .ant-form-item:not(:first-of-type) {
+  margin-top: 1rem !important;
+}
+
+.join-meet .ant-select-single .ant-select-selector {
+  color: #fff !important;
+}
+
+.join-meet .join-meet-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.join-meet .settings-select {
+  max-height: 180px;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+.join-meet .device-settings {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  padding: 0 1rem;
+}
+
+.join-meet .settings-close {
+  animation: fadeOut 0.4s ease-in-out;
+}
+
+.join-meet .settings-select {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 1366px) {
+  .join-meet .join-meet-img {
+    width: 100px;
+    height: 100px;
+  }
+  .join-meet .join-meet-main {
+    padding: 1rem;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .join-meet .join-meet-main {
+    padding: 1rem;
+  }
+}

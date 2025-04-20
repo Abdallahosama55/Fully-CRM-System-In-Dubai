@@ -1,0 +1,76 @@
+.left-calendar {
+  background-color: #fafafb;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 10px;
+}
+.left-calendar .ant-picker-panel {
+  transform: scale(0.9);
+}
+.left-calendar .ant-picker-calendar-header {
+  justify-content: center;
+}
+.left-calendar .ant-picker-calendar-mini,
+.left-calendar .ant-picker-body {
+  background-color: #fafafb !important;
+}
+.left-calendar .search {
+  display: flex;
+  justify-content: center;
+}
+.left-calendar .search > span {
+  width: 95%;
+}
+.left-calendar .prev-arrow,
+.left-calendar .next-arrow {
+  background: #27294205;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #2729420f;
+}
+.left-calendar .prev-arrow svg path,
+.left-calendar .next-arrow svg path {
+  fill: #030713;
+}
+.left-calendar .collapse {
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+}
+.left-calendar .collapse .ant-collapse {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+.left-calendar .collapse .ant-collapse > .ant-collapse-item {
+  border-bottom: none;
+}
+
+.left-calendar .collapse .ant-collapse .ant-collapse-content {
+  background-color: transparent;
+  border-top: none;
+}
+.left-calendar .collapse .leaves .ant-checkbox-inner {
+  background-color: #0d9ff533;
+  border: 0.5px solid #0d9ff5;
+}
+.left-calendar .collapse .leaves .ant-checkbox-inner:after {
+  border-color: #0d9ff5;
+}
+
+.left-calendar .collapse .meet .ant-checkbox-inner {
+  background-color: #37c27e33;
+  border: 0.5px solid #37c27e;
+}
+.left-calendar .collapse .meet .ant-checkbox-inner:after {
+  border-color: #37c27e;
+}
+.left-calendar .collapse .events .ant-checkbox-inner {
+  background-color: #1131da33;
+  border: 0.5px solid #3a5ee3;
+}
+.left-calendar .collapse .events .ant-checkbox-inner:after {
+  border-color: #3a5ee3;
+}

@@ -1,0 +1,57 @@
+.service-section-header {
+  background: linear-gradient(
+    315.43deg,
+    #ff2b7b -18.7%,
+    #f42d80 8.57%,
+    #bd3a99 32.18%,
+    #744aba 72.7%,
+    #3a62da 111.46%,
+    #3259d8 140.81%
+  );
+  justify-content: space-between;
+  padding: 24px 10px;
+  display: flex;
+}
+.service-section-header .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+.service-section-header .vindo-logo {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-section-header h3 {
+  color: #ffffff;
+}
+.service-section-header p {
+  color: #e5e5ea;
+}
+.service-section-header .close-btn {
+  color: #ffffff;
+  position: relative;
+  right: 16px;
+}
+
+.web-widget-layout-modal {
+  max-width: 100%;
+  border-radius: 0;
+  height: 100%;
+}
+
+.web-widget-layout-modal.ant-modal {
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+.web-widget-layout-modal.ant-modal-content {
+  border-radius: 0;
+
+  height: 100%;
+  padding: 0;
+}

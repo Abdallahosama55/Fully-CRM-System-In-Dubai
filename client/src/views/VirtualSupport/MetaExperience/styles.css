@@ -1,0 +1,46 @@
+.meta-experience .back-word {
+  position: absolute;
+  top: 32px;
+}
+
+.meta-experience .dim-card {
+  position: relative;
+  max-width: 420px;
+  min-height: 100px;
+  border-radius: 12px;
+  background: #fff;
+  border: 2px solid #ffffff;
+  overflow: hidden;
+  margin: auto;
+}
+
+.meta-experience .dim-card:hover {
+  border: 2px solid #0000;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(270deg, #8fcaf3 0%, #3a5ee3 100%);
+}
+
+.meta-experience .dim-card .dim-card-img {
+  width: 100%;
+  min-height: 250px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+}
+
+.meta-experience .dim-card .dim-card-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.39);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  border-radius: 15px;
+  padding: 2px 8px;
+}
+
+.meta-experience .dim-card .dim-card-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

@@ -1,0 +1,86 @@
+.transfer_filters_section{
+    padding: 1rem;
+    background-color: transparent !important;
+    border: 1px solid #E5E5EA;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.transfer_filters_side_header {
+    border-bottom: 1px solid #E5E5EA;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.transfer_filters_section .filter_group {
+    padding: 12px 16px;
+    border: 1px solid #E5E5EA;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.transfer_filters_section .filter_group .ant-collapse-header {
+    padding: 0 !important;
+}
+
+.transfer_filters_section .filter_group .ant-collapse-item-active .ant-collapse-header {
+    padding: 0 0 12px 0 !important;
+}
+
+.transfer_filters_section .ant-collapse-content-box {
+    padding: unset !important;
+}
+
+.checkbox_item {
+    margin-bottom: 0.5rem;
+}
+
+.checkbox_item.checkbox_item_with_icon label span:last-of-type{
+    display: grid !important;
+    grid-template-columns: 24px 1fr;
+    gap: 4px;
+}
+
+.checkbox_item_with_icon svg{
+    width: 22px;
+    height: 22px;
+}
+
+.transfer_filters_checkbox_group{
+    max-height: 300px !important;
+    overflow: auto;
+}
+
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+.transfer_filters_checkbox_group::-webkit-scrollbar {
+    width: 8px; /* Set width of scrollbar */
+}
+
+.transfer_filters_checkbox_group::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+}
+
+.transfer_filters_checkbox_group::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar */
+}
+
+/* Hover effect for thumb */
+.transfer_filters_checkbox_group::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4); /* Darker on hover */
+}
+
+/* For Firefox */
+.transfer_filters_checkbox_group {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Thumb color and track color */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 920px) {
+    .transfer_filters_section {
+        padding: 0.5rem !important;
+    }
+}

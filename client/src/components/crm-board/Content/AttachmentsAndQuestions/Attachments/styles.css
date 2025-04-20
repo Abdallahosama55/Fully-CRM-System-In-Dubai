@@ -1,0 +1,31 @@
+.attachments .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.attachments .prim_btn {
+  color: var(--vbooking-b700) !important;
+}
+
+.attachments .body {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.attachments .file_card {
+  background-color: #f1f1f3;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.attachments .file_icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

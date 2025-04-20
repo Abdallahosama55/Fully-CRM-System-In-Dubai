@@ -1,0 +1,3 @@
+.city_input.error .ant-select-selector {
+    border: 1px solid #ff4d4f !important;
+}

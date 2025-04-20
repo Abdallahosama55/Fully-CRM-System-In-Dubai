@@ -1,0 +1,47 @@
+.counter-section {
+  height: calc(100% - 5px);
+}
+
+.counter-section .counter-btn {
+  border: none;
+  background: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.counter-section .counter-gradiant-btn::before {
+  background-color: #f9f9fb;
+  border-radius: 10px;
+}
+
+.counter-section .counter-btn:hover .ant-typography {
+  color: #3a5ee3;
+}
+
+.counter-section .counter-btn:hover svg {
+  fill: #3a5ee3;
+}
+
+.counter-section .counter-btn .AED-svg svg {
+  width: 22px;
+  height: 22px;
+}
+
+.counter-section .counter-btn:hover .AED-svg svg {
+  fill: transparent;
+  color: #3a5ee3;
+}
+
+.counter-section .counter-btn-active {
+  border: 1px solid #3a5ee3;
+}
+
+.counter-section .counter-btn-active .ant-typography {
+  color: #3a5ee3;
+}
+.counter-section .counter-btn-active svg {
+  fill: #3a5ee3;
+}

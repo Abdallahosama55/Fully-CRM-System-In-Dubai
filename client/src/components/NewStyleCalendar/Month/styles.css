@@ -1,0 +1,37 @@
+.month {
+  margin: 20px;
+}
+
+.month .fc-theme-standard td,
+.fc-theme-standard th {
+  border-top: 1px solid #ececef;
+  background-color: #fafafa;
+}
+
+.month .fc .fc-daygrid-day-number {
+  color: #030713 !important;
+}
+
+.month .month .fc-theme-standard td,
+.fc-theme-standard th,
+.month .fc-theme-standard td,
+.fc-theme-standard th {
+  height: 100px;
+}
+
+.month .day .fc-theme-standard td,
+.fc-theme-standard th {
+  background-color: transparent;
+  height: 50px;
+}
+
+.month .fc .fc-col-header-cell-cushion {
+  color: #030713;
+  font-weight: 400;
+  margin-top: 12px;
+  background-color: white !important;
+}
+
+.month .fc .fc-daygrid-day.fc-day-today {
+  background-color: #eff2fd;
+}

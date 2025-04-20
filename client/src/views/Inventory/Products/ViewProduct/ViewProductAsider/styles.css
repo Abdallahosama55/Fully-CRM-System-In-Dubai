@@ -1,0 +1,11 @@
+.asider-info {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #d4d4d8;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.asider-info > .ant-row:not(:last-child) {
+  margin-bottom: 2.1rem;
+}

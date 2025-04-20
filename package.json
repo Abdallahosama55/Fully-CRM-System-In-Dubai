@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "start:client": "npm run start:client --workspace=client",
+    "start:prod": "npm run start:client:prod --workspace=client",
+    "build:development": "npm run build:development --workspace=client",
+    "build:production": "npm run build:production --workspace=client",
+    "lint": "npm run lint-staged --workspace=client",
+    "prepare": "npm run prepare --workspace=client"
+  },
+  "private": true,
+  "dependencies": {
+    "@tiptap/extension-color": "^2.9.1",
+    "@tiptap/extension-text-align": "^2.9.1",
+    "@tiptap/extension-text-style": "^2.9.1",
+    "fastest-levenshtein": "^1.0.16",
+    "file-saver": "^2.0.5",
+    "i": "^0.3.7",
+    "lottie-react": "^2.4.1",
+    "lucide-react": "^0.487.0",
+    "npm": "^10.9.2",
+    "recharts": "^2.15.2"
+  }
+}

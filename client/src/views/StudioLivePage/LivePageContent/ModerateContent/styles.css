@@ -1,0 +1,27 @@
+.moderate-content .moderate-panels-title {
+  width: 100%;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+
+.moderate-content .moderate-panels {
+  min-height: 200px;
+  padding-top: 1rem;
+}
+
+.moderate-content .update-audience-loading {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+.moderate-content .drop-here {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

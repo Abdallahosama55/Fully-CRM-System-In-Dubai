@@ -1,0 +1,93 @@
+.edit-categoreis {
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-inline-end: 12px;
+}
+.edit-categoreis-main .tabs .ant-tabs-nav::before {
+  border-bottom: 0px;
+}
+.edit-categoreis-main .tabs .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 12px;
+  border: 1px solid #efeff1;
+  background-color: #ffffff;
+  padding: 4px 8px;
+  margin: 0;
+  margin-right: 8px;
+}
+.edit-categoreis-main .tabs .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+  color: #8e8e93;
+}
+.edit-categoreis-main .tabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 12px;
+  background-color: #3a5ee3;
+  padding: 4px 8px;
+}
+.edit-categoreis-main .tabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fff;
+}
+.edit-categoreis-main .tabs .ant-tabs-nav .ant-tabs-ink-bar-animated {
+  height: 0;
+}
+
+.edit-categoreis-main .tabs .inner-tab .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 4px 8px;
+}
+.edit-categoreis-main .inner-tab .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 8px;
+}
+.edit-categoreis-main .inner-tab .ant-tabs-tab-btn .ant-col {
+  font-size: 10px;
+}
+
+.edit-categoreis-main
+  .tabs
+  .inner-tab
+  .ant-tabs-nav
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #000;
+  filter: saturate(1);
+}
+
+.edit-categoreis-main .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+  color: #8e8e93;
+  filter: saturate(0.2);
+}
+.edit-categoreis form {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: calc(100vh - 197px);
+}
+.edit-categoreis .basic-info-upload-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #eee;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.edit-categoreis .basic-info-upload-img-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  z-index: 3;
+  pointer-events: inherit;
+}

@@ -1,0 +1,12 @@
+.custom-table .ant-table-thead > tr > th {
+    background: white !important;
+  }
+   .custom-table .ant-table-tbody > tr:nth-child(even) {
+    background-color: white;
+  }
+  
+  .custom-table .ant-table-tbody > tr:nth-child(odd) {
+    background-color: #F9FAFB;
+  }
+  
+  

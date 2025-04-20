@@ -1,0 +1,10 @@
+.speaker-drive-panel {
+  background-color: #fafafa;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 0px;
+  height: 100%;
+  border: 1px solid #ccc;
+  height: calc(99vh - 62px);
+  overflow-y: auto;
+}

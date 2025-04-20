@@ -1,0 +1,119 @@
+.add-product-main .ant-tabs-nav::before {
+  border-bottom: 0px;
+}
+
+.add-product-main .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 12px;
+  border: 1px solid #efeff1;
+  background-color: #ffffff;
+  padding: 4px 8px;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.add-product-main .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 12px;
+  background-color: #3a5ee3;
+  padding: 4px 8px;
+}
+.add-product-main
+  .ant-tabs-nav
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #fff;
+}
+.add-product-main .ant-tabs-nav .ant-tabs-ink-bar-animated {
+  height: 0;
+}
+
+.add-product-main .inner-tab .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 4px 8px;
+}
+.add-product-main .inner-tab .ant-tabs-tab-btn .ant-col {
+  font-size: 10px;
+}
+
+.add-product-main .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+  color: #8e8e93;
+  filter: saturate(0.2);
+}
+
+.add-product-main
+  .inner-tab
+  .ant-tabs-nav
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #000;
+  filter: saturate(1);
+}
+.add-product-main .inner-tab .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 8px;
+}
+.add-product-main .data-tab .ant-tabs-nav-wrap {
+  background-color: #395de1;
+  border-radius: 12px;
+  padding: 9px 56px;
+}
+.add-product-main .data-tab .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  background-color: #395de1;
+  position: relative;
+}
+
+.add-product-main
+  .data-tab
+  .ant-tabs-nav
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #fff;
+  opacity: 1;
+}
+.add-product-main .data-tab .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+  color: #fff;
+  opacity: 0.5;
+}
+.add-product-main
+  .data-tab
+  .ant-tabs-nav
+  .ant-tabs-tab.ant-tabs-tab-active::before {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  width: 100%;
+  bottom: -9px;
+  left: 0;
+  border-radius: 6px 6px 0px 0px;
+}
+.add-product-main .data-tab .ant-tabs-nav .ant-tabs-tab {
+  border-radius: 12px;
+  border: 1px solid #395de1;
+  background-color: #395de1;
+  padding: 4px 8px;
+  margin: 0;
+  margin-right: 8px;
+}
+.add-product-main .input-with-btn-row {
+  border: 1px solid #d1d1d6;
+  background: #fff;
+  border-radius: 8px;
+}
+.add-product-main .input-with-btn {
+  border: none;
+}
+.add-product-main .big-input-btn-Infinity {
+  background: #272942;
+  padding: 0px 14px;
+  border-radius: 8px;
+  height: 38px;
+  margin-top: 2px;
+  margin-right: 2px;
+}
+.add-product-main form {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: calc(100vh - 197px);
+}
+.inventory .ant-drawer-wrapper-body {
+  padding: 24px 0;
+}

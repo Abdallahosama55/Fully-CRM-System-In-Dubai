@@ -1,0 +1,204 @@
+.main-nav {
+  padding: 8px 0px 8px 16px;
+  border-bottom: 1px solid #E5E5EA;
+}
+
+.main-nav .clock-in-btn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 14px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-mobile .ant-menu-sub.ant-menu-inline .ant-menu-sub.ant-menu-inline .ant-menu-item .ant-menu-title-content {
+  margin-inline-start: 0px !important;
+}
+
+.nav-mobile .ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline .ant-menu-item.ant-menu-item-selected {
+  max-height: 50px;
+  line-height: 50px;
+  border-radius: 4px;
+  padding: 4px 8px 4px 8px;
+  color: white;
+}
+
+.nav-mobile .ant-menu-inline-collapsed>.ant-menu-item {
+  padding: 6px 17px !important;
+}
+
+.nav-mobile .ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline .ant-menu-item-selected .ant-menu-title-content a {
+  margin-left: 0;
+  color: white;
+}
+
+.nav-mobile .ant-menu-sub .ant-menu-vertical {
+  background-color: #f5f5f6 !important;
+  border-radius: 0 !important;
+}
+
+.ant-menu-light .ant-menu-item,
+:where(.css-dev-only-do-not-override-uv8uuz).ant-menu-light>.ant-menu .ant-menu-item {
+  height: 40px;
+  line-height: 40px;
+}
+
+.nav-mobile .sider-layout.collapsed {
+  padding: 24px 0 24px 0;
+}
+
+.nav-mobile .sider-layout.collapsed .ant-menu-submenu>.ant-menu-submenu-title {
+  padding-left: 16px !important;
+}
+
+.ant-menu-light>.ant-menu .ant-menu-item-selected {
+  height: 40px;
+  line-height: 40px;
+  /* background: #3a5de3; */
+  color: black;
+  border-radius: 0;
+  box-shadow: inset 3px 0px 0px -1px #3a5de3;
+}
+
+.nav-mobile .ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline .ant-menu-item.ant-menu-item-selected {
+  max-height: 50px;
+  line-height: 50px;
+  border-radius: 4px;
+  padding: 4px 8px 4px 8px;
+  color: white;
+}
+
+.nav-mobile .ant-menu-title-content a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #030713;
+}
+
+.nav-mobile .ant-menu-title-content {
+  font-size: 12px;
+  font-weight: 400;
+  color: #030713;
+  margin-inline-start: 15px !important;
+}
+
+.nav-mobile .ant-menu .ant-menu-item .ant-menu-item-icon+span {
+  margin-inline-start: 16px !important;
+}
+
+.nav-mobile .main-menu .ant-menu-item-selected {
+  border-radius: 0;
+
+  font-weight: 400;
+}
+
+.nav-mobile .main-menu .ant-menu-item.ant-menu-item-active::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  border-radius: 0;
+  height: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3a5ee3;
+  left: 1px;
+}
+
+.nav-mobile .ant-menu-sub.ant-menu-inline .ant-menu-item-selected {
+  background: #3a5de3;
+  color: white !important;
+  height: 25px;
+  border-radius: 4px;
+  padding: 4px 8px 4px 8px;
+}
+
+.main-nav .clock-in-btn:hover {
+  background: #2729420a;
+}
+
+.drawer-icon {
+  display: none;
+}
+
+.nav-mobile .main-menu .ant-menu-item-selected {
+  font-weight: 500;
+}
+
+.nav-mobile .ant-menu-sub.ant-menu-inline>.ant-menu-item {
+  height: 28px;
+}
+
+.nav-mobile .ant-menu-submenu-title {
+  height: 40px !important;
+  border-radius: 0px !important;
+}
+
+.nav-mobile .main-menu .ant-menu-item {
+  height: 40px;
+}
+
+.main-menu .ant-menu-item svg {
+  width: 24px;
+  height: 24px;
+}
+
+.hide-sm {
+  display: flex;
+}
+
+.main-nav .switch-btn {
+  background: #e7e7ea;
+  padding: 6px;
+  border-radius: 8px;
+  color: #3a5ee3;
+  font-size: 11px;
+  font-weight: 500;
+  border: none;
+}
+
+.hide-info {
+  display: flex;
+}
+
+.nav-mobile .schedule-button {
+  padding: 10px;
+  margin: 4px;
+  background: linear-gradient(30deg, #8fcaf3 -10%, #1131da 90%);
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+.navbar-icons .icon {
+  border-radius: 12px;
+  background: #27294205;
+  border: 1px solid #2729420f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-nav {
+    padding: 12px 0px 12px 16px;
+  }
+
+  .is_online_booking_page {
+    display: none;
+  }
+
+  .drawer-icon {
+    display: flex;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .hide-info {
+    display: none;
+  }
+}

@@ -1,0 +1,6 @@
+.travel-online-booking-flight-list .ant-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 34px;
+}

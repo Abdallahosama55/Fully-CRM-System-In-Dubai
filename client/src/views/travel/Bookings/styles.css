@@ -1,0 +1,103 @@
+.bookings_page_container .ant-tabs-ink-bar {
+    display: none !important;
+}
+
+.bookings_page_container .ant-tabs-nav::before {
+    display: none;
+}
+
+.bookings_page_container .ant-tabs-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.bookings_page_container .ant-tabs-nav-list .ant-tabs-tab {
+    border-radius: 8px;
+    border: 1px solid #EFEFF1;
+    background: #FFF;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+}
+
+
+.bookings_page_container .ant-tabs-nav-list .ant-tabs-tab-active {
+    background-color: #2D6ADB;
+}
+
+.bookings_page_container .ant-tabs-nav-list .ant-tabs-tab-active * {
+    color: #fff;
+}
+
+.bookings_page_container .ant-tabs-nav-list .ant-tabs-tab-icon {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 18px !important;
+}
+
+.bookings_page_container .ant-tabs-tab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+}
+
+
+.bookings_page_container .outline_circle {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    outline: 2px solid #313342;
+    display: inline-block;
+    margin-inline-end: 0.25rem;
+}
+
+/* BookingInfoCard */
+.bookings_page_container .rate_stars {
+    display: inline-flex;
+    align-items: center;
+    transform: scale(0.7);
+    gap: 1px;
+}
+
+.bookings_page_container .ant-tabs .ant-tabs-tab {
+    padding: 0.5rem 1rem;
+    width: fit-content;
+}
+
+.bookings_page_container .select-with-prefix {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bookings_page_container .select-prefix-icon {
+    margin-right: 8px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+
+.bookings_page_container .custom-select {
+    width: 100%;
+}
+
+.bookings_page_container .ant-select-selection-placeholder,
+.bookings_page_container .ant-select-selection-item,
+.bookings_page_container .ant-select-selection-search input {
+    text-indent: 24px !important;
+}
+
+/* advance_filters_card */
+.bookings_page_container  .advance_filters_card{
+    background: var(--vbooking-b100);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

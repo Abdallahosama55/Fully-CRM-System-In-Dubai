@@ -1,0 +1,3 @@
+.package_passengers_tab .questions_tabs .ant-tabs-nav-list{
+    width: clamp(150px, 100%, 300px);
+}

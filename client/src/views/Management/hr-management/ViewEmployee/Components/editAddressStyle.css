@@ -1,0 +1,10 @@
+.edit-page .ant-form-item-label {
+    padding: 0px !important;
+}
+
+.edit-page .ant-form-item .ant-form-item-label>label {
+    flex-direction: row !important;
+} 
+.edit-page .ant-form-item .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before{
+    display: none;
+} 

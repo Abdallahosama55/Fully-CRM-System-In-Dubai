@@ -1,0 +1,18 @@
+.book_room_section {
+    border: 1px solid #E5E5EA;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.book_room_section-header {
+    background: #F6F6F7;
+    border-radius: 8px 8px 0px 0px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.book_room_section-content {
+    padding: 24px;
+}

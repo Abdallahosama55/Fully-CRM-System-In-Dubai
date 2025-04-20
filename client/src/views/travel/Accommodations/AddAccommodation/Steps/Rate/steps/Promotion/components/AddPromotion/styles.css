@@ -1,0 +1,32 @@
+.add_promotion .add_promotion_steps {
+    border-radius: 31px;
+    background-color: #FFF;
+    width: fit-content;
+    margin: 20px 0;
+}
+
+.add_promotion .add_promotion_steps.step_1 {
+    background-color: #272942;
+}
+
+.add_promotion .add_promotion_steps .add_promotion_step {
+    padding: 16px 33px;
+    outline: none;
+    border: unset;
+    border-radius: 31px;
+}
+
+
+.add_promotion .add_promotion_steps .add_promotion_step.active {
+    background-color: #272942;
+    color: #FFFFFF;
+}
+
+.add_promotion .add_promotion_steps .add_promotion_step {
+    background-color: #FFF;
+    color: #272942;
+}
+
+.add_promotion .ant-select-arrow {
+    pointer-events: unset !important;
+}

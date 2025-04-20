@@ -1,0 +1,59 @@
+.add_supplier {
+    border: 1px solid red;
+    border-radius: 16px;
+    border: 1px solid var(--gray-100);
+    padding: 24px;
+}
+
+.add_supplier .add_supplier_header {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.add_supplier_body {
+    max-height: calc(100dvh - 158px);
+    overflow: auto;
+    padding-inline-end: 10px;
+    margin-top: 4px;
+}
+
+.add_supplier_body_content {
+    padding: 32px 0 0;
+}
+
+/* supplier_section */
+.add_supplier_section {
+    margin-bottom: 32px;
+}
+
+.add_supplier_section_header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px;
+    border-bottom: 1px dashed var(--gray-300);
+    margin-bottom: 12px;
+}
+
+.add_supplier_section_header img {
+    height: 16px;
+    width: 16px;
+}
+
+/* basic info section */
+.add_supplier .ant-upload.ant-upload-select {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.add_supplier .button_with_icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.add_supplier .button_with_icon svg{
+    height: 16px;
+    width: 16px;
+}

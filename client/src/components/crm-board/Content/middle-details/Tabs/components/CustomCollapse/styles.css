@@ -1,0 +1,93 @@
+.collapse_card {
+  background-color: #fff;
+  margin-top: 1rem;
+  border: 1px solid #efeff1;
+  border-radius: 12px;
+}
+
+.collapse_card_drop_down_menu_btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.collapse_card_drop_down_menu_btn.remove_btn {
+  color: #f40055;
+}
+
+/* head */
+.collapse_card .head {
+  padding: 0.7rem 1rem 0.5rem;
+}
+
+.collapse_card .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collapse_card .head .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collapse_card .toggle-btn {
+  width: 14px;
+  height: 8px;
+  cursor: pointer;
+  margin-inline-end: 0.8rem;
+}
+
+.collapse_card .collapse_icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #efeff1;
+}
+
+.collapse_card .collapse_icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.collapse_card .left .center {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.collapse_card .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.collapse_card .head .menu_btn {
+  cursor: pointer;
+  height: 0.75rem;
+}
+
+.collapse_card .body {
+  border-top: 1px solid transparent;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0rem 1rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.collapse_card .body.active {
+  width: 100%;
+  border-top: 1px solid #eeeeee;
+  max-height: 100dvh;
+  padding: 0.8rem 1rem 0.5rem;
+}

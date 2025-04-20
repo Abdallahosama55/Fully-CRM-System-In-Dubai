@@ -1,0 +1,13 @@
+.counter_input {
+    border-radius: 8px;
+    border: 1px solid var(--gray-300);
+    background: #FFF;
+    height: 44px !important;
+    /* Shadow/xs */
+    transition: 0.3s all ease-in-out;
+    padding: 0 6px;
+}
+
+.counter_input:hover {
+    border: 1px solid #5787f7;
+}

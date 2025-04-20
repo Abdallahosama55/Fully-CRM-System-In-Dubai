@@ -1,0 +1,59 @@
+.add_agencie {
+    border: 1px solid red;
+    border-radius: 16px;
+    border: 1px solid var(--Grey-100, #F2F4F7);
+    padding: 24px;
+}
+
+.add_agencie .add_agencie_header {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--Grey-200, #EAECF2);
+}
+
+.add_agencie_body {
+    max-height: calc(100dvh - 158px);
+    overflow: auto;
+    padding-inline-end: 10px;
+    margin-top: 4px;
+}
+
+.add_agencie_body_content {
+    padding: 32px 0 0;
+}
+
+/* supplier_section */
+.add_agencie_section {
+    margin-bottom: 32px;
+}
+
+.add_agencie_section_header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px;
+    border-bottom: 1px dashed var(--Grey-300, #CCD5DF);
+    margin-bottom: 12px;
+}
+
+.add_agencie_section_header img {
+    height: 16px;
+    width: 16px;
+}
+
+/* basic info section */
+.add_agencie .ant-upload.ant-upload-select {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.add_agencie .button_with_icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.add_agencie .button_with_icon svg{
+    height: 16px;
+    width: 16px;
+}

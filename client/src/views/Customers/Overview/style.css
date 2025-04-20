@@ -1,0 +1,86 @@
+.customers-table .ant-table-thead>tr>th {
+  color: #030713;
+  letter-spacing: 0.42px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  border-left: 1px solid #e1e1e6;
+  border-bottom: 1px solid #e1e1e6;
+
+  padding: 10.5px 12px;
+}
+
+.customers-table .ant-table {
+  border: 1px solid #e1e1e6;
+  border-radius: 8px;
+}
+
+.customers-table .ant-checkbox-inner {
+  border-radius: 6px;
+}
+
+.customers-table .ant-table-tbody .ant-table-row.ant-table-row-selected>.ant-table-cell {
+  background: #f0f5ff;
+}
+
+.customers-table .ant-table-body {
+  min-height: 400px;
+}
+
+.customers-table .ant-table-tbody>tr>td {
+  border-color: #e1e1e6;
+  color: #585a72;
+}
+
+.customers-root {
+  height: calc(100vh - 85px);
+}
+
+.customers-root .customers-table-container {
+  padding-top: 8px;
+  height: calc(100% - 76px);
+}
+
+.customers-root .filter-panel-container {
+  padding: 16px;
+  padding-top: 22px;
+  border-right: 2px solid #2729420f;
+}
+
+.customers-root .customers-list {
+  padding: 16px;
+  padding-top: 0;
+}
+
+.customers-root .reset-filters {
+  text-align: right;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.customers-root .filter-fields-scroll {
+  height: calc(100% - 150px);
+  overflow: auto;
+  padding-right: 8px;
+  margin-bottom: 16px;
+}
+
+.customers-root .customers-table-container .table-bottom-count {
+  margin-left: 16px;
+}
+
+.customers-table .ant-table-header {
+  background-color: #f0f3f5;
+  /* border-radius: 0px !important; */
+}
+
+.customers-root .ant-tabs .ant-tabs-tab {
+  padding: 0 0 12px 0;
+}
+
+.customers-root .ant-tabs .ant-tabs-tab>div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}

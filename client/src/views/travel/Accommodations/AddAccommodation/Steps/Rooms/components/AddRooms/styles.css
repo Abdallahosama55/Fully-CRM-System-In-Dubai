@@ -1,0 +1,56 @@
+.add_room {
+    padding: 2rem;
+    background-color: #F6F6F7;
+    border-radius: 8px;
+    border: 1px solid #E5E5EA;
+    margin-bottom: 1rem;
+}
+
+.add_room .add_room_header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #C7C7C7;
+    align-items: center;
+}
+
+.add_room .add_btn {
+    padding: 0.5rem 1rem;
+}
+
+.section_title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px dashed #C7C7C7;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.section_title span {
+    line-height: 24px;
+}
+
+.smoking_question {
+    background-color: #fff;
+    padding: 0.25rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #E5E5EA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smoking_question_options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smoking_question_options .ant-form-item:last-child {
+    margin: unset;
+}
+
+.add_room .ant-checkbox-group {
+    display: unset !important;
+}

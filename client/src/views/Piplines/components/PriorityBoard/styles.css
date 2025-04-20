@@ -1,0 +1,56 @@
+.priority-board_head {
+    margin: 1rem 0;
+}
+
+.priority-board_head .menu_column,
+.menu_column_cell {
+    width: 40px;
+}
+
+.priority_table_body {
+    position: relative;
+}
+
+.priority-board_body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.priority-board_body table thead,
+.priority_row {
+    padding: 0 1rem !important;
+    border-bottom: 1px solid #EEEEEE !important;
+}
+
+.priority-board_body table thead tr td {
+    padding: 1rem 0;
+}
+
+.priority_table_body tr td {
+    padding: 10px 0;
+}
+
+.priority_row.active_drag {
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 12px #00000014;
+    opacity: 1;
+    border-radius: 12px;
+    rotate: 2deg;
+}
+
+.priority_number {
+    width: 150px;
+}
+
+.priority_cell {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.priority_cell .priority_circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #CCC;
+}

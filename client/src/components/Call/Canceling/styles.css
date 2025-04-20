@@ -1,0 +1,23 @@
+
+.ant-modal-content .are-you-sure{
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+.ant-modal-content span.ant-typography{
+    font-size: 12px;
+    color: #8E8E93;
+}
+.ant-modal-content hr.line{
+    margin: 0.5rem 0px;
+}
+.ant-modal-content .leave-call{
+    font-weight: 500;
+    color: #E81224;
+    padding: 7px 0px;
+}
+.ant-modal-content .leave-call:hover{
+    color: #E81224;
+}
+.model-body-canceling button{
+    width: 100%;
+}

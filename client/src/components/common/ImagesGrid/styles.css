@@ -1,0 +1,93 @@
+.images_grid {
+    display: unset;
+}
+
+.images_grid .ant-image,
+.images_grid .ant-image-mask,
+.images_grid .ant-image .ant-image-img {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.images_grid .ant-image .ant-image-img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.images_grid .ant-image-mask {
+    border-radius: 8px;
+}
+
+.images_grid .images_container {
+    position: relative;
+}
+
+.images_grid .images_container .more_images {
+    background-color: rgba(24, 30, 61, 0.64);
+    color: #fff;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-radius: 40000px;
+
+    position: absolute;
+    bottom: 10px;
+    inset-inline-end: 10px;
+    cursor: pointer;
+}
+
+.show_more_modal .ant-modal-content {
+    padding: 0;
+}
+
+.image_in_show_more_modal {
+    width: 80dvw;
+    height: 85dvh;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.show_more_modal .slick-arrow.slick-prev,
+.show_more_modal .slick-arrow.slick-next {
+    width: 35px !important;
+    height: 35px !important;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 1 !important;
+}
+
+.show_more_modal .slick-arrow svg {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.show_more_modal .slick-arrow::after {
+    display: none !important;
+}
+
+.image_carousel {
+    display: none;
+}
+
+.image_carousel .image_slide {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .image_carousel {
+        display: block;
+    }
+
+    .images_grid {
+        display: none;
+    }
+}

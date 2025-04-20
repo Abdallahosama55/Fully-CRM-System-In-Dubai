@@ -1,0 +1,47 @@
+.package_add_page .ant-tabs-ink-bar {
+    display: none !important;
+}
+
+.package_add_page .ant-tabs-nav::before {
+    display: none;
+}
+
+.package_add_page .ant-tabs-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.package_add_page .ant-tabs-nav-list .ant-tabs-tab {
+    border-radius: 8px;
+    border: 1px solid #EFEFF1;
+    background: #FFF;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+}
+
+
+.package_add_page .ant-tabs-nav-list .ant-tabs-tab-active {
+    border: 1px solid var(--vbooking-c800);
+    background: var(--vbooking-c500);
+}
+
+.package_add_page .ant-tabs-nav-list .ant-tabs-tab-active * {
+    color: #2D6ADB !important;
+}
+
+.package_add_page .ant-tabs-nav-list .ant-tabs-tab-icon {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 18px !important;
+}
+
+.package_add_page .ant-tabs-tab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+}

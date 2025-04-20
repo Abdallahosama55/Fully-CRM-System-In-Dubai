@@ -1,0 +1,64 @@
+.desks_and_working_times .desks {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    overflow-y: auto;
+    padding: 5px 0;
+}
+
+.desks_and_working_times .days_grid {
+    display: grid;
+    padding: 1rem;
+    margin-top: 20px;
+    border-radius: 12px;
+    background-color: #2729420A;
+    overflow: auto;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
+}
+
+.desks_and_working_times .enable_all {
+    margin: 2rem 0 1rem;
+}
+
+.desks_and_working_times .time_zone {
+    padding: 1rem 0;
+    border-top: 1px solid #E5E5EA;
+    border-bottom: 1px solid #E5E5EA;
+}
+
+.desks_and_working_times .time_zone .time_zone_label {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.desks_and_working_times .holiday {
+    padding: 0.75rem;
+    background-color: #2729420A;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.days_board {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.days_board .day_switch {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.days_board .day_switch .ant-form-item {
+    margin-bottom: 0;
+}
+
+.days_board .day_switch p {
+    text-transform: capitalize;
+}

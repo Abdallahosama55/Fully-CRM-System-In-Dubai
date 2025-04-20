@@ -1,0 +1,8 @@
+.serach_block .ant-picker-input {
+    flex-direction: row-reverse;
+    gap: 6px;
+}
+
+.serach_block .ant-form-item {
+    margin-bottom: 0 !important;
+}

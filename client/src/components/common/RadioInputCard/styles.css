@@ -1,0 +1,36 @@
+.radio_input_card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.radio_input_card.disabled {
+    opacity: 0.7;
+    background-color: #f0f0f1;
+    border: 1px solid #CCC;
+}
+
+.radio_input_card.checked {
+    box-shadow: 0px 0px 6px #00000029;
+    border: 2px solid var(--vbooking-b700) !important;
+}
+
+.radio_input_card.not_checked {
+    border: 2px solid #D1D1D6;
+}
+
+.radio_input_card .ant-radio-wrapper .ant-radio-inner {
+    width: 24px;
+    height: 24px;
+}
+
+.radio_input_card .ant-radio-disabled .ant-radio-inner::after {
+    background-color: #FFF !important;
+}
+
+.radio_input_card .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+    background-color: var(--vbooking-b700);
+    border-color: var(--vbooking-b700);
+}

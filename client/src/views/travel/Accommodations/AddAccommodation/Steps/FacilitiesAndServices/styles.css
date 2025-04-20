@@ -1,0 +1,23 @@
+.facilities_and_services_tags {
+  padding: 8px 10px;
+  background-color: #fff;
+  border: 1px solid #e5e5ea;
+  border-radius: 51px;
+  cursor: pointer;
+}
+
+.facilities_and_services_tags .facilities_and_services_tags_icon {
+  background-color: #e5efff;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facilities_and_services_additional_questions {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #e5e5ea;
+}

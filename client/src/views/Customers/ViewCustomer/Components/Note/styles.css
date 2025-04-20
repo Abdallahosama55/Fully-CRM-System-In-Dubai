@@ -1,0 +1,9 @@
+.view-customer-note-collapse .ant-collapse-content {
+  border-top-color: #efeff1;
+  padding: 0;
+}
+
+.view-customer-note-collapse .ant-collapse-header-text {
+  font-size: 15px;
+  font-weight: 500;
+}

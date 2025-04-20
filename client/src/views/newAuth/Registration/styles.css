@@ -1,0 +1,49 @@
+.registration-content .content-holder {
+  display: flex;
+  max-width: 90.48vw;
+  box-shadow: 0 20px 24px -4px rgba(10, 13, 18, 8%), 0 8px 8px -4px rgba(10, 13, 18, 3%);
+}
+.registration-content .content-holder .content-logo {
+  background: linear-gradient(270deg, #c9edf0 0%, #99dee2 100%);
+  border-radius: 16px 0 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px 16px 23px 24px;
+  flex: 1;
+}
+.registration-content .content-holder .content-logo .content-logo-text {
+  margin-top: 58px;
+  text-align: center;
+  max-width: 516px;
+}
+.registration-content .content-holder .content-logo .content-logo-text .title-one {
+  color: #ba00ab;
+  text-align: center;
+  font-size: 36px;
+}
+.registration-content .content-holder .content-logo .content-logo-text .title-two {
+  color: #2d63cf;
+  text-align: center;
+  font-size: 36px;
+}
+.registration-content .content-holder .content-logo .content-logo-text .long-des {
+  color: #0067de;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.registration-content .content-holder .content-form {
+  border-radius: 0 16px 16px 0;
+  background-color: #fff;
+  flex: 1;
+}
+@media (max-width: 832px) {
+  .registration-content .content-holder .content-logo {
+    display: none;
+  }
+  .registration-content .content-holder .content-form {
+    border-radius: 16px;
+  }
+}

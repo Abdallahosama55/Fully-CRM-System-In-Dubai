@@ -1,0 +1,26 @@
+.view_session .ant-picker-calendar,
+.view_session .ant-picker-panel {
+    background-color: transparent !important;
+}
+
+
+.view_session .date_in_range {
+    position: absolute;
+    inset: 0;
+}
+
+.view_session .ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date-today {
+    border-color: #ebebec;
+}
+
+.ant-picker-cell .ant-picker-cell-inner:has(.ant-picker-calendar-date-content .date_in_range) {
+    background-color: #272942 !important;
+}
+
+.ant-picker-cell .ant-picker-cell-inner:has(.ant-picker-calendar-date-content .date_in_range) .ant-picker-calendar-date-value {
+    color: #FFF !important;
+}
+
+.ant-picker-cell .ant-picker-cell-inner:has(.ant-picker-calendar-date-content .date_in_range):hover {
+    background-color: #0c0d1c !important;
+}

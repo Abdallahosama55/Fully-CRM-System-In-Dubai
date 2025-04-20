@@ -1,0 +1,13 @@
+.user-tickit-view {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100vh;
+  border-right: 1.5px solid #f2f2f4;
+}
+
+.user-tickit-view .logo-image {
+  padding: 1rem;
+  border: 1.5px solid #f2f2f4;
+  border-bottom: none;
+  border-right: none;
+}

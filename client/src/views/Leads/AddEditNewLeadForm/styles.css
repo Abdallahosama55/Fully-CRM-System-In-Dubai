@@ -1,0 +1,51 @@
+.new-lead-drawer .Buttons {
+  gap: 12px;
+}
+
+.new-lead-drawer .Buttons .converButton {
+  background-color: #fff;
+  color: #d1d1d6;
+  border: 1px solid #d1d1d6;
+}
+
+.new-lead-drawer .assgined-to {
+  margin-top: 1rem;
+}
+
+.lead-side-info {
+  padding: 10px 10px;
+  box-shadow: 0px 0px 12px #00000010;
+  border: 1px solid #efeff1;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.lead-side-info .personal-name {
+  text-align: center;
+  font: normal normal medium 13px/20px Poppins;
+  letter-spacing: 0.26px;
+  color: #030713;
+  opacity: 1;
+  max-width: calc(100% - 56px);
+}
+
+.leads-add-edit-lead-form-lead-side-info .ant-collapse-header {
+  padding: 12px 8px;
+  border-radius: 8px;
+  background: #f6f6fa;
+  gap: 8px;
+}
+
+.leads-add-edit-lead-form-lead-side-info .ant-collapse-header-text {
+  font-size: 12px;
+  padding: 0;
+  text-align: left;
+}
+
+.leads-add-edit-lead-form-lead-side-info .ant-collapse-content-active {
+  border-top: unset;
+}
+
+.leads-add-edit-lead-form-lead-side-info .ant-collapse-content {
+  background: transparent;
+}

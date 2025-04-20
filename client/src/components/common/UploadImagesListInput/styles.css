@@ -1,0 +1,41 @@
+.image_preview_card {
+    position: relative;
+    width: fit-content;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #EAECF0;
+}
+
+
+.image_preview_card .image-preview {
+    border-radius: 8px;
+    object-fit: cover !important;
+}
+
+.image_menu_container {
+    position: absolute;
+    top: 8px;
+    inset-inline-end: 8px;
+    z-index: 1000;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.cover_container {
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border-radius: 8px;
+    z-index: 999;
+    background-color: #000;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover_container span {
+    color: #fff;
+    opacity: 1;
+}

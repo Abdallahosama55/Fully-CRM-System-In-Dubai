@@ -1,0 +1,95 @@
+.book_experiance_page {
+    padding: 1rem;
+}
+
+.book_experiance_page .page_content{
+    max-width: 1440px;
+    margin: 0 auto !important;
+}
+
+
+.experience_info .info_with_icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 0;
+}
+
+/* slider */
+.experience_info .experience_card_image,
+.experience_info .ant-carousel {
+    height: 100%;
+    min-height: 300px;
+    max-height: 500px;
+    width: 100% !important;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.experience_info .slick-arrow.slick-prev,
+.experience_info .slick-arrow.slick-next {
+    width: 35px !important;
+    height: 35px !important;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 1 !important;
+}
+
+.experience_info .slick-arrow svg {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.experience_info .slick-arrow::after {
+    display: none !important;
+}
+
+/* info */
+.experience_info .info_body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience_info .info_body .experience_data{
+    flex-grow: 1;
+}
+
+.experience_info .experience_info .title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.experience_info .title h2 {
+    margin-bottom: 0;
+}
+
+.experience_info .rate_stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.experience_info .rate_stars svg {
+    transform: scale(1.4);
+}
+
+.experience_info .location {
+    max-width: 100%;
+}
+
+.experience_info .info_body-price_section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.experience_info .cancellation{
+    color: #C30000;
+}

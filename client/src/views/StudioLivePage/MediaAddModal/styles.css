@@ -1,0 +1,31 @@
+.media-add-modal .dimension-files-tab {
+  background: #fff;
+  border-radius: 14px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  transition: color 0s;
+  transition: background 0.2s ease-in-out;
+}
+
+.media-add-modal .dimension-files-tab .ant-col {
+  font-size: 12px;
+}
+
+.media-add-modal .dimension-files-tab:hover {
+  background: #3a5ee3cc !important;
+  color: #fff !important;
+}
+
+.media-add-modal .dimension-files-tab:hover svg path {
+  fill: #fff;
+}
+
+.media-add-modal .dimension-files-tab.active {
+  background: #3a5ee3;
+  color: #fff;
+}
+
+.media-add-modal .dimension-files-tab.active svg path {
+  fill: #fff;
+}

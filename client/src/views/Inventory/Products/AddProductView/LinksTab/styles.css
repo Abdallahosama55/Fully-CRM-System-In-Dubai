@@ -1,0 +1,46 @@
+.upload-img {
+  height: 350px !important;
+}
+
+.upload-img .add-category-preview {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 350px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.general-form .links-categories {
+  background-color: #ffffff;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+}
+.general-form .links-categories-item .ant-select-selector {
+  border: none;
+}
+.general-form .add-ategory {
+  height: 38px;
+  padding: 0 10px;
+  margin-right: 2px;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #272942;
+}
+.isDownloadAbel .ant-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.isDownloadAbel .ant-row .ant-col.ant-form-item-label {
+  padding: 0;
+}
+.isDownloadAbel .ant-row.ant-col.ant-form-item-control {
+  width: fit-content;
+}

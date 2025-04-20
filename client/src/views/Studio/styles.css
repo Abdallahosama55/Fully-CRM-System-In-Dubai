@@ -1,0 +1,8 @@
+.studio-table .ant-table-thead > tr > th {
+  color: #030713;
+  font: normal normal medium 14px/21px Poppins;
+  letter-spacing: 0.42px;
+}
+.studio-table .ant-table-body {
+  min-height: 400px;
+}

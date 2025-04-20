@@ -1,0 +1,24 @@
+.customers-desk {
+  margin-top: 12px;
+}
+.customers-desk .more-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #2729420a;
+  cursor: pointer;
+}
+
+.ticketing-actions .ant-dropdown-menu .ant-dropdown-menu-item {
+  padding: 8px 10px;
+}
+
+.ticketing-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: auto;
+  z-index: 1;
+}

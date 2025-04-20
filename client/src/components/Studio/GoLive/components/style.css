@@ -1,0 +1,46 @@
+.customers-table .ant-table-thead > tr > th {
+  color: #030713;
+  font: normal normal medium 14px/21px Poppins;
+  letter-spacing: 0.42px;
+}
+
+.customers-table .ant-table-body {
+  min-height: 400px;
+}
+
+.import-participants-root {
+  height: calc(100vh - 85px);
+}
+
+.import-participants-root .customers-table-container {
+  padding-top: 8px;
+  height: calc(100% - 196px);
+}
+
+.import-participants-root .filter-panel-container {
+  padding: 16px;
+  padding-top: 22px;
+  border-right: 2px solid #2729420f;
+}
+
+.import-participants-root .customers-list {
+  padding: 16px;
+  padding-top: 0;
+}
+
+.import-participants-root .reset-filters {
+  text-align: right;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.import-participants-root .filter-fields-scroll {
+  height: calc(100% - 112px);
+  overflow: auto;
+  padding-right: 8px;
+  margin-bottom: 16px;
+}
+
+.import-participants-root .customers-table-container .table-bottom-count {
+  margin-left: 16px;
+}

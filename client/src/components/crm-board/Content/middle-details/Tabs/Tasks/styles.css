@@ -1,0 +1,25 @@
+.filter_label {
+    margin: 1rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter_label svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.filters{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tasks_history_head{
+    margin: 1rem 0;
+}
+
+.history-task{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

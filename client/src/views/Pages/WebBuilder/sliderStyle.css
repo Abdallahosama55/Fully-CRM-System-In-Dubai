@@ -1,0 +1,166 @@
+.gjs-sm-custom-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.gjs-sm-custom-button button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  width: 100px;
+  text-transform: capitalize;
+}
+.gjs-sm-custom-button button:hover {
+  opacity: 0.9;
+}
+.gjs-sm-custom-button button:active {
+  transform: scale(0.94);
+}
+
+div[class*="gjs-sm-swiper-slide"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+div[class*="gjs-sm-swiper-slide"] .gjs-fields {
+  flex: 1;
+}
+div[class*="gjs-sm-swiper-slide"] .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+div[class*="gjs-sm-swiper-slide"] button {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-top: 4px;
+  background: #545454;
+  color: #fff;
+}
+div[class*="gjs-sm-swiper-slide"] button:hover {
+  opacity: 0.9;
+}
+div[class*="gjs-sm-swiper-slide"] button.slect {
+  flex: 2;
+}
+div[class*="gjs-sm-swiper-slide"] button.delete {
+  flex: 1;
+  background-color: #dc3545;
+}
+div[class*="gjs-sm-swiper-slide"] button.delete:hover {
+  background-color: #bb2d3b;
+}
+div[class*="gjs-sm-swiper-slide"] button:active {
+  transform: scale(0.95);
+}
+.gjs-sm-SwiperSettings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* new */
+.gjs-trt-trait__wrp-slide .gjs-label-wrp {
+  display: none;
+}
+.gjs-trt-trait__wrp-addSlider .gjs-label-wrp {
+  display: none;
+}
+.gjs-field-slide {
+  background-color: transparent;
+}
+.slide-container {
+  display: flex;
+  border: 1px solid #fff;
+}
+.slide-container .slide-selector {
+  flex: 8;
+  border-right: 1px solid #fff;
+  padding: 7px;
+}
+.slide-container .copy-slide {
+  flex: 1;
+  border-right: 1px solid #fff;
+  padding: 7px;
+}
+.slide-container .delete-slide {
+  flex: 1;
+  padding: 7px;
+}
+.slide-container button {
+  transition: all 0.3s;
+}
+.slide-container button:hover {
+  background-color: #8f898a;
+}
+.advanced-property {
+  width: 100%;
+  margin-bottom: 7px;
+  border-top: none;
+  height: 0;
+  border: transparent;
+  content-visibility: hidden;
+}
+.advanced-property.show {
+  border: 1px solid #fff;
+  height: auto;
+  content-visibility: visible;
+  border-top: none;
+}
+
+.advanced-property .color-input {
+  padding: 0 !important;
+}
+
+.advanced-property #contant-title,
+.advanced-property #contant-description {
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 400;
+}
+
+.button-holder {
+  display: flex;
+  align-items: center;
+}
+.button-holder button:nth-child(1) {
+  border: 1px solid #fff;
+  padding: 4px;
+  flex: 1;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+.button-holder button:nth-child(2) {
+  border: 1px solid #fff;
+  padding: 4px;
+  flex: 1;
+}
+.button-holder button:nth-child(3) {
+  border: 1px solid #fff;
+  padding: 4px;
+  flex: 1;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.advanced-property .button-holder button {
+  transition: all 0.3s;
+}
+.advanced-property .button-holder button.active,
+.advanced-property .button-holder button:hover {
+  background-color: #8f898a;
+}

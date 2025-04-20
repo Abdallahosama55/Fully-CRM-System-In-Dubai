@@ -1,0 +1,61 @@
+.view_package .ant-tabs-ink-bar {
+    display: none !important;
+}
+
+.view_package .ant-tabs-nav::before {
+    display: none;
+}
+
+.view_package .ant-tabs-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.view_package .ant-tabs-nav-list .ant-tabs-tab {
+    border-radius: 8px;
+    border: 1px solid #EFEFF1;
+    background: #FFF;
+    margin: 0;
+    padding: 8px;
+}
+
+
+.view_package .ant-tabs-nav-list .ant-tabs-tab-active {
+    border: 1px solid var(--vbooking-c800);
+    background: var(--vbooking-c500);
+}
+
+.view_package .ant-tabs-nav-list .ant-tabs-tab-active * {
+    color: #2D6ADB !important;
+}
+
+.view_package .ant-tabs-nav-list .ant-tabs-tab-icon {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 18px !important;
+}
+
+.view_package .ant-tabs-tab-btn {
+    gap: 8px;
+    min-width: 120px;
+}
+
+.view_package .full_width_button>div>div>.ant-tabs-nav-list,
+.view_package .full_width_button>div>div>.ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn,
+.view_package .full_width_button>div>div>.ant-tabs-nav-list .ant-tabs-tab {
+    width: 100%;
+}
+
+.view_package .full_width_button>div>div>.ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.package_section_container {
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--gray-200);
+    background: #FFF;
+}

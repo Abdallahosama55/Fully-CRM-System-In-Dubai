@@ -1,0 +1,33 @@
+.main-navigation {
+}
+
+.main-navigation .main-navigation-wraper {
+  /* display: flex;
+  column-gap: 24px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible; */
+}
+
+.main-navigation .main-navigation-item {
+  /* display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 16px 33px;
+  margin: 0 !important; */
+}
+
+.main-navigation-active-item {
+  /* background-color: #fff;
+  color: #272942;
+  border-radius: 31px !important; */
+}
+
+.main-navigation-active-item .ant-typography {
+  /* color: #272942 !important; */
+}
+
+.main-navigation .main-navigation-active-item::before {
+  /* display: none; */
+}

@@ -1,0 +1,10 @@
+.add_suplement {
+    position: relative;
+    min-height: 100%;
+}
+
+.add_supplement_btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

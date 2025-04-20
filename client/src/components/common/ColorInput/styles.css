@@ -1,0 +1,21 @@
+.hex_color_input .ant-color-picker-color-block{
+    border-radius: 50% !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.hex_color_input .ant-color-picker-trigger{
+    background-color: transparent !important;
+    border: unset !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: unset;
+}
+
+.hex_color_input .ant-input-affix-wrapper.ant-input-outlined{
+    border-inline-end: unset !important;
+}
+.hex_color_input .ant-input-group-addon{
+    background-color: #fff !important;
+}

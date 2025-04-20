@@ -1,0 +1,43 @@
+.attachments-form-header {
+  margin-top: 40px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-13) var(--unnamed-font-family-poppins);
+  letter-spacing: var(--unnamed-character-spacing-0-28);
+  color: var(--unnamed-color-030713);
+
+  font: normal normal normal 14px/13px Poppins;
+  letter-spacing: 0.28px;
+  color: #030713;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.attachments-form-dragger.ant-upload-list-item {
+  width: 350px;
+  background: #f1f1f3 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 18px;
+}
+
+.attachments-form-dragger.ant-upload-drag {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px dashed #d1d1d6;
+  border-radius: 8px;
+  min-height: 120px;
+}
+
+.attachments-form-dragger.ant-upload-btn {
+  padding: 38px 0px !important;
+}
+
+.attachments-form-dragger-ondrop {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal)
+    var(--unnamed-font-size-12) / 19px var(--unnamed-font-family-poppins);
+  letter-spacing: var(--unnamed-character-spacing-0-24);
+  color: var(--gray-2);
+
+  font: normal normal normal 12px/19px Poppins;
+  letter-spacing: 0.24px;
+  color: #aeaeb2;
+}

@@ -1,0 +1,35 @@
+.forgot-container-card {
+  padding: 23px 44px;
+  border-radius: 16px;
+  background-color: #fff;
+  width: 446px;
+}
+.forgot-container-card .forgot-title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #224a9a;
+  margin-bottom: 16px;
+}
+
+.forgot-container-card .forgot-checkbox-row {
+  margin-bottom: 23px;
+}
+.forgot-container-card .forgot-checkbox-row .forgot {
+  color: #2d63cf;
+  font-size: 14px;
+  font-weight: bold;
+}
+.forgot-container-card .account {
+  font-size: 12px;
+}
+.forgot-container-card .register {
+  color: #2d63cf;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 446px) {
+  .forgot-container-card {
+    width: auto;
+  }
+}

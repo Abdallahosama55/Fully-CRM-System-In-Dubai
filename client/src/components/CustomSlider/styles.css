@@ -1,0 +1,76 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.custom-slider .slick-dots li button:before {
+  display: flex !important;
+}
+
+.custom-slider .slick-dots li button:before {
+  top: 30px;
+  color: white;
+}
+
+.custom-slider .slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.custom-slider .slick-slide img {
+  display: initial !important;
+}
+
+.custom-slider .slider-next-arrow,
+.custom-slider .slider-prev-arrow {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-self: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  color: #b5b5b5;
+}
+
+.custom-slider .slider-next-arrow {
+  right: -0.7rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-slider .slider-prev-arrow {
+  left: 0.4rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.custom-slider .slider-next-arrow span,
+.custom-slider .slider-prev-arrow span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-slider .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.custom-slider .slick-slide > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-slider .slick-slide:not(:last-of-type) > div {
+  padding-inline-end: 0.5rem;
+}
+
+.custom-slider .slick-track {
+  margin-left: 0;
+  margin-right: 0;
+}

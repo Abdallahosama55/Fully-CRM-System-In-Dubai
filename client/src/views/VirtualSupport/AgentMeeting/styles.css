@@ -1,0 +1,108 @@
+.agent-meeting-content .agent-audio-renderer {
+  position: relative;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2D1532, #2A385A, #145E70);
+}
+
+.agent-meeting-content .agent-full-screen {
+  position: absolute;
+  top: 16px;
+  right: 8px;
+
+  display: flex;
+  width: 48px;
+  height: 32px;
+  padding: 16px;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+
+  border-radius: 51px;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  border: 1px solid color(display-p3 1 1 1 / 0.40);
+  background: linear-gradient(153deg, rgba(255, 255, 255, 0.30) 0.97%, rgba(255, 255, 255, 0.10) 100.01%);
+  background: linear-gradient(153deg, color(display-p3 1 1 1 / 0.30) 0.97%, color(display-p3 1 1 1 / 0.10) 100.01%);
+  backdrop-filter: blur(20px);
+
+  cursor: pointer;
+  color: white;
+}
+
+.agent-meeting-content .name {
+  border-radius: 51px;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  border: 1px solid color(display-p3 1 1 1 / 0.40);
+  background: linear-gradient(153deg, rgba(255, 255, 255, 0.30) 0.97%, rgba(255, 255, 255, 0.10) 100.01%);
+  background: linear-gradient(153deg, color(display-p3 1 1 1 / 0.30) 0.97%, color(display-p3 1 1 1 / 0.10) 100.01%);
+  backdrop-filter: blur(20px);
+  
+  display: flex;
+  height: 32px;
+  padding: 16px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  color: white;
+  position: absolute;
+  top: 16px;
+  left: 8px;
+}
+
+.agent-meeting-content .caller-audio-renderer {
+  position: relative;
+  border-radius: 8px;
+  background: #262221;
+}
+
+.agent-meeting-content .caller-audio-track {
+  position: absolute;
+  top: 16px;
+  right: 8px;
+
+  display: flex;
+  width: 80px;
+  height: 32px;
+  padding: 16px;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+
+  border-radius: 51px;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  border: 1px solid color(display-p3 1 1 1 / 0.40);
+  background: linear-gradient(153deg, rgba(255, 255, 255, 0.30) 0.97%, rgba(255, 255, 255, 0.10) 100.01%);
+  background: linear-gradient(153deg, color(display-p3 1 1 1 / 0.30) 0.97%, color(display-p3 1 1 1 / 0.10) 100.01%);
+  backdrop-filter: blur(20px);
+
+  color: white;
+}
+
+.agent-meeting-content .caller-track-controls {
+  position: absolute;
+  bottom: 16px;
+  right: 8px;
+
+  display: flex;
+  width: 80px;
+  height: 32px;
+  padding: 10px 0 4px 6px;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+
+  border-radius: 51px;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  border: 1px solid color(display-p3 1 1 1 / 0.40);
+  background: linear-gradient(153deg, rgba(255, 255, 255, 0.30) 0.97%, rgba(255, 255, 255, 0.10) 100.01%);
+  background: linear-gradient(153deg, color(display-p3 1 1 1 / 0.30) 0.97%, color(display-p3 1 1 1 / 0.10) 100.01%);
+  backdrop-filter: blur(20px);
+
+  color: white;
+}
+

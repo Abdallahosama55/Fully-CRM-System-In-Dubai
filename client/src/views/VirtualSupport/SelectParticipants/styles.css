@@ -1,0 +1,21 @@
+.custome-checkbox-reversed {
+  width: 100%;
+}
+
+.custome-checkbox-reversed .ant-checkbox-wrapper {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.custome-checkbox-reversed .ant-checkbox-wrapper::after {
+  display: none;
+}
+
+.custome-checkbox-reversed .ant-checkbox + span {
+  padding-inline-start: 0px;
+}
+
+.custome-checkbox-reversed .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+  margin-inline-start: 0px;
+}

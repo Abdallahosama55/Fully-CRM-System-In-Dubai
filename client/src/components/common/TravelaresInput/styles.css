@@ -1,0 +1,64 @@
+.travelers_inut_popup {
+    background-color: #fff;
+    width: 500px;
+    padding: 12px;
+}
+
+.travelres_button {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    line-height: 1.57;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.icon_container {
+    max-width: 45px;
+}
+
+
+
+.counter {
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    gap: 8px;
+}
+
+.counter .counter_button {
+    user-select: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.counter_item {
+    margin-top: 12px;
+}
+
+.child_age_input {
+    width: 250px;
+}
+
+.travelers_counter{
+    margin: 0 !important;
+}
+
+.childes_ages {
+    width: 100%;
+}
+
+.travelers_input_popover.error{
+    border: 1px solid #ff4d4f !important;
+}
+
+.ant-popover-content .ant-popover-inner:has(.travelers_inut_popup.error){
+    border: 1px solid #ff4d4f !important;
+
+}

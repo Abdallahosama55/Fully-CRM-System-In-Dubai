@@ -1,0 +1,78 @@
+.registration_form_container {
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 24px 16px 23px 24px;
+}
+.form-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 82vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.form-container::-webkit-scrollbar {
+  display: none;
+}
+.registration_form_container .registration_form_title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #9c25a0;
+  margin-bottom: 16px;
+}
+.registration_form_container .registration_form_title span {
+  color: #224a9a;
+}
+.registration_form_container .form-title {
+  color: #2d63cf;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+.registration_form_container .register-button {
+  background-color: #9c25a0 !important;
+  border-color: #9c25a0 !important;
+  color: #fff !important;
+  font-size: 14px;
+  text-transform: capitalize;
+  width: 100%;
+  margin-top: 11px;
+}
+.registration_form_container .register-button:hover {
+  opacity: 0.8;
+}
+
+.registration_form_tabs .ant-tabs-nav ::before {
+  border: none;
+}
+.registration_form_tabs .ant-tabs-nav-list > div {
+  flex: 1;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration_form_tabs .ant-tabs-nav-list > div:first-child {
+  flex: 1;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px 0 0 8px;
+}
+.registration_form_tabs .ant-tabs-nav-list {
+  width: 100%;
+}
+.registration_form_tabs .ant-tabs-nav-list > div:nth-child(2) {
+  flex: 1;
+  border: 1px solid #d0d5dd;
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+.registration_form_tabs .ant-tabs-tab.ant-tabs-tab-active {
+  background: linear-gradient(270deg, #d0ecef 0%, #a8dce1 100%);
+  color: #224a9a;
+  border: none !important;
+}
+
+.registration_form_tabs .ant-tabs-ink-bar {
+  display: none !important;
+}

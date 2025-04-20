@@ -1,0 +1,11 @@
+.ai_configrations {
+  padding: 12px;
+}
+
+.ai_configrations .ant-tabs .ant-tabs-tab {
+  opacity: 0.5;
+}
+
+.ai_configrations .ant-tabs .ant-tabs-tab-active {
+  opacity: 1;
+}

@@ -1,0 +1,119 @@
+.opration-table thead th {
+  padding: 16px !important;
+  background-color: #f8fafb !important;
+}
+
+.opration-table .ant-table-content,
+.opration-table .ant-table.ant-table-bordered {
+  scrollbar-color: auto !important;
+  scrollbar-width: none !important;
+}
+.opration-table .ant-table-container {
+  border: none !important;
+}
+.opration-table .ant-table-body::-webkit-scrollbar {
+  display: none;
+}
+/* /// */
+
+.operation_page_container .ant-tabs-ink-bar {
+  display: none !important;
+}
+
+.operation_page_container .ant-tabs-nav::before {
+  display: none;
+}
+
+.operation_page_container .ant-tabs-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.operation_page_container .ant-tabs-nav-list .ant-tabs-tab {
+  border-radius: 8px;
+  border: 1px solid #efeff1;
+  background: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+}
+
+.operation_page_container .ant-tabs-nav-list .ant-tabs-tab-active {
+  background-color: #2d6adb;
+}
+
+.operation_page_container .ant-tabs-nav-list .ant-tabs-tab-active * {
+  color: #fff;
+}
+
+.operation_page_container .ant-tabs-nav-list .ant-tabs-tab-icon {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 18px !important;
+}
+
+.operation_page_container .ant-tabs-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.operation_page_container .outline_circle {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  outline: 2px solid #313342;
+  display: inline-block;
+  margin-inline-end: 0.25rem;
+}
+
+/* BookingInfoCard */
+.operation_page_container .rate_stars {
+  display: inline-flex;
+  align-items: center;
+  transform: scale(0.7);
+  gap: 1px;
+}
+
+.operation_page_container .ant-tabs .ant-tabs-tab {
+  padding: 0.5rem 1rem;
+  width: fit-content;
+}
+
+.operation_page_container .select-with-prefix {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.operation_page_container .select-prefix-icon {
+  margin-right: 8px;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  z-index: 999;
+  transform: translateY(-50%);
+}
+
+.operation_page_container .custom-select {
+  width: 100%;
+}
+
+.operation_page_container .ant-select-selection-placeholder,
+.operation_page_container .ant-select-selection-item,
+.operation_page_container .ant-select-selection-search input {
+  text-indent: 24px !important;
+}
+
+/* advance_filters_card */
+.operation_page_container .advance_filters_card {
+  background: var(--vbooking-b100);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}

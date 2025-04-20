@@ -1,0 +1,146 @@
+:root {
+  /* COLORS FROM DESIGN SYSTEM */
+  --vbooking-b900: #1C3D80;
+  --vbooking-b800: #234CA0;
+  --vbooking-b700: #2A5CC1;
+  --vbooking-b600: #3D6FD5;
+  --vbooking-b500: #5E87DC;
+  --vbooking-b400: #7E9FE3;
+  --vbooking-b300: #9EB7EA;
+  --vbooking-b200: #BECFF1;
+  --vbooking-b100: #DFE7F8;
+
+  --vbooking-c900: #A8DCE1;
+  --vbooking-c800: #B2E0E4;
+  --vbooking-c700: #BBE4E8;
+  --vbooking-c600: #C5E8EB;
+  --vbooking-c500: #CFECEE;
+  --vbooking-c400: #D8EFF2;
+  --vbooking-c300: #E2F3F5;
+  --vbooking-c200: #ECF7F8;
+  --vbooking-c100: #F5FBFC;
+
+  --vbooking-v900: #831F87;
+  --vbooking-v800: #A126A6;
+  --vbooking-v700: #BF2DC5;
+  --vbooking-v600: #CF44D4;
+  --vbooking-v500: #D764DB;
+  --vbooking-v400: #DF83E2;
+  --vbooking-v300: #E7A2EA;
+  --vbooking-v200: #EFC1F1;
+  --vbooking-v100: #F7E0F8;
+
+  /* TRAVEL COLORS */
+  --travel-flight1: #175CD3;
+  --travel-flight2: #EFF8FF;
+  --travel-hotel1: #B93815;
+  --travel-hotel2: #FEF6EE;
+  --travel-transfer1: #027A48;
+  --travel-transfer2: #ECFDF3;
+  --travel-experience1: #5925DC;
+  --travel-experience2: #F4F3FF;
+  --travel-resturants1: #B93815;
+  --travel-resturants2: #FFF1F3;
+
+  /* BASE COLORS */
+  --base-white: #FFF;
+  --base-black: #000;
+
+  /* FONT COLORS */
+  --font-primary: #344054;
+  --font-secondary: #667085;
+  --font-disabled: #D0D5DD;
+  --font-link: #2D6ADB;
+  --font-blue: #2A5CC1;
+
+  /* ICONS COLORS */
+  --icons-primary: #344054;
+  --icons-secondary: #667085;
+  --icons-disabled: #D0D5DD;
+  --icons-blue1: #2A5CC1;
+  --icons-vivid1: #A126A6;
+
+  /* GRAY COLORS */
+  --gray-900: #101828;
+  --gray-800: #1D2939;
+  --gray-700: #344054;
+  --gray-600: #475467;
+  --gray-500: #667085;
+  --gray-400: #98A2B3;
+  --gray-300: #D0D5DD;
+  --gray-200: #EAECF0;
+  --gray-100: #F2F4F7;
+  --gray-50: #F9FAFB;
+  --gray-25: #FCFCFD;
+
+  /* LAYOUT COLORS */
+  --side-menu-bg-1: #E4EDFF;
+  --side-menu-bg-2: #F1F5FF;
+  --side-menu-bg-3: #CFDEFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins";
+}
+
+body[dir="rtl"] {
+  overflow-x: hidden;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder {
+  font-weight: 400;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  font-weight: 500;
+}
+
+textarea {
+  font-weight: 500;
+}
+
+textarea::placeholder {
+  font-weight: 400;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  padding: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b8b9bb;
+  border-radius: 16px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #76797c;
+  border-radius: 16px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

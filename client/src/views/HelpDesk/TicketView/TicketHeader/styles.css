@@ -1,0 +1,37 @@
+.main-ticket-info {
+  padding: 16px;
+  border-bottom: 1.5px solid #f2f2f4;
+  border-top: 1.5px solid #f2f2f4;
+}
+
+.main-ticket-info .tickit-number-text {
+  padding: 4px 16px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #e9e9ec;
+}
+
+.main-ticket-info .tickit-number {
+  padding: 4px 16px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #e9e9ec;
+  border-left: none;
+}
+
+.main-ticket-info .priority-tag {
+  padding: 4px 16px;
+  border-radius: 5px;
+  border: 1px solid #e9e9ec;
+}
+
+.main-ticket-info .tickit-status {
+  padding: 4px 16px;
+  border-radius: 5px;
+}
+
+.main-ticket-info .tickit-type {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 2px 3px 6px #2729420f;
+  cursor: pointer;
+}

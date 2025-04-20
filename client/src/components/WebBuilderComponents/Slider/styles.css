@@ -1,0 +1,57 @@
+.web_builder_slider {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.edit_btns_container {
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit_btns_container button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    opacity: 0.5;
+    transition: 0.3s all ease-in-out;
+}
+
+.edit_btns_container button:hover {
+    opacity: 1;
+}
+
+.web_builder_slider .image_slide_container {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.web_builder_slider .image_slide {
+    border-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+}
+
+.web_builder_slider .slick-dots ul {
+    list-style: none !important;
+}
+
+.web_builder_slider .slick-dots li button:before,
+.web_builder_slider .slick-active li button:before {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: var(--dotes-color);
+    color: var(--dotes-color) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

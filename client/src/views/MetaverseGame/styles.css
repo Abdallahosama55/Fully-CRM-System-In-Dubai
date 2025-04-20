@@ -1,0 +1,172 @@
+.join-meet {
+  min-height: 100vh;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  overflow-x: hidden !important;
+}
+
+.enter-email::placeholder {
+  color: #999; /* Change the placeholder color as desired */
+}
+
+.join-meet .meet-blur {
+  background: rgba(0, 0, 0, 0.21);
+  backdrop-filter: blur(15px);
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-meet .join-meet-main {
+  padding: 16px 24px 16px 24px;
+  border-radius: 8px;
+  background: #fff;
+  max-width: 550px;
+  width: 100%;
+}
+
+.join-meet .icon-wrapper {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.join-meet .join-meet-form label {
+  color: #030713 !important;
+}
+
+.join-meet
+  .join-meet-form
+  :where(.css-dev-only-do-not-override-1ljbt02).ant-select-outlined:not(.ant-select-customize-input)
+  .ant-select-selector,
+.join-meet
+  .join-meet-form
+  .ant-select-focused:where(.css-dev-only-do-not-override-1ljbt02).ant-select-outlined:not(
+    .ant-select-disabled
+  ):not(.ant-select-customize-input):not(.ant-pagination-size-changer)
+  .ant-select-selector,
+.join-meet
+  .join-meet-form
+  :where(.css-dev-only-do-not-override-1ljbt02).ant-select-outlined:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer):hover
+  .ant-select-selector {
+  border: 1px solid rgb(142, 142, 147);
+  background: transparent;
+}
+
+.join-meet
+  .join-meet-form
+  :where(.css-dev-only-do-not-override-1ljbt02).ant-select
+  .ant-select-selection-placeholder,
+.join-meet
+  .join-meet-form
+  :where(.css-dev-only-do-not-override-1ljbt02).ant-select
+  .ant-select-arrow {
+  color: #030713;
+}
+
+.join-meet .join-meet-form .ant-form-item:not(:first-of-type) {
+  margin-top: 1rem !important;
+}
+
+.join-meet .ant-select-single .ant-select-selector {
+  color: #030713 !important;
+}
+
+.join-meet .join-meet-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 53px;
+}
+
+.join-meet .settings-select {
+  max-height: 180px;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+.join-meet .device-settings {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  padding: 0 1rem;
+}
+
+.join-meet .join-meet-btn {
+  background: #3a5ee3;
+}
+
+.join-meet .join-meet-btn:hover {
+  background: #4e72f1;
+}
+
+.join-meet .settings-close {
+  animation: fadeOut 0.4s ease-in-out;
+}
+
+.join-meet .settings-select {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 1366px) {
+  .join-meet .join-meet-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .join-meet .join-meet-main {
+    padding: 1rem;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .join-meet .join-meet-main {
+    padding: 1rem;
+  }
+}
+
+.join-meet .join-meet-main .login-tabs li {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.join-meet .join-meet-main .login-tabs .ant-menu-item {
+  width: 33%;
+}
+
+.join-meet .join-meet-main .login-tabs {
+  justify-content: space-evenly;
+}
+
+.join-meet .join-meet-main .ant-divider-horizontal {
+  margin: 8px 0;
+}
+
+.join-meet .join-meet-main .otp-input {
+  margin: 8px !important;
+}
+
+.join-meet .join-meet-form .ant-form-item:not(:first-of-type).otp-input {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.join-meet .join-meet-form .ant-input::placeholder {
+  color: rgb(97, 92, 92);
+}

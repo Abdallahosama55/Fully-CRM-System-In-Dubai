@@ -1,0 +1,11 @@
+.general_info .ant-select-selection-item {
+    display: flex;
+    align-items: center;
+}
+
+.general_info .blue_addon_after .ant-input-group-addon {
+    background-color: #fff !important;
+    color: #3A5EE3;
+    font-weight: 700;
+    font-size: 12px;
+}

@@ -1,0 +1,84 @@
+.basic-information {
+  margin: auto;
+  padding: 30px;
+}
+.basic-information .make-row .ant-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basic-information .make-row .ant-row .ant-col {
+  width: auto;
+}
+
+.basic-info-upload-icon {
+  background: #272942;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+.basic-info-upload-wraper {
+  position: relative;
+}
+
+.basic-info-upload-wraper .ant-image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basic-info-upload-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #eee;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.basic-info-upload-img-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  z-index: 3;
+  pointer-events: inherit;
+}
+
+.basic-information .rows-verses {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.basic-information .Search {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basic-information .border-blue {
+  border-radius: 10px;
+  border: 2px solid #3a5ee3;
+}

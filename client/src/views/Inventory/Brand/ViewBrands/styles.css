@@ -1,0 +1,34 @@
+.view-brands {
+  background-color: #fff;
+  border-radius: 16px;
+  margin: 2rem 0;
+  border: 1px solid #d4d4d8;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.view-brands-header {
+  background-color: #f5f7f9;
+  padding: 1rem 1.5rem;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid #d4d4d8;
+}
+
+.view-brands-main {
+  padding: 1.1rem 1.5rem;
+}
+
+.view-brand-img {
+  border: 1px solid #d7dae2;
+  border-radius: 16px;
+  padding: 0.5rem;
+  max-height: 300px;
+  width: fit-content;
+}
+
+.view-brand-img .ant-image-mask {
+  border-radius: 12px;
+}
+
+.view-brand-info > .ant-row {
+  margin-bottom: 2rem;
+}

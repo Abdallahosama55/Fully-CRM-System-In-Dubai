@@ -1,0 +1,32 @@
+.pricing_module_page .ant-table-row:nth-child(odd) {
+    background-color: unset !important;
+}
+
+.pricing_modal .ant-modal-header {
+    padding-bottom: 8px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #E5E5EA;
+}
+
+.pricing_modal .ant-modal-close {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    inset-inline-end: 12px;
+}
+
+
+.pricing_module_page .ant-tabs-tab-btn {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 6px;
+    align-items: center;
+}
+
+.pricing_module_page .ant-tabs-tab-icon:empty {
+    display: none !important;
+}
+
+.pricing_module_page .ant-tabs-tab-btn:has(.ant-tabs-tab-icon:empty) {
+    grid-template-columns: 1fr;
+}

@@ -1,0 +1,33 @@
+.pricing_tab .select_with_select_all {
+    position: relative;
+}
+
+.pricing_tab .select_with_select_all .select_with_select_all_btn {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+}
+
+.pricing_tab .ant-collapse-header,
+.pricing_tab .ant-collapse-content-box {
+    padding: 1rem !important;
+}
+
+.pricing_tab .ant-collapse-header {
+    position: relative;
+}
+
+.pricing_tab .ant-collapse-extra {
+    position: absolute;
+    inset-inline-end: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline_form_item{
+    display: inline !important;
+}

@@ -1,0 +1,129 @@
+.call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 96vh;
+    text-align: center;
+    margin: 0 auto;
+    justify-content:center;
+   
+}
+.call.gap{
+    gap:7.5rem
+}
+.call .texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    
+}
+.call .call-main-img {
+    margin-top: 6rem;
+}
+.call .call-main-img  .main-and-logo{
+    position: relative;
+}
+.call .call-main-img .logo div{
+    background: #fff;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+.call .call-main-img .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    background: transparent linear-gradient(315deg, rgba(255, 43, 123,0.6) 0%, rgba(244, 45, 128,0.6) 17%, rgba(189, 58, 153,0.6) 32%, rgba(116, 74, 186,0.6) 57%, rgba(58, 98, 217,0.6) 82%, rgba(50, 89, 216,0.6) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #0000;
+    z-index: 1;
+}
+.call .call-main-img .VindoCustomer span{
+    font-size: 16px;
+    line-height: 36px;
+    
+}
+.call .call-main-img .VindoCustomer span:first-child{
+    font-weight: bold;
+}
+.call .call-main-img svg{
+    max-width: 100%;
+    height: auto;
+}
+.call .main-text{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 25px;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+}
+.call .texts .You-are-muted{
+    background: #FAFAFA;
+    padding: 10px 20px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.call .description{
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    line-height: 24px;
+    color: #000;
+}
+.call .description.font-wight-600{
+    font-weight: 600;
+}
+.call .phone-stats{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    
+}
+.call .phone-stats .Sound-max,
+.call .phone-stats .Mic-off{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color:  #AEAEB2;
+}
+
+.call .phone-call{
+    width: 55px;
+    height: 55px;
+    background: #e81224;
+    border: 4px solid #ffc9c976;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.call .phone-call.marginTop{
+    margin-top: 4.5rem
+}
+.call .phone-call svg,
+.call .phone-stats svg
+{
+    width: 23.25px;
+    height: 16.5px;
+}

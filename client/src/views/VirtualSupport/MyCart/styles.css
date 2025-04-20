@@ -1,0 +1,15 @@
+.support-my-cart {
+  margin-top: 24px;
+}
+
+.support-my-cart .cart-item {
+  padding: 20px 0px 12px;
+}
+
+.support-my-cart .cart-item:first-of-type {
+  padding: 0px 0px 12px;
+}
+
+.support-my-cart .cart-item:not(:last-of-type) {
+  border-bottom: 2px solid #d8d8d8;
+}

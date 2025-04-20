@@ -1,0 +1,25 @@
+.book_page {
+    position: relative;
+    padding: 1rem;
+}
+
+
+.book_page .page_content {
+    max-width: 1440px;
+    margin: 0 auto !important;
+}
+
+.book_btns {
+    position: sticky;
+    top: 100vh;
+    width: 100%;
+    background-color: #fff;
+    padding: 16px;
+    border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width:992px) {
+    .book_page {
+        padding: 1rem 0rem !important;
+    }
+}

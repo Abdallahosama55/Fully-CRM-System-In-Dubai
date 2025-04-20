@@ -1,0 +1,82 @@
+.body-content.room {
+  padding: 16px;
+}
+.breadcrumb-room {
+  margin-bottom: 12px;
+}
+.room .more-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.room .filter-svg {
+  margin-top: 3px;
+}
+
+.ticketing-actions .ant-dropdown-menu .ant-dropdown-menu-item {
+  padding: 8px 10px;
+}
+
+.ticketing-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: auto;
+  z-index: 1;
+}
+.right-drawer .add-time-form {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: calc(100vh - 100px);
+}
+
+.right-drawer .add-time-form .ant-picker-input {
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.right-drawer .add-time-form .hidden label {
+  visibility: hidden;
+}
+.Active-status {
+  border-radius: 8px;
+  color: #3a5ee3;
+  padding: 5px 10px;
+}
+.Draft-status {
+  border-radius: 8px;
+  color: #8e8e93;
+  padding: 5px 10px;
+}
+.inventory .ant-drawer-wrapper-body {
+  padding: 24px 0;
+}
+
+.body-content.room .general-table-search .ant-input {
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 1070px) {
+  .body-content.room .search-row {
+    flex-direction: column;
+  }
+  .body-content.room .search-row .tilte {
+    flex: 1;
+    max-width: 100%;
+  }
+  .body-content.room .search-row .search-bar {
+    flex: 1;
+    max-width: 100%;
+  }
+  .body-content.room .search-row .search-input-col {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 647px) {
+  .body-content.room .search-row .search-bar .search-bar-row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,16 @@
+.add_people .ant-upload.ant-upload-select {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.add_people .button_with_icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.add_people .button_with_icon svg{
+    height: 16px;
+    width: 16px;
+}

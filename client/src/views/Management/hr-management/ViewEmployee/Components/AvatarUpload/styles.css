@@ -1,0 +1,31 @@
+.avatar_upload .ant-upload-drag,
+.avatar_upload .image_preview_box,
+.avatar_upload .image_preview_box .avatar_preview,
+.avatar_upload .image_preview_box .upload_overlay {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: unset;
+}
+
+.avatar_upload .ant-upload.ant-upload-btn {
+    padding: 0;
+    border: unset;
+}
+
+.avatar_upload .image_preview_box {
+    position: relative;
+}
+
+.avatar_upload .upload_overlay,
+.avatar_upload .avatar_preview {
+    position: absolute;
+    inset: 0;
+}
+
+.avatar_upload .upload_overlay {
+    background-color: #03071365;
+    flex-direction: column;
+    gap: 8px;
+}

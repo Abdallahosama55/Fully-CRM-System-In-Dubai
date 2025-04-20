@@ -1,0 +1,79 @@
+.office_drawer_info {
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid #EFEFF1;
+    background-color: #fff;
+}
+
+.office_info_head {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 64px 1fr;
+    gap: 10px;
+}
+
+.office_info_head-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.office_info_head-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.office_type_badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: red;
+    width: fit-content;
+    padding: 2px 8px;
+    background: var(--vbooking-c200);
+    border-radius: 8px;
+    color: #175CD3;
+}
+
+.office_info_head-contact_link {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #F6F6FA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.office_info_head-contact_link svg {
+    width: 12px;
+    height: 12px;
+}
+
+.office_info_collapse .ant-collapse-header {
+    padding: 8px !important;
+    background-color: #F6F6FB;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+
+
+.office_info_collapse .ant-collapse-expand-icon {
+    padding-inline-start: 0 !important;
+    padding-inline-end: 6px !important;
+}
+
+.office_info_with_icon {
+    display: grid;
+    grid-template-columns: 12px 1fr;
+    align-items: center;
+    gap: 4px;
+}
+
+.office_info_with_icon svg{
+    width: 12px;
+    height: 12px;
+}

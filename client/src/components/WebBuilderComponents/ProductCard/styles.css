@@ -1,0 +1,31 @@
+.product_card {
+    padding: 8px;
+    border-radius: 8px;
+    /* border: 1px solid #929292; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0.5rem;
+    width: 170px;
+}
+
+.product_name {
+    width: 60%;
+}
+
+.product_card .image_container {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_card .image_container img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s all ease-in-out;
+}
+
+.product_card:hover .image_container img {
+    transform: scale(1.1);
+}

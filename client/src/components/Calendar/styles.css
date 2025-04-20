@@ -1,0 +1,8 @@
+.calendar-container .body {
+  height: calc(100vh - 173px);
+}
+.calendar-right-side {
+  flex-grow: 1;
+  height: inherit;
+  overflow: auto;
+}

@@ -1,0 +1,125 @@
+.join-meet {
+  min-height: 100vh;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  overflow-x: hidden !important;
+  position: relative;
+}
+.ant-layout-content:has(> main.join-meet) {
+  padding-inline-start: 0 !important;
+}
+.join-meet .meet-blur {
+  /* background: rgba(0, 0, 0, 0.21); */
+  /* backdrop-filter: blur(15px); */
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+}
+
+.join-meet .join-meet-main {
+  padding: 16px 24px 16px 24px;
+  border-radius: 8px;
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+}
+
+.join-meet .icon-wrapper {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.join-meet .join-meet-form label {
+  color: #030713 !important;
+}
+
+.join-meet .ant-select-outlined {
+  border: 1px solid rgb(142, 142, 147);
+  background: transparent;
+  border-radius: 8px;
+  color: #030713;
+}
+.join-meet .ant-select-outlined :focus {
+  color: #030713;
+  background: white;
+}
+
+.join-meet .ant-select-arrow {
+  color: #030713;
+}
+
+.join-meet .join-meet-form .ant-form-item:not(:first-of-type) {
+  margin-top: 1rem !important;
+}
+
+.join-meet .ant-select-single .ant-select-selector {
+  color: #030713 !important;
+}
+
+.join-meet .join-meet-img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 53px;
+}
+
+.join-meet .settings-select {
+  max-height: 180px;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+.join-meet .device-settings {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  padding: 0 1rem;
+}
+
+.join-meet .join-meet-btn {
+  background: #3a5ee3;
+}
+
+.join-meet .join-meet-btn:hover {
+  background: #4e72f1;
+}
+
+.join-meet .settings-close {
+  animation: fadeOut 0.4s ease-in-out;
+}
+
+.join-meet .settings-select {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 1366px) {
+  .join-meet .join-meet-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .join-meet .join-meet-main {
+    padding: 1rem;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .join-meet .join-meet-main {
+    padding: 1rem;
+  }
+}

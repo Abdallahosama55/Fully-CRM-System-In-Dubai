@@ -1,0 +1,13 @@
+.book_page {
+    position: relative;
+    padding: 1rem 0.5rem;
+}
+
+
+.book_page .page_content {
+    max-width: 1440px;
+    margin: 0 auto !important;
+    border: 1px solid #E5E5EA;
+    padding: 1rem;
+    border-radius: 8px;
+}

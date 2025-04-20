@@ -1,0 +1,77 @@
+.package_day_item_card {
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--gray-200);
+    background: #FFF;
+    margin-top: 24px;
+}
+
+.package_day_item_card_header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.package_item_card_header_icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.package_day_item_card_body {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+}
+
+.package_day_item_card_body_replacments {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 1rem;
+    overflow: auto;
+}
+
+.package_day_item_card_body_replacment_card {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--gray-200);
+    width: 400px;
+    cursor: pointer;
+}
+
+.package_day_item_card_body_replacment_card.selected {
+    border: 1px solid var(--vbooking-c800);
+    background: var(--vbooking-c500);
+}
+
+.radio_chcek_select_item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.radio_chcek_select_item div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radio_chcek_select_item.selected {
+    border: 1px solid var(--vbooking-b900);
+}
+
+.radio_chcek_select_item.selected div {
+    background: var(--vbooking-b900);
+}

@@ -1,0 +1,27 @@
+.create-post {
+  border: 1.5px solid #e5e5ead9;
+  box-shadow: 6px 5px 34px #04051305;
+  border-radius: 24px;
+  background-color: #fff;
+  padding: 1rem 0rem;
+}
+
+.create-post .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list {
+  padding-bottom: 1rem !important;
+}
+.create-post .go-live {
+  background: transparent
+    linear-gradient(
+      280deg,
+      #ff2b7b 0%,
+      #f42d80 17%,
+      #bd3a99 28%,
+      #744aba 57%,
+      #3a62da 85%,
+      #96d3f5 100%,
+      #3259d8 100%
+    )
+    0% 0% no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,51 @@
+.pricing_tab .experiance_tab_content .sub_title {
+  margin-bottom: 1rem !important;
+}
+
+/* pricing_categories step */
+.pricing_categories .category_card {
+  padding: 9px 12px;
+  background: #FFFFFF;
+  border-top: 2px solid #F2F2F4;
+  border-bottom: 2px solid #F2F2F4;
+}
+
+.pricing_categories .category_card .category_card_cations {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pricing_categories .category_card .category_card_cations .default_flag {
+  cursor: text;
+}
+
+.pricing_categories .categories_list {
+  margin: 12px 0 16px;
+}
+
+/* rates_step */
+.rates_step .rate_card {
+  padding: 9px 12px;
+  background: #FFFFFF;
+  border-top: 2px solid #F2F2F4;
+  border-bottom: 2px solid #F2F2F4;
+  margin-bottom: 0.5rem;
+}
+
+.rates_step .rate_card .rate_info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.rates_step .rate_card .rate_info .icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.with_select_all_btn .ant-select-selector {
+  padding-inline-end: 70px !important;
+}
