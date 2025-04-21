@@ -26,11 +26,12 @@ import usePageTitle from "hooks/usePageTitle";
 import CustomTable from "components/CustomTable";
 import useGetForm from "services/CrmForms/Queries/useGetForms";
 import ShareIcon from "assets/EyeFormSVG";
-import ShareModal from "views/Desks/DeskInformation/ShareModal";
+
 import { SaveOutlined } from "@ant-design/icons";
 import useDeleteForm from "services/CrmForms/Mutations/useDeleteForm";
 import useUpdateForm from "services/CrmForms/Mutations/useUpdateForm";
 import useGetResponses from "services/CrmForms/Queries/useGetResponses";
+import ShareModal from "./ShareModal";
 
 const Forms = () => {
   usePageTitle("Charters");
@@ -52,8 +53,7 @@ const Forms = () => {
   const [editingRows, setEditingRows] = useState({});
 
   const { data, isPending } = useGetForm({ ...filter, page });
-  useEffect(() => {
-    console.log("Filter changed:", filter),[filter]})
+
 // console.log(filter)
   const handleEdit = (record) => {
     setEditingRows({
