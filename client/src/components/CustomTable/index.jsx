@@ -53,7 +53,7 @@ const CustomTable = ({ className = "", style = {}, tableStyle = {}, page = 1, pa
             setPage(localPage);
         }
     }, [localPage]);
-console.log(tableProps.dataSource)
+// console.log(tableProps.dataSource)
     const tableRef = useRef();
     useEffect(() => {
         const handleResize = () => {

@@ -9,15 +9,11 @@ import FormAutoSave from "components/FormAutoSave";
 import dayjs from "dayjs";
 
 const Filters = ({ setFilter }) => {
-  const onFinish = (item) => {
-    setFilter({ ...item, fromDate: item?.fromDate && dayjs(item?.fromDate).format("YYYY-MM-DD") });
-  };
-
+  // console.log("first")
   return (
 <>
 
     <FormAutoSave
-      onFinish={onFinish}
       layout="horizontal"
       labelAlign="left"
     >
@@ -30,9 +26,7 @@ const Filters = ({ setFilter }) => {
     top: '50%', 
     transform: 'translateY(-50%)', 
     zIndex: 1 ,
-    
-    
-  
+
   }} 
   color="#3F65E4"
   />
@@ -41,7 +35,17 @@ const Filters = ({ setFilter }) => {
     style={{ minWidth: "180px", paddingLeft: '30px' }} // Add padding to make space for icon
     placeholder="Select Date"
     suffixIcon={<ArrowDownSVG color={"#2d5feb"} />}
-  />
+ onChange={(value) => {
+    if (value) {
+      const formattedDate = value.format("YYYY-MM-DD");
+      console.log(formattedDate);
+      setFilter((prev) => ({
+        ...prev,
+        startDate: formattedDate 
+      }));
+    }
+   }
+   }  />
 </div>
         </Form.Item>
       </Flex>
@@ -52,14 +56,16 @@ const Filters = ({ setFilter }) => {
     <Select
       allowClear
       showSearch
+      name="status"
       className="custom-select w-100 pl-8" // add padding-left to make space for prefix
       placeholder="Status"
       suffixIcon={<ArrowDownSVG color="#3F65E4" />}
       options={[
         { label: "Active", value: "Active" },
         { label: "InActive", value: "InActive" },
-        { label: "All", value: null },
+        { label: "All", value: "" },
       ]}
+           onChange={(value) => {setFilter((prev) => ({ ...prev, status: value }))}}
     />
   </Form.Item>
 

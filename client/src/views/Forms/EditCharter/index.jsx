@@ -149,7 +149,8 @@ const EditCharterDrawer = ({ groupId, list, close }) => {
                   <Row align="middle" gutter={[16, 0]} wrap={false}>
                     <DeleteFlightAction
                       handleDelete={handleDelete}
-                      id={rowData.outboundFlight.id}
+                     id={rowData.outboundFlight?.id}
+
                     />
                   </Row>
                 );

@@ -16,12 +16,12 @@ import TimeType from "./components/QuestionsTypes/TimeType";
 import DateTypes from "./components/QuestionsTypes/DateTypes";
 import FileuploadTypes from "./components/QuestionsTypes/FileuploadTypes";
 import { ArrowDownSVG } from "assets/jsx-svg";
-
+import useAddForm from "services/CrmForms/Mutations/useAddForm";
 const { TextArea } = Input;
 const { Title, Text } = Typography;
 
 function Index() {
-  const [formName, setFormName] = useState("");
+  const [name, setname] = useState("");
   const [activeChecked, setActiveChecked] = useState(true);
   const questionContainerRef = useRef(null);
   const [description, setDescription] = useState("");
@@ -233,8 +233,9 @@ function Index() {
 
   const getFormData = () => {
     return {
-      formName,
+      name,
       description,
+      status: activeChecked ? "active" : "inactive",
       questions: questionsList.map(q => ({
         questionText: q.questionText,
         answerType: answerTypeMap[q.type],
@@ -373,8 +374,8 @@ function Index() {
           <label className="form-label">Form Name</label>
           <Input
             placeholder="Travel agent registration"
-            value={formName}
-            onChange={(e) => setFormName(e.target.value)}
+            value={name}
+            onChange={(e) => setname(e.target.value)}
           />
         </div>
 
@@ -449,12 +450,12 @@ function Index() {
       </div>
     );
   };
+const { addForm, isPending } = useAddForm();
+const handleSaveForm = async () => {
+  const formData = getFormData();
+    await addForm(formData);  
+};
 
-  const handleSaveForm = () => {
-    const formData = getFormData();
-    console.log("Form Data to be saved:", formData);
-    message.success("Form saved successfully!");
-  };
 
   return (
     <DndProvider backend={HTML5Backend}>
@@ -477,7 +478,7 @@ function Index() {
           className="custom-tabs"
         />
         {activeTab === "1" && (
-          <BottomNavigation onSave={handleSaveForm} />
+          <BottomNavigation isLoading={isPending} onSave={handleSaveForm} />
         )}
       </div>
     </DndProvider>
