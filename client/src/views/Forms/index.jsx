@@ -7,6 +7,7 @@ import {
   Row,
   Select,
   Space,
+  Table,
   Tooltip,
   Typography,
   message,
@@ -103,23 +104,40 @@ const handleEditGroup = async (formId) => {
     console.log(submissions)
     const formattedList = submissions.map((submission) => ({
       id: submission.id,
-      submittedAt: dayjs(submission.submittedAt).format("YYYY-MM-DD HH:mm"),
-      answers: submission.answers.map((answer) => ({
-        ...answer,
-        isFile: answer.type === "file_upload",
-      })),
+      submittedAt: dayjs(submission.submittedAt).format("YYYY-MM-DD - HH:mm"),
+      answers: `${submission.answers.length} Answers`,
     }));
 
     console.log("Formatted Responses", formattedList);
+const columns = [
+  {
+    title: "Response ID",
+    dataIndex: "id",
+    key: "id",
+  },
+  {
+    title: "Date Submitted",
+    dataIndex: "submittedAt",
+    key: "submittedAt",
+  },
+  {
+    title: "Answers",
+    dataIndex: "answers",
+    key: "answers",
+  },
+];
 
     DrawerAPI.open("1280px");
     DrawerAPI.setDrawerContent(
-      <EditCharterDrawer
-        formId={formId}
-        list={formattedList}
-        isLoading={isGettingResponses}
-        close={DrawerAPI.close}
-      />
+      <Table
+  style={{ maxHeight: "100%", minHeight: "100%" }}
+  scroll={{ y: 400 }}
+  bordered
+  pagination={{ pageSize: 50, position: ["none", "bottomCenter"] }}
+  dataSource={formattedList}
+  columns={columns}
+/>
+      
     );
   } catch (error) {
     console.error("Error loading responses:", error);
