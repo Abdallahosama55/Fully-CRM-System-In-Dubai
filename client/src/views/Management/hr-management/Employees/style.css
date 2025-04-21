@@ -15,7 +15,6 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-
 }
 
 .employee-img {
@@ -37,7 +36,6 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-
     font-size: 11px;
     text-align: center;
     color: white;
@@ -90,12 +88,17 @@
     height: 16px !important;
 }
 
+.ant-switch[aria-checked=false] {
+    background-color: gray !important;
+}
+
 .ant-switch-inner-unchecked {
     align-items: center !important;
     display: flex !important;
     font-size: 9px !important;
     height: 26px !important;
 }
+
 
 /* :where(.css-dev-only-do-not-override-e4b30p).ant-switch {
     background: rgb(0 0 0 / 0%) !important;
@@ -104,7 +107,6 @@
 
 .add-new-employee-card {
     margin: 5px 10px;
-
     justify-content: center;
     flex-direction: column;
     display: flex;
@@ -143,7 +145,6 @@
 
 .btn-search {
     flex: 1 1 auto;
-
     text-align: center;
     transition: 0.5s;
     background-size: 150% auto;
@@ -152,7 +153,6 @@
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     background-image: linear-gradient(to right, #3A5EE3 0%, #8FCAF3 51%);
-
 }
 
 .avater-label .css-dev-only-do-not-override-e4b30p {
@@ -177,7 +177,6 @@
 
 .btn-add {
     flex: 1 1 auto;
-
     text-align: center;
     transition: 0.5s;
     background-size: 150% auto;
@@ -186,5 +185,4 @@
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     background-image: linear-gradient(to right, #3A5EE3 0%, #8FCAF3 51%);
-
 }

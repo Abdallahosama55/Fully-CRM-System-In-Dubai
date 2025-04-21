@@ -3,6 +3,7 @@ import { ArrowBackSVG, ArrowSVG } from 'assets/jsx-svg'
 import React, { useEffect, useRef, useState } from 'react'
 // style
 import './styles.css'
+
 // for development purposes
 /**
  * CustomTable component for displaying data in a table format.
@@ -52,7 +53,7 @@ const CustomTable = ({ className = "", style = {}, tableStyle = {}, page = 1, pa
             setPage(localPage);
         }
     }, [localPage]);
-
+console.log(tableProps.dataSource)
     const tableRef = useRef();
     useEffect(() => {
         const handleResize = () => {
@@ -71,7 +72,6 @@ const CustomTable = ({ className = "", style = {}, tableStyle = {}, page = 1, pa
             window.removeEventListener('resize', handleResize); // Cleanup
         };
     }, []);
-
     return (
         <ConfigProvider theme={{
             "components": {

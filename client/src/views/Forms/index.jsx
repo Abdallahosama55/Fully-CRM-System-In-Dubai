@@ -1,7 +1,7 @@
 import { Button, Flex, Form, Input, Modal, Row, Select, Space, Tooltip, Typography } from "antd";
 import { useMemo, useState, useRef, useEffect } from "react";
 import { renderColumns } from "./renderColumns";
-
+import dayjs from 'dayjs';
 import Filters from "./components/Filters";
 import Box from "components/Box";
 import AddCharter from "./AddCharter";
@@ -10,14 +10,12 @@ import './Froms.css'
 import Link from "antd/es/typography/Link";
 import EditCharterDrawer from "./EditCharter";
 import { useDrawer } from "context/drawerContext";
-import dayjs from "dayjs";
 import usePageTitle from "hooks/usePageTitle";
 import CustomTable from "components/CustomTable";
-import useListFlights from "services/travel/charters/Queries/useListFlights";
+import useGetForm from "services/CrmForms/Queries/useGetForms";
 import ShareIcon from "assets/EyeFormSVG";
 import ShareModal from "views/Desks/DeskInformation/ShareModal";
 import { SaveOutlined } from "@ant-design/icons";
-
 const Forms = () => {
   usePageTitle("Charters");
   const DrawerAPI = useDrawer();
@@ -25,8 +23,8 @@ const Forms = () => {
   const [filter, setFilter] = useState({});
   const [editingRows, setEditingRows] = useState({});
 
-  const { data, isPending } = useListFlights({ ...filter, page, size: 10 });
-console.log(data?.rows)
+  const { data, isPending } = useGetForm({page, });
+  // console.log(Filters)
   const handleEdit = (record) => {
     setEditingRows({
       ...editingRows,
@@ -82,9 +80,32 @@ console.log(data?.rows)
     );
     
   };
-  const columns = useMemo(() => {
-    return renderColumns(true, editingRows, setEditingRows, handleSave, handleCancel);
-  }, [editingRows]);
+  // const columns = useMemo(() => {
+  //   return renderColumns(true, editingRows, setEditingRows, handleSave, handleCancel);
+  // }, [editingRows]);
+
+const columns = [
+  {
+    title: 'Form Name',
+    dataIndex: 'name',
+    key: 'name',
+  }, {
+    title: 'Created At',
+    dataIndex: 'createdAt',
+    key: 'createdAt',
+    render: (text) => dayjs(text).format('YYYY-MM-DD'),
+  },
+  {
+    title: 'Responses',
+    dataIndex: 'responses',
+    key: 'responses',
+  }, {
+    title: 'Status',
+    dataIndex: 'status',
+    key: 'status',
+  },
+ 
+];
 
   return (
     <section>
@@ -117,8 +138,8 @@ console.log(data?.rows)
           pageSize={10}
           page={page}
           setPage={setPage}
-          total={data?.total}
-          dataSource={data?.rows ?? []}
+          total={data?.data?.totalPages}
+          dataSource={data?.data?.forms ?? []}
           columns={[
             ...columns,
             {

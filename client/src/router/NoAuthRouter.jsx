@@ -9,8 +9,8 @@ import LoadingPage from "components/common/LoadingPage";
 import { ConnectionProvider } from "hooks/useConnection";
 import Logo from "components/common/Logo";
 import ClientRoutes from "./ClientRoutes";
-import ClientTravelRoutes from "./ ClientTravelRoutes";
-import UnityIframesRoutes from "./ UnityIframesRoutes";
+import ClientTravelRoutes from "./ClientTravelRoutes";
+import UnityIframesRoutes from "./UnityIframesRoutes";
 import LayoutNotAuth from "views/newAuth/components/Layout";
 
 const SliderPreview = lazy(() => import("views/SliderPreview"));

@@ -22,6 +22,7 @@ const { Title, Text } = Typography;
 
 function Index() {
   const [formName, setFormName] = useState("");
+  const [activeChecked, setActiveChecked] = useState(true);
   const questionContainerRef = useRef(null);
   const [description, setDescription] = useState("");
   const [isRequired, setIsRequired] = useState(true);
@@ -355,7 +356,14 @@ function Index() {
         <Space>
           <Button icon={<ShareIcon />}>Share</Button>
           <Button>
-            Active <Switch defaultChecked style={{ backgroundColor: "#12B76A" }} />
+            Active <Switch 
+            defaultChecked 
+            checked={activeChecked}
+            onClick={() => setActiveChecked(!activeChecked)}
+            style={{ backgroundColor: activeChecked?"#12B76A":"#d9d9d9" }}
+            // class="active-switch--1"
+            // style={{ backgroundColor: "#12B76A" }} 
+            />
           </Button>
         </Space>
       </header>
@@ -399,7 +407,7 @@ function Index() {
             checked={isRequired}
             onChange={setIsRequired}
             className="custom-switch"
-            style={{ backgroundColor: "#25449C" }}
+
           />
           <Select
             value={questionType}
