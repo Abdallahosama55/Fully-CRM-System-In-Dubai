@@ -17,6 +17,8 @@ import DateTypes from "./components/QuestionsTypes/DateTypes";
 import FileuploadTypes from "./components/QuestionsTypes/FileuploadTypes";
 import { ArrowDownSVG } from "assets/jsx-svg";
 import useAddForm from "services/CrmForms/Mutations/useAddForm";
+import ShareModal from "../ShareModal";
+
 const { TextArea } = Input;
 const { Title, Text } = Typography;
 
@@ -353,9 +355,10 @@ function Index() {
   const renderFormInfo = () => (
     <div className="container-info">
       <header>
+      <ShareModal isOpen={openModal} deskId={slug} setIsOpen={setOpenModal} />
         <Title level={4}>Form Info</Title>
         <Space>
-          <Button icon={<ShareIcon />}>Share</Button>
+          <Button onClick={handleShare} icon={<ShareIcon />}>Share</Button>
           <Button>
             Active <Switch 
             defaultChecked 
@@ -450,12 +453,23 @@ function Index() {
       </div>
     );
   };
+  const [slug, setSlug] = useState('');
+  const [openModal, setOpenModal] = useState(false);
+const handleShare=()=>{
+if (slug) {
+  setOpenModal(true);
+}
+}
 const { addForm, isPending } = useAddForm();
 const handleSaveForm = async () => {
-  const formData = getFormData();
-    await addForm(formData);  
+  try {
+    const formData = getFormData();
+    const newForm = await addForm(formData);
+    setSlug(newForm.data.slug); 
+  } catch (err) {
+    console.error("Failed to save form:", err);
+  }
 };
-
 
   return (
     <DndProvider backend={HTML5Backend}>

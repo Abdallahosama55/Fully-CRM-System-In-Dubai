@@ -143,10 +143,11 @@ const columns = [
     console.error("Error loading responses:", error);
   }
 };
+const [selectedDeskId, setSelectedDeskId] = useState(null);
 const [isOpen, setIsOpen] = useState(false);
-const handleShareModal = async () => {
+const handleShareModal = async (slug) => {
    setIsOpen(true);
-   console.log(isOpen)
+     setSelectedDeskId(slug);
 }
 
 
@@ -233,17 +234,18 @@ const handleShareModal = async () => {
                     </Tooltip>
 
                     <Tooltip title={"Share It now "}>
+                     <ShareModal isOpen={isOpen} deskId={selectedDeskId} setIsOpen={setIsOpen} />
                       <Link>
                         <Button
                           size="small"
                           className="table_action_button custom-action-button"
-                          onClick={handleShareModal}
+                          onClick={()=>handleShareModal(rowData.slug)}
                           icon={<ShareIcon color={"#000"}
                            />}
                         />
                       </Link>
                     </Tooltip>
-                          <ShareModal isOpen={isOpen} deskId={rowData.slug} setIsOpen={setIsOpen} />
+                         
 
                     <Tooltip title={"Delete"}>
                       <Button
@@ -313,7 +315,6 @@ const handleShareModal = async () => {
         />
       </Box>
 
-      <ShareModal />
     </section>
   );
 };

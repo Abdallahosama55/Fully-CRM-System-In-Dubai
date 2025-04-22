@@ -27,10 +27,11 @@ const ShareModal = ({ isOpen, deskId, setIsOpen }) => {
       width={700}
       centered={true}
       open={isOpen}
+      mask={true}
       onOk={handleContinue}
       onCancel={() => setIsOpen(false)}
       title={"Share"}
-      className="share-modal"
+      className="share-modal "
       footer={() => null}>
       <TabsMenu tabs={tabs} onTabChanged={(tab) => setCurrentTab(tab)} />
       {currentTab === "shareALink" && (
