@@ -4,7 +4,7 @@ import { useForm, useWatch } from "antd/es/form/Form";
 import { SearchSVG } from "assets/jsx-svg";
 import AirportInput from "components/common/AirportInput";
 import dayjs from "dayjs";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Filters from "./components/Filters";
 import FlightsResults from "./components/FlightsResults";
 import TravelersInput from "components/common/TravelaresInput";
@@ -14,6 +14,7 @@ import useGetSearchFlight from "services/travel/external_flights/Queries/useGetS
 
 const FlightsTab = ({ setTabContent }) => {
   const [form] = useForm();
+  const [page, setPage] = useState(1);
   const [filters, setFilters] = useState({});
   const filterFunction = useCallback(
     (data) => {
@@ -105,31 +106,24 @@ const FlightsTab = ({ setTabContent }) => {
   );
 
   const search = useWatch("search", form);
-  const flightsList = useGetSearchFlight(
-    {
-      ...search,
-      fromDate:
-        search?.type === "TWO_WAY"
-          ? Array.isArray(search?.rangeDate)
-            ? dayjs(search?.rangeDate?.[0]).format("YYYY-MM-DD")
-            : undefined
-          : dayjs(search?.date).format("YYYY-MM-DD"),
-      toDate: Array.isArray(search?.rangeDate)
-        ? dayjs(search?.rangeDate?.[1]).format("YYYY-MM-DD")
-        : undefined,
-      adult: search?.travelers?.adults,
-      child: search?.travelers?.childs,
-      infant: search?.travelers?.infants,
-      rangeDate: undefined,
-      travelers: undefined,
-      date: undefined,
-    },
-    { enabled: false, select: (data) => data?.data?.data },
-  );
+  const flightsList = useGetSearchFlight({
+    ...search,
+    page,
+    size: 10,
+    fromDate:
+      search?.type === "TWO_WAY" && search?.rangeDate?.[0]
+        ? dayjs(search?.rangeDate?.[0])?.format("YYYY-MM-DD")
+        : dayjs(search?.date).format("YYYY-MM-DD"),
+    toDate: search?.rangeDate?.[1] ? dayjs(search?.rangeDate?.[1]).format("YYYY-MM-DD") : undefined,
+    ...search?.travelers,
+    rangeDate: undefined,
+    travelers: undefined,
+    date: undefined,
+  });
 
   useEffect(() => {
-    if (Array.isArray(flightsList?.data?.rows) && flightsList.isSuccess) {
-      if (flightsList?.data?.rows?.length === 0) {
+    if (Array.isArray(flightsList?.data) && flightsList.isSuccess) {
+      if (flightsList?.data?.length === 0) {
         message.warning("No available flights with this requirements");
       }
     }
@@ -145,10 +139,14 @@ const FlightsTab = ({ setTabContent }) => {
     }
   }, [flightsList?.isError, flightsList?.error]);
 
+  const flightsListRows = useMemo(
+    () => filterFunction(flightsList?.data?.rows),
+    [filterFunction, flightsList?.data?.rows],
+  );
   useEffect(() => {
     if (flightsList?.isFetching) {
       setTabContent(<TurboLoadingPage height="calc(100dvh - 200px)" />);
-    } else if (flightsList?.data?.rows?.length === 0) {
+    } else if (flightsListRows?.length === 0) {
       setTabContent(
         <div className="mt-1 center-items" style={{ minHeight: "450px" }}>
           <Empty
@@ -165,12 +163,15 @@ const FlightsTab = ({ setTabContent }) => {
       setTabContent(
         <Row className="mt-1" gutter={[16, 16]}>
           <Col lg={6} md={8} sm={24}>
-            <Filters setFilters={setFilters} results={flightsList?.data?.rows} />
+            <Filters setFilters={setFilters} results={flightsListRows} />
           </Col>
           <Col lg={18} md={16} sm={24}>
             <FlightsResults
+              setPage={setPage}
+              page={page}
+              totalFlightsCount={flightsList?.data?.count}
               travelers={search?.travelers}
-              data={filterFunction(flightsList?.data?.rows)}
+              data={flightsListRows}
               fromDate={
                 search?.type === "TWO_WAY"
                   ? Array.isArray(search?.rangeDate)
@@ -197,12 +198,28 @@ const FlightsTab = ({ setTabContent }) => {
         </Row>,
       );
     }
-  }, [flightsList?.isFetching, flightsList.data, setTabContent, form, filterFunction]);
+  }, [
+    flightsList?.isFetching,
+    flightsListRows,
+    setTabContent,
+    flightsList?.data?.count,
+    form,
+    filterFunction,
+    setPage,
+    page,
+    search,
+  ]);
 
   return (
     <div>
       <Typography.Title level={5}>Great deals. One easy search.</Typography.Title>
-      <Form onFinish={flightsList?.refetch} form={form} layout="vertical">
+      <Form
+        onFinish={() => {
+          flightsList?.search();
+          setPage(1);
+        }}
+        form={form}
+        layout="vertical">
         <Form.Item name={["search", "type"]} initialValue={"TWO_WAY"}>
           <Radio.Group>
             <Radio value={"TWO_WAY"}>

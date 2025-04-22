@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Badge,
   Button,
   Col,
   ConfigProvider,
@@ -15,7 +16,6 @@ import {
   Row,
   Select,
   Space,
-  Table,
   Tabs,
   Tag,
   Tooltip,
@@ -35,14 +35,11 @@ import {
   ArrowDownSVG,
   ArrowRightSVG,
   BackArrow,
-  ClientsSVG,
   DeleteSVG,
   EditSVG,
   EmailSVG,
   PhoneSVG,
-  ProspectsSVG,
-  QualitySVG,
-  ViewAllSVG,
+  StatusSuppliersSVG,
   WhatsappSVG,
   WorldMapSVG,
 } from "assets/jsx-svg";
@@ -55,27 +52,29 @@ import CustomTable from "components/CustomTable";
 import default_image from "assets/images/default_image.png";
 import { useDrawer } from "hooks/useDrawer";
 import ChangeOfficePassword from "components/ChangeOfficePassword";
+import { EyeOutlined } from "@ant-design/icons";
+import useActivateOffice from "services/agencies/Mutations/useActivateOfficer";
 
 const tapsFilter = [
   {
     key: "ALL",
     label: `View All`,
-    icon: <ViewAllSVG />,
   },
   {
     key: "LEAD",
     label: `Lead`,
-    icon: <ProspectsSVG />,
   },
   {
     key: "REGISTERED",
     label: `Registered`,
-    icon: <QualitySVG />,
   },
   {
     key: "CLIENTS",
     label: `Clients`,
-    icon: <ClientsSVG />,
+  },
+  {
+    key: "NEWREQUESTE",
+    label: `New Requests`,
   },
 ];
 
@@ -107,7 +106,11 @@ const itemRender = (_, type, originalElement) => {
 };
 
 const Suppliers = () => {
+  const [formModal] = Form.useForm();
   const [selectedTab, setSelectedTab] = useState("ALL");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modulData, setModulData] = useState(null);
+
   usePageTitle("Suppliers / " + selectedTab);
 
   const DrawerAPI = useDrawer();
@@ -120,16 +123,23 @@ const Suppliers = () => {
   const debounceFilters = useDebounce(filters);
 
   // queries
+
+  const activateOffice = useActivateOffice();
+
   const officesQuery = useGetOffices({
     page,
     size: pageSize,
     type: OFFICER_TYPE.SUPPLIER,
     ...{
-      ...debounceFilters,
+      generalSearchValue: debounceFilters?.generalSearchValue,
+      supplierOf: selectedTab === "NEWREQUESTE" ? undefined : debounceFilters?.supplierOf,
+      status: selectedTab === "NEWREQUESTE" ? "PENDING" : debounceFilters?.status,
+      lastLoginBefore: selectedTab === "NEWREQUESTE" ? undefined : debounceFilters?.lastLoginBefore,
+      lastLoginAfter: selectedTab === "NEWREQUESTE" ? undefined : debounceFilters?.lastLoginAfter,
       lastLoginBefore: debounceFilters?.loginRange?.[1]?.format("YYYY-MM-DD"),
       lastLoginAfter: debounceFilters?.loginRange?.[0]?.format("YYYY-MM-DD"),
       loginRange: undefined,
-      level: selectedTab === "ALL" ? undefined : selectedTab,
+      level: selectedTab === "ALL" || selectedTab === "NEWREQUESTE" ? undefined : selectedTab,
     },
   });
 
@@ -150,19 +160,40 @@ const Suppliers = () => {
       message.error("Something went wrong");
     },
   });
+  const showModal = (data) => {
+    setIsModalOpen(true);
+    setModulData(data);
+  };
+
+  const handleOk = async () => {
+    await activateOffice.mutateAsync({ id: modulData.id, data: { ...formModal.getFieldValue() } });
+    officesQuery.refetch();
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="suppliers_page">
       {DrawerAPI.Render}
       <Tabs
+        className="suppliers-page-tab"
         onChange={(value) => setSelectedTab(value)} // Handle tab changes
         activeKey={selectedTab} // Track the currently active tab
         items={tapsFilter.map((el) => ({
           key: el.key,
           label: (
-            <div style={{ display: "flex", alignItems: "center" }}>
-              {el.icon} {/* Render the icon */}
+            <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
               <span style={{ marginLeft: 8 }}>{el.label}</span> {/* Render the label */}
+              {el.key === "NEWREQUESTE" && officesQuery.data?.pendingRequestsCount > 0 && (
+                <Badge
+                  className="bades"
+                  status={selectedTab === "NEWREQUESTE" ? "default" : "error"}
+                  count={officesQuery.data?.pendingRequestsCount}
+                />
+              )}
             </div>
           ),
           children: <></>, // Render the page content for each tab
@@ -180,7 +211,7 @@ const Suppliers = () => {
         }}>
         <Form form={form}>
           <Row gutter={[12, 12]}>
-            <Col lg={7}>
+            <Col lg={selectedTab === "NEWREQUESTE" ? 24 : 7}>
               <Form.Item name={["filters", "generalSearchValue"]}>
                 <Input
                   type="search"
@@ -190,63 +221,93 @@ const Suppliers = () => {
                 />
               </Form.Item>
             </Col>
-            <Col lg={14}>
-              <Row gutter={[12, 12]}>
-                <Col lg={12}>
-                  <Form.Item name={["filters", "loginRange"]}>
-                    <DatePicker.RangePicker
-                      className="w-100"
-                      placeholder="Select Date"
-                      suffixIcon={<DateSVG color="#3F65E4" width={16} height={16} />}
-                    />
-                  </Form.Item>
+            {selectedTab !== "NEWREQUESTE" && (
+              <>
+                <Col lg={14}>
+                  <Row gutter={[12, 12]}>
+                    <Col lg={8}>
+                      <Form.Item name={["filters", "loginRange"]}>
+                        <DatePicker.RangePicker
+                          className="w-100"
+                          placeholder="Select Date"
+                          suffixIcon={<DateSVG color="#3F65E4" width={16} height={16} />}
+                        />
+                      </Form.Item>
+                    </Col>
+                    <Col lg={8}>
+                      <div className="select-with-prefix">
+                        <WorldMapSVG
+                          className="select-prefix-icon"
+                          fill="#3F65E4"
+                          width={16}
+                          height={16}
+                        />
+                        <Form.Item noStyle name={["filters", "supplierOf"]} className="w-100">
+                          <Select
+                            allowClear
+                            showSearch
+                            className="custom-select w-100"
+                            placeholder="supplier of"
+                            suffixIcon={<ArrowDownSVG color={"#3F65E4"} />}
+                            options={[
+                              { label: "Hotels", value: "HOTELS" },
+                              { label: "Flights", value: "FLIGHTS" },
+                              { label: "Experiences", value: "EXPERIENCES" },
+                              { label: "Transfers", value: "TRANSFERS" },
+                              { label: "All", value: null },
+                            ]}
+                          />
+                        </Form.Item>
+                      </div>
+                    </Col>
+                    <Col lg={8}>
+                      <div className="select-with-prefix">
+                        <StatusSuppliersSVG className="select-prefix-icon" color={"#3F65E4"} />
+                        <Form.Item noStyle name={["filters", "status"]} className="w-100">
+                          <Select
+                            allowClear
+                            showSearch
+                            className="custom-select w-100"
+                            placeholder="Status"
+                            options={[
+                              { label: "All", value: "ALL" },
+                              { label: "Active", value: "ACTIVE" },
+                              { label: "Inactive", value: "INACTIVE" },
+                              { label: "Pending", value: "PENDING" },
+                            ]}
+                          />
+                        </Form.Item>
+                      </div>
+                    </Col>
+                  </Row>
                 </Col>
-                <Col lg={12}>
-                  <div className="select-with-prefix">
-                    <WorldMapSVG
-                      className="select-prefix-icon"
-                      fill="#3F65E4"
-                      width={16}
-                      height={16}
-                    />
-                    <Form.Item noStyle name={["filters", "supplierOf"]} className="w-100">
-                      <Select
-                        allowClear
-                        showSearch
-                        className="custom-select w-100"
-                        placeholder="supplier of"
-                        suffixIcon={<ArrowDownSVG color={"#3F65E4"} />}
-                        options={[
-                          { label: "Hotels", value: "HOTELS" },
-                          { label: "Flights", value: "FLIGHTS" },
-                          { label: "Experiences", value: "EXPERIENCES" },
-                          { label: "Transfers", value: "TRANSFERS" },
-                          { label: "All", value: null },
-                        ]}
-                      />
-                    </Form.Item>
+                <Col lg={3}>
+                  <div
+                    className="w-100"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}>
+                    <Divider type="vertical" />
+                    <Button
+                      onClick={() => {
+                        DrawerAPI.setDrawerContent(
+                          <AddSupplier
+                            onEnd={() => officesQuery.refetch()}
+                            DrawerAPI={DrawerAPI}
+                          />,
+                        );
+                        DrawerAPI.open("calc(100% - 110px)");
+                      }}
+                      icon={<PluseSVG color="#fff" />}
+                      type="primary">
+                      New
+                    </Button>
                   </div>
                 </Col>
-              </Row>
-            </Col>
-            <Col lg={3}>
-              <div
-                className="w-100"
-                style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                <Divider type="vertical" />
-                <Button
-                  onClick={() => {
-                    DrawerAPI.setDrawerContent(
-                      <AddSupplier onEnd={() => officesQuery.refetch()} DrawerAPI={DrawerAPI} />,
-                    );
-                    DrawerAPI.open("calc(100% - 110px)");
-                  }}
-                  icon={<PluseSVG color="#fff" />}
-                  type="primary">
-                  New
-                </Button>
-              </div>
-            </Col>
+              </>
+            )}
           </Row>
         </Form>
       </ConfigProvider>
@@ -413,11 +474,59 @@ const Suppliers = () => {
             ),
           },
           {
+            title: <p className="xs_text_medium">Status</p>,
+            dataIndex: "status",
+            onCell: () => ({ style: { verticalAlign: "middle", textAlign: "center" } }),
+            render: (status) => {
+              const style = {
+                ACTIVE: {
+                  backGround: "#A6F4C5",
+                  color: "#027A48",
+                },
+                INACTIVE: {
+                  backGround: "#FECDCA",
+                  color: "#B42318",
+                },
+                PENDING: {
+                  backGround: "#FFEFCC",
+                  color: "#F49B19",
+                },
+              };
+              return (
+                <Typography.Paragraph>
+                  <span
+                    style={{
+                      backgroundColor: style[status].backGround,
+                      color: style[status].color,
+                      padding: "2px 27px",
+                      borderRadius: "15px",
+                      whiteSpace: "nowrap",
+                    }}>
+                    {status.charAt(0) + status.substring(1).toLowerCase()}
+                  </span>
+                </Typography.Paragraph>
+              );
+            },
+          },
+          {
             title: <p className="xs_text_medium">Actions</p>,
             dataIndex: "id",
-            render: (id) => (
+            render: (id, data) => (
               <Space>
-                <ChangeOfficePassword officeId={id} />
+                {selectedTab === "NEWREQUESTE" ? (
+                  <Tooltip title="active">
+                    <Button
+                      type="primary"
+                      onClick={() => showModal(data)}
+                      className="table_action_button"
+                      style={{ background: "#ddd" }}
+                      icon={<EyeOutlined />}
+                    />
+                  </Tooltip>
+                ) : (
+                  <ChangeOfficePassword officeId={id} />
+                )}
+
                 <Tooltip title={"Delete"}>
                   <Button
                     type="primary"
@@ -426,7 +535,9 @@ const Suppliers = () => {
                     onClick={() => {
                       Modal.confirm({
                         title: "Do you want to delete this supplier?",
-                        content: <p className="gc">This action is irreversible and cannot be undone.</p>,
+                        content: (
+                          <p className="gc">This action is irreversible and cannot be undone.</p>
+                        ),
                         centered: true,
                         okText: "Delete",
                         okType: "danger",
@@ -494,6 +605,43 @@ const Suppliers = () => {
           />
         </Space>
       )}
+      <Modal
+        title="Confirm the Supplier Request"
+        centered
+        open={isModalOpen}
+        destroyOnClose={true}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        okText="Confirm">
+        <Form
+          form={formModal}
+          layout="vertical"
+          initialValues={{
+            supplierOf: modulData?.supplierOf,
+          }}>
+          <Form.Item
+            rules={[{ required: true }]}
+            label={<p className="sm_text_medium">supplier Of</p>}
+            name={"supplierOf"}
+            className="w-100">
+            <Select
+              allowClear
+              showSearch
+              mode="multiple"
+              className="custom-select w-100"
+              placeholder="supplier of"
+              suffixIcon={<ArrowDownSVG color={"#3F65E4"} />}
+              options={[
+                { label: "Hotels", value: "HOTELS" },
+                { label: "Flights", value: "FLIGHTS" },
+                { label: "Experiences", value: "EXPERIENCES" },
+                { label: "Transfers", value: "TRANSFERS" },
+                { label: "All", value: null },
+              ]}
+            />
+          </Form.Item>
+        </Form>
+      </Modal>
     </div>
   );
 };

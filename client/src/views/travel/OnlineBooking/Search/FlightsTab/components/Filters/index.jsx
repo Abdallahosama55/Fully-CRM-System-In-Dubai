@@ -29,7 +29,6 @@ const Filters = ({ setFilters, results }) => {
   const debouncePriceRange = useDebounce(priceRange, 500);
 
   useEffect(() => {
-    console.log("SET FILTERS SET FILTERS");
     setFilters({
       debounceName,
       debounceDepartureTimeRange,

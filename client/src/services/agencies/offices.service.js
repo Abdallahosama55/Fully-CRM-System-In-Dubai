@@ -64,6 +64,7 @@ const getOffices = (params) => {
         data: res.data.data.rows,
         totalCount: res.data.data.count,
         totalPages: res.data.data.totalPages,
+        pendingRequestsCount: res.data.data.pendingRequestsCount,
       };
     })
     .catch((error) => {
@@ -99,6 +100,17 @@ const getOfficeInsights = (id) => {
 const editOfficeLevel = ({ id, level }) => {
   return axios
     .put(SERVICE_BASE_OFFICES + `edit-office-level/${id}`, { level })
+    .then((res) => {
+      return res.data?.data;
+    })
+    .catch((error) => {
+      console.log(error);
+      throw new Error(responseErrorMessageExtractor(error));
+    });
+};
+const activateOfficer = ({ id, data }) => {
+  return axios
+    .patch(SERVICE_BASE_OFFICES + `activate-officer/${id}`, data)
     .then((res) => {
       return res.data?.data;
     })
@@ -164,7 +176,7 @@ const getAgentStatements = (params) => {
       return {
         ...res?.data?.data,
         totals: res?.data?.totals,
-      }
+      };
     })
     .catch((error) => {
       console.log(error);
@@ -179,7 +191,7 @@ const getSupplierStatements = (params) => {
       return {
         ...res?.data?.data,
         totals: res?.data?.totals,
-      }
+      };
     })
     .catch((error) => {
       console.log(error);
@@ -325,6 +337,7 @@ const OfficesService = {
   deleteOfficeById,
   getOfficeInsights,
   editOfficeLevel,
+  activateOfficer,
   StatementsService,
   OfficesUsersService,
 };

@@ -2,7 +2,9 @@ import { Col, Form, Input, Modal, Row, Select } from "antd";
 import { useForm } from "antd/es/form/Form";
 import { ArrowDownSVG } from "assets/jsx-svg";
 import PhoneNumberInput from "components/common/PhoneNumberInput";
+import UploadInput from "components/common/UploadInput";
 import React from "react";
+import { TRAVEL_API_URL } from "services/travel/config";
 
 const NewQuotationModal = ({ isOpen, close, handelFinish, loading = false }) => {
   const [form] = useForm();
@@ -16,7 +18,13 @@ const NewQuotationModal = ({ isOpen, close, handelFinish, loading = false }) => 
       okButtonProps={{ loading: loading }}
       title={"New Quotation"}
       okText="Add Quotation">
-      <Form form={form} onFinish={handelFinish} layout="vertical">
+      <Form
+        form={form}
+        onFinish={(values) => {
+          handelFinish({ ...values, image: values?.image?.link });
+          form.resetFields();
+        }}
+        layout="vertical">
         <Row gutter={[8, 8]}>
           <Col span={24}>
             <Form.Item
@@ -84,6 +92,20 @@ const NewQuotationModal = ({ isOpen, close, handelFinish, loading = false }) => 
               label={"Phone"}
               rules={[{ required: true, message: "Phone name is required" }]}>
               <PhoneNumberInput />
+            </Form.Item>
+          </Col>
+          <Col span={24}>
+            <Form.Item
+              name={"image"}
+              label={"Cover image"}
+              rules={[{ required: true, message: "cover image is required" }]}>
+              <UploadInput
+                action={TRAVEL_API_URL + "common/add-image"}
+                name={"image"}
+                maxText="1000 X 1000"
+                maxHeight={"150px"}
+                imagePreviwSize="150px"
+              />
             </Form.Item>
           </Col>
         </Row>

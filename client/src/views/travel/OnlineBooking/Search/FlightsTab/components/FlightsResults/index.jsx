@@ -1,9 +1,17 @@
 import React from "react";
 import FlightCard from "../FlightCard";
-import { Empty, Flex } from "antd";
+import { Empty, Flex, Pagination } from "antd";
 import empty_booking_screen from "assets/images/empty_booking_screen.png";
 // FlightsTab
-const FlightsResults = ({ data, travelers, fromDate, toDate }) => {
+const FlightsResults = ({
+  data,
+  travelers,
+  fromDate,
+  toDate,
+  setPage,
+  page,
+  totalFlightsCount,
+}) => {
   if (data?.length === 0) {
     return (
       <Flex
@@ -28,6 +36,16 @@ const FlightsResults = ({ data, travelers, fromDate, toDate }) => {
           travelers={travelers}
         />
       ))}
+      {totalFlightsCount > 10 && (
+        <Pagination
+          showSizeChanger={false}
+          onChange={setPage}
+          total={totalFlightsCount}
+          pageSize={10}
+          current={page}
+          align="end"
+        />
+      )}
     </div>
   );
 };

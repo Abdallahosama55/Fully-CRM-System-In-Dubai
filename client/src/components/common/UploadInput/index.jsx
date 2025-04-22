@@ -13,10 +13,12 @@ const UploadInput = ({
   maxText = "100px x 100px",
   uploadText,
   formatsText,
+  insideImageListInput = false,
   setUploadingState = () => {},
   withImagePreview = true,
   withListContainer = true,
   fullWidth = false,
+  imagePreviwSize = "125px",
 }) => {
   const [image, setImage] = useState(value);
   const [isFirstTime, setIsFirstTime] = useState(true);
@@ -108,7 +110,7 @@ const UploadInput = ({
   };
 
   return (
-    <div className="image_input" >
+    <div className="image_input">
       <Upload.Dragger
         disabled={isUploading}
         beforeUpload={beforeUpload}
@@ -121,9 +123,13 @@ const UploadInput = ({
           return image?.link && !isUploading && withImagePreview ? (
             <img
               src={image?.link}
-              width={124}
-              height={124}
-              style={{ borderRadius: "1rem", objectFit: "cover", marginTop: "0.5rem" }}
+              style={{
+                borderRadius: "1rem",
+                objectFit: "cover",
+                marginTop: "0.5rem",
+                width: imagePreviwSize,
+                height: imagePreviwSize,
+              }}
               alt={"preview"}
             />
           ) : (
@@ -155,7 +161,11 @@ const UploadInput = ({
                   </Flex>
                 )}
                 <span style={{ color: "#3538CD" }} className="fw-500">
-                  {uploadText ? uploadText : "Click to upload"}
+                  {uploadText
+                    ? uploadText
+                    : value && !insideImageListInput
+                    ? "Click to replace image"
+                    : "Click to upload"}
                 </span>{" "}
                 {!uploadText && "or drag and drop"}
               </p>

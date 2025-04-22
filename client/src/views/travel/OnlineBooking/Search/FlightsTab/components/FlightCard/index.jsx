@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import ROUTER_URLS from "constants/ROUTER_URLS";
 import formatNumber from "utils/formatNumber";
 import useGetAirlineByCode from "services/Common/Queries/useGetAirlineByCode";
+import { getCurrencySymbol } from "utils/getCurrencySymbol";
 dayjs.extend(utc);
 
 const PlaneCard = ({
@@ -143,15 +144,8 @@ const FlightCard = ({ data, travelers, fromDate, toDate }) => {
           }}
           gap={2}>
           <p className="fz-16 fw-700">
-            {data?.outboundFlight[0]?.currencyCode === "USD" ? "$" : ""}
-            {data?.totalPrice || data?.totalSellPrice
-              ? formatNumber(data?.totalPrice || data?.totalSellPrice)
-              : formatNumber(
-                  data?.outboundFlight[0]?.totalSellPrice +
-                    (data?.returnFlight?.totalSellPrice || 0),
-                )}{" "}
-            {data?.outboundFlight[0]?.currencyCode !== "USD" &&
-              data?.outboundFlight[0]?.currencyCode}
+            {data?.totalPrice || data?.totalSellPrice?.toFixed(2)?.toLocaleString()}{" "}
+            {getCurrencySymbol(data?.currencyCode)}
           </p>
           <p className="fz-12 fw-500" style={{ color: "#D50000" }}>
             {data?.outboundFlight[0]?.availableAlotment} Seats Left

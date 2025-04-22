@@ -813,6 +813,10 @@ export const StarSVG2 = wrapWithLazy(() => import("./StarSVG2.jsx"), "StarSVG2")
 export const StatementsSVG = wrapWithLazy(() => import("./StatementsSVG.jsx"), "StatementsSVG");
 export const StateSVG = wrapWithLazy(() => import("./StateSVG.jsx"), "StateSVG");
 export const StatusSVG = wrapWithLazy(() => import("./StatusSVG.jsx"), "StatusSVG");
+export const StatusSuppliersSVG = wrapWithLazy(
+  () => import("./StatusSuppliersSVG.jsx"),
+  "StatusSuppliersSVG",
+);
 export const StepAppsSVG = wrapWithLazy(() => import("./StepAppsSVG.jsx"), "StepAppsSVG");
 export const StepCommentSVG = wrapWithLazy(() => import("./StepCommentSVG.jsx"), "StepCommentSVG");
 export const StepFormSVG = wrapWithLazy(() => import("./StepFormSVG.jsx"), "StepFormSVG");

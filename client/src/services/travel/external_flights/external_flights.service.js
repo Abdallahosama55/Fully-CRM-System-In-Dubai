@@ -6,7 +6,13 @@ const BASE = "/tbo-flight";
 const getSearchFlight = (params = {}) =>
   TravelDashboardAPI.get(BASE + "/search", {
     params,
-  });
+  })
+    .then((res) => {
+      return res.data.data;
+    })
+    .catch((error) => {
+      throw new Error(responseErrorMessageExtractor(error));
+    });
 
 const calculatePriceCost = (params = {}) => {
   return TravelDashboardAPI.get(BASE + `/calculate-price-coast/${params?.id}`, {

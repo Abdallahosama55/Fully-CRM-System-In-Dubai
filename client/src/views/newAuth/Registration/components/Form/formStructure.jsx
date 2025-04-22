@@ -8,6 +8,9 @@ import LanguageInput from "components/common/LanguageInputNotAuth";
 import CountryInput from "components/common/CountryInput";
 import CityInput from "components/common/CityInputNotAuth";
 
+import { ArrowDownSVG } from "assets/jsx-svg";
+import { OFFICER_TYPE } from "constants/BUYER_GROUB";
+
 const FormStructure = ({ type }) => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
@@ -30,8 +33,6 @@ const FormStructure = ({ type }) => {
       companyPhone: value?.companyPhone,
       phone: value?.phone,
       whatsapp: value?.whatsapp,
-      companyId: 22,
-      logo: value?.logo?.file?.response?.uploadedFiles?.logo,
     };
 
     MutationOfficerRegistration.mutate({
@@ -96,6 +97,30 @@ const FormStructure = ({ type }) => {
               <LanguageInput placeholder="language" />
             </Form.Item>
           </Col>
+          {type === OFFICER_TYPE.SUPPLIER && (
+            <Col span={24}>
+              <Form.Item
+                label={<p className="sm_text_medium">supplier Of</p>}
+                name={"supplierOf"}
+                className="w-100">
+                <Select
+                  allowClear
+                  showSearch
+                  mode="multiple"
+                  className="custom-select w-100"
+                  placeholder="supplier of"
+                  suffixIcon={<ArrowDownSVG color={"#3F65E4"} />}
+                  options={[
+                    { label: "Hotels", value: "HOTELS" },
+                    { label: "Flights", value: "FLIGHTS" },
+                    { label: "Experiences", value: "EXPERIENCES" },
+                    { label: "Transfers", value: "TRANSFERS" },
+                    { label: "All", value: null },
+                  ]}
+                />
+              </Form.Item>
+            </Col>
+          )}
         </Row>
         <div className="form-title">General Manager Info</div>
         <Row gutter={[16, 4]}>

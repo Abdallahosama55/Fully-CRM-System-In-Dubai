@@ -15,6 +15,7 @@ const UploadImagesListInput = ({
     <Row gutter={[12, 12]}>
       <Col md={fullWidth ? 24 : 10} xs={24}>
         <UploadInput
+          insideImageListInput={true}
           fullWidth={fullWidth}
           withListContainer={false}
           withImagePreview={false}
@@ -37,7 +38,11 @@ const UploadImagesListInput = ({
               <div key={index} className="image_preview_card">
                 <div
                   className={"image_menu_container"}
-                  style={withCoverSelect ? {} : { background: "#FFF", borderRadius: "4px" , padding: "0.5rem 0" }}>
+                  style={
+                    withCoverSelect
+                      ? {}
+                      : { background: "#FFF", borderRadius: "4px", padding: "0.5rem 0" }
+                  }>
                   <Dropdown
                     menu={{
                       items: withCoverSelect

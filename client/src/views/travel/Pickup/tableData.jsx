@@ -1,4 +1,4 @@
-import { Typography, Tag, Button } from "antd";
+import { Typography, Tag, Button, Tooltip } from "antd";
 import dayjs from "dayjs";
 
 export const columns = (handleViewDetails) => [
@@ -79,6 +79,27 @@ export const columns = (handleViewDetails) => [
       );
     },
   },
+  {
+    title: "Agent & Supplier",
+    dataIndex: "agentName",
+    width: "160px",
+    key: "agentName",
+    render: (agentName, data) => {
+      return (
+        <>
+          <Tooltip title={agentName}>
+            <Tag color="#2db7f5" style={{ marginBottom: "5px" }}>
+              {agentName}
+            </Tag>
+          </Tooltip>
+          <Tooltip title={data.supplierName}>
+            <Tag color="#87d068">{data.supplierName}</Tag>
+          </Tooltip>
+        </>
+      );
+    },
+  },
+
   {
     title: "Quotation",
     dataIndex: "withQuotation",
