@@ -93,19 +93,6 @@
 
 /* styles.css */
 
-.share-modal .ant-modal-content {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-    border-radius: 12px;
-}
-
-
-/* in styles.css or a CSS module */
-
-.ant-modal-mask {
-    background-color: rgba(0, 0, 0, 0.08) !important;
-    /* or change to transparent if you want */
-}
-
 .desk-information-share-modal-booking-page-settings-radio .ant-radio span:first-child {
     width: 100%;
 }

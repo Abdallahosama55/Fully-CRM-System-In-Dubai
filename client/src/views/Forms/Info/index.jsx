@@ -5,6 +5,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import ShareIcon from "assets/EyeFormSVG";
 import "./info.css";
+import '../ShareModal/styles.css';
 import ChooceChecked from "assets/jsx-svg/ChooceChecked";
 import BottomNavigation from "./components/BottomNavigation/BottomNavigation";
 import ResultFormInfo from "./components/ResultFormInfo";
@@ -17,7 +18,7 @@ import DateTypes from "./components/QuestionsTypes/DateTypes";
 import FileuploadTypes from "./components/QuestionsTypes/FileuploadTypes";
 import { ArrowDownSVG } from "assets/jsx-svg";
 import useAddForm from "services/CrmForms/Mutations/useAddForm";
-import ShareModal from "../ShareModal";
+import ShareModal from "../ShareModal/ShareModal";
 
 const { TextArea } = Input;
 const { Title, Text } = Typography;
@@ -358,7 +359,7 @@ function Index() {
       <ShareModal isOpen={openModal} deskId={slug} setIsOpen={setOpenModal} />
         <Title level={4}>Form Info</Title>
         <Space>
-          <Button onClick={handleShare} icon={<ShareIcon />}>Share</Button>
+          <Button disabled={slug?false:true} onClick={handleShare} icon={<ShareIcon />}>Share</Button>
           <Button>
             Active <Switch 
             defaultChecked 
@@ -453,7 +454,9 @@ function Index() {
       </div>
     );
   };
+  
   const [slug, setSlug] = useState('');
+
   const [openModal, setOpenModal] = useState(false);
 const handleShare=()=>{
 if (slug) {

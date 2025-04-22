@@ -234,7 +234,7 @@ const handleShareModal = async (slug) => {
                     </Tooltip>
 
                     <Tooltip title={"Share It now "}>
-                     <ShareModal isOpen={isOpen} deskId={selectedDeskId} setIsOpen={setIsOpen} />
+                     <ShareModal isOpen={isOpen} deskId={selectedDeskId} setIsOpen={setIsOpen} classes="fromModal" />
                       <Link>
                         <Button
                           size="small"

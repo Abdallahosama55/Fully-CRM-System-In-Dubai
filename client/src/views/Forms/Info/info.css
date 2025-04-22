@@ -7,6 +7,27 @@
     margin: auto;
 }
 
+.share-modal .ant-modal-content {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 12px;
+}
+
+
+/* in styles.css or a CSS module */
+
+.ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    /* or change to transparent if you want */
+}
+
+.ant-modal.fromModal~.ant-modal-mask {
+    /* or change to transparent if you want */
+}
+
+.ant-modal-root:has(.fromModal) .ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
 header {
     display: flex;
     justify-content: space-between;
