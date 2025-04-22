@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Space } from 'antd';
 
-const BottomNavigation = ({onSave}) => {
+const BottomNavigation = ({onSave,isLoading=""}) => {
   return (
     <div style={{
       display: 'flex',
@@ -15,7 +15,7 @@ const BottomNavigation = ({onSave}) => {
         <Button>Cancel</Button>
         <Button disabled>Previous</Button>
       </Space>
-      <Button type="primary" onClick={onSave}>Save </Button>
+      <Button type="primary" loading={isLoading} onClick={onSave}>Save </Button>
     </div>
   );
 };

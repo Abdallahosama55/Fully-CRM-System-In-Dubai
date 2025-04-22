@@ -5,6 +5,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import ShareIcon from "assets/EyeFormSVG";
 import "./info.css";
+import '../ShareModal/styles.css';
 import ChooceChecked from "assets/jsx-svg/ChooceChecked";
 import BottomNavigation from "./components/BottomNavigation/BottomNavigation";
 import ResultFormInfo from "./components/ResultFormInfo";
@@ -16,12 +17,15 @@ import TimeType from "./components/QuestionsTypes/TimeType";
 import DateTypes from "./components/QuestionsTypes/DateTypes";
 import FileuploadTypes from "./components/QuestionsTypes/FileuploadTypes";
 import { ArrowDownSVG } from "assets/jsx-svg";
+import useAddForm from "services/CrmForms/Mutations/useAddForm";
+import ShareModal from "../ShareModal/ShareModal";
 
 const { TextArea } = Input;
 const { Title, Text } = Typography;
 
 function Index() {
-  const [formName, setFormName] = useState("");
+  const [name, setname] = useState("");
+  const [activeChecked, setActiveChecked] = useState(true);
   const questionContainerRef = useRef(null);
   const [description, setDescription] = useState("");
   const [isRequired, setIsRequired] = useState(true);
@@ -232,8 +236,9 @@ function Index() {
 
   const getFormData = () => {
     return {
-      formName,
+      name,
       description,
+      status: activeChecked ? "active" : "inactive",
       questions: questionsList.map(q => ({
         questionText: q.questionText,
         answerType: answerTypeMap[q.type],
@@ -351,11 +356,19 @@ function Index() {
   const renderFormInfo = () => (
     <div className="container-info">
       <header>
+      <ShareModal isOpen={openModal} deskId={slug} setIsOpen={setOpenModal} />
         <Title level={4}>Form Info</Title>
         <Space>
-          <Button icon={<ShareIcon />}>Share</Button>
+          <Button disabled={slug?false:true} onClick={handleShare} icon={<ShareIcon />}>Share</Button>
           <Button>
-            Active <Switch defaultChecked style={{ backgroundColor: "#12B76A" }} />
+            Active <Switch 
+            defaultChecked 
+            checked={activeChecked}
+            onClick={() => setActiveChecked(!activeChecked)}
+            style={{ backgroundColor: activeChecked?"#12B76A":"#d9d9d9" }}
+            // class="active-switch--1"
+            // style={{ backgroundColor: "#12B76A" }} 
+            />
           </Button>
         </Space>
       </header>
@@ -365,8 +378,8 @@ function Index() {
           <label className="form-label">Form Name</label>
           <Input
             placeholder="Travel agent registration"
-            value={formName}
-            onChange={(e) => setFormName(e.target.value)}
+            value={name}
+            onChange={(e) => setname(e.target.value)}
           />
         </div>
 
@@ -399,7 +412,7 @@ function Index() {
             checked={isRequired}
             onChange={setIsRequired}
             className="custom-switch"
-            style={{ backgroundColor: "#25449C" }}
+
           />
           <Select
             value={questionType}
@@ -441,12 +454,25 @@ function Index() {
       </div>
     );
   };
+  
+  const [slug, setSlug] = useState('');
 
-  const handleSaveForm = () => {
+  const [openModal, setOpenModal] = useState(false);
+const handleShare=()=>{
+if (slug) {
+  setOpenModal(true);
+}
+}
+const { addForm, isPending } = useAddForm();
+const handleSaveForm = async () => {
+  try {
     const formData = getFormData();
-    console.log("Form Data to be saved:", formData);
-    message.success("Form saved successfully!");
-  };
+    const newForm = await addForm(formData);
+    setSlug(newForm.data.slug); 
+  } catch (err) {
+    console.error("Failed to save form:", err);
+  }
+};
 
   return (
     <DndProvider backend={HTML5Backend}>
@@ -469,7 +495,7 @@ function Index() {
           className="custom-tabs"
         />
         {activeTab === "1" && (
-          <BottomNavigation onSave={handleSaveForm} />
+          <BottomNavigation isLoading={isPending} onSave={handleSaveForm} />
         )}
       </div>
     </DndProvider>
