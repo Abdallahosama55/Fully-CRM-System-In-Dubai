@@ -171,6 +171,7 @@ const handleShareModal = async (slug) => {
       title: "Responses",
       dataIndex: "responses",
       key: "responses",
+      width: 200,
     },
     {
       title: "Status",
@@ -203,7 +204,7 @@ const handleShareModal = async (slug) => {
         }}>
         <CustomTable
           loading={isPending}
-          style={{ marginBlock: "px" }}
+          style={{ marginBlock: "30px" }}
           tableLayout="auto"
           pageSize={10}
           page={page}
