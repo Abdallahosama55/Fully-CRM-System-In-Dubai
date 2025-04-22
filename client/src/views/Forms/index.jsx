@@ -143,6 +143,11 @@ const columns = [
     console.error("Error loading responses:", error);
   }
 };
+const [isOpen, setIsOpen] = useState(false);
+const handleShareModal = async () => {
+   setIsOpen(true);
+   console.log(isOpen)
+}
 
 
   // const columns = useMemo(() => {
@@ -232,10 +237,14 @@ const columns = [
                         <Button
                           size="small"
                           className="table_action_button custom-action-button"
-                          icon={<ShareIcon color={"#000"} />}
+                          onClick={handleShareModal}
+                          icon={<ShareIcon color={"#000"}
+                           />}
                         />
                       </Link>
                     </Tooltip>
+                          <ShareModal isOpen={isOpen} deskId={rowData.slug} setIsOpen={setIsOpen} />
+
                     <Tooltip title={"Delete"}>
                       <Button
                         type="primary"

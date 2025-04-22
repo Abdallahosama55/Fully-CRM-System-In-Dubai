@@ -6,7 +6,7 @@ import ShareALink from "./components/ShareALink";
 import AddToWebsite from "./components/AddToWebsite";
 import { ProviderPageSettingsProvider } from "./ProviderPageSettings";
 
-const ShareModal = ({ isOpen, deskId, deskName, setIsOpen }) => {
+const ShareModal = ({ isOpen, deskId, setIsOpen }) => {
   const [currentTab, setCurrentTab] = useState("shareALink");
 
   const handleContinue = () => {};
@@ -29,7 +29,7 @@ const ShareModal = ({ isOpen, deskId, deskName, setIsOpen }) => {
       open={isOpen}
       onOk={handleContinue}
       onCancel={() => setIsOpen(false)}
-      title={deskName ?? "Share"}
+      title={"Share"}
       className="share-modal"
       footer={() => null}>
       <TabsMenu tabs={tabs} onTabChanged={(tab) => setCurrentTab(tab)} />

@@ -2,9 +2,7 @@ import { Button, Card, Col, Input, Row, Space, Typography, message } from "antd"
 import "../styles.css";
 
 const ShareALink = ({ deskId }) => {
-  const meetingLink = `${window.location.origin}/web-widget/schedule-call${
-    deskId ? "?desk_id=" + deskId : ""
-  }`;
+  const meetingLink = `https://vbookingform.vercel.app/forms/${deskId}`;
 
   const handleCopyMeetingLink = () => {
     navigator.clipboard.writeText(meetingLink);
