@@ -60,6 +60,13 @@ To build the client in Production mode:
 git checkout vindo-dev
 ```
 
+
+
+
+https://github.com/user-attachments/assets/3bdf47f4-37e3-4a85-b2c1-0d935b0f2504
+
+
+
 ### Branch flow
 main>vindo-testing>vindo-dev> your PR
 
